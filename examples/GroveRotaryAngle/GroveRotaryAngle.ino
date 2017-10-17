@@ -1,30 +1,30 @@
+/*  
+*  Copyright ...
+*  Licensed under the MIT license. See LICENSE file in the project root for full license information.
+*/
+
 /*
-  Rotary Angle
+  Grove Rotary Angle
 
   Demonstrates analog input by reading an analog sensor on analog pin 0 and
   turning on and off a light emitting diode(LED) connected to digital pin 4.
   The amount of time the LED will be on and off depends on the value obtained
-  by analogRead().
-
-  Also demonstrates the use of the serial port with the DebugSerial method.
-  
+  by analogRead(). Also demonstrates the use of the serial port with the DebugSerial function.
   An offset of 512 is applied because the Grove Pi+ board is a subsystem.  See the Blink example 
   for more details.
 
-  created by David Cuartielles
-  modified 30 Aug 2011
-  By Tom Igoe
+  Make sure to be connected to your board 'via Cloud' for the DebugSerial function to work. If
+  you prefer to see the serial output over the micro USB cable, change all instances of DebugSerial
+  to Serial.
 
-  This example code is in the public domain.
-
-  http://www.arduino.cc/en/Tutorial/AnalogInput
+  https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/GroveRotaryAngle 
+  
 */
 
 
 int sensorPin = 512;    // select the input pin for the Grove rotary angle sensor
 int ledPin = 516;      // select the pin for the LED
 int sensorValue = 0;  // variable to store the value coming from the sensor
-
 
 void setup() {
   // add the Grove Pi+ sub-platform

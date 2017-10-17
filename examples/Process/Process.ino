@@ -1,45 +1,76 @@
+ /*
+ created 5 Jun 2013
+ by Cristian Maglie
+ modified 13 Oct 2017
+ by Joseph Butler
+
+ This example code is in the public domain. 
+ 
+ */
+
 /*
-  Blink
-
-  Turns an LED on for one second, then off for one second, repeatedly.
-
-  Requires a Grove LED connected to the Grove Pi+ board. 
+  Process
   
-  The Arduino APIs use MRAA (mraa.io) as a hardware abstraction layer for the UP Squared board.
-  The Grove Pi+ is considered a sub-platform in MRAA. For more information see 
-  https://github.com/intel-iot-devkit/mraa/blob/master/docs/firmata.md
+  Running linux processes using the Process class.  Gets the Arduino ascii art logo from 
+  the network, and prints it over serial.  Also gets the cpu info.
+
+  Make sure to be connected to your board 'via Cloud' for the DebugSerial function to work. If
+  you prefer to see the serial output over the micro USB cable, change all instances of DebugSerial
+  to Serial.
   
-  For information specific to usage of the Grove Pi+ see 
-  https://github.com/intel-iot-devkit/mraa/blob/master/docs/grovepi.md
-  
-  The definition for the Gro
-  modified 8 May 2014
-  by Scott Fitzgerald
-  modified 2 Sep 2016
-  by Arturo Guadalupi
-  modified 8 Sep 2016
-  by Colby Newman
+  https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/Process
 
-  This example code is in the public domain.
+ */
 
-  http://www.arduino.cc/en/Tutorial/Blink
-*/
-
-//A 512 offset is required for sub-platforms.  516 corresponds to digital pin 4, or D4.
-#define LED_BUILTIN 516
-
-// the setup function runs once when you start your sketch
 void setup() {
-  //add the Grove Pi+ sub-platform
-  mraa_add_subplatform(MRAA_GROVEPI, "0");
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
+  // Initialize Serial
+  DebugSerial.begin(115200);
+
+  // Wait until a Serial Monitor is connected.
+  while (!DebugSerial);
+
+  // run various example processes
+  runCurl();
+  //runCpuInfo();
 }
 
-// the loop function runs over and over again forever
 void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
+  // Do nothing here.
+}
+
+void runCurl() {
+  // Launch "curl" command and get Arduino ascii art logo from the network
+  // curl is command line program for transferring data using different internet protocols
+  Process p;		// Create a process and call it "p"
+  p.begin("curl");	// Process that launch the "curl" command
+  p.addParameter("-k"); // Add the URL parameter to "curl"  
+  p.addParameter("https://www.arduino.cc/asciilogo.txt"); // Add the URL parameter to "curl"
+  p.run();		// Run the process and wait for its termination
+
+  // Print arduino logo over the serial
+  // A process output can be read with the stream methods
+  while (p.available() > 0) {
+    char c = p.read();
+    DebugSerial.print(c);
+  }
+  // Ensure the last bit of data is sent.
+  DebugSerial.flush();
+}
+
+void runCpuInfo() {
+  // Launch "cat /proc/cpuinfo" command (shows info on Atheros CPU)
+  // cat is a command line utility that shows the content of a file
+  Process p;		// Create a process and call it "p"
+  p.begin("cat");	// Process that launch the "cat" command
+  p.addParameter("/proc/cpuinfo"); // Add the cpuifo file path as parameter to cut
+  p.run();		// Run the process and wait for its termination
+
+  // Print command output over serial
+  // A process output can be read with the stream methods
+  while (p.available() > 0) {
+    char c = p.read();
+    DebugSerial.print(c);
+  }
+  // Ensure the last bit of data is sent.
+  DebugSerial.flush();
 }

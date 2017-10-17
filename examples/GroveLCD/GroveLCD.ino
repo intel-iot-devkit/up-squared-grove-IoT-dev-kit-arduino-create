@@ -1,45 +1,50 @@
-/*
-  Blink
+// upm - Version: Latest 
+//#include <ArduinoUPM.h>
+#include <jhd1313m1.h>
+//#include <jhd1313m1.hpp>
 
-  Turns an LED on for one second, then off for one second, repeatedly.
+#include "upm_utilities.h"
 
-  Requires a Grove LED connected to the Grove Pi+ board. 
-  
-  The Arduino APIs use MRAA (mraa.io) as a hardware abstraction layer for the UP Squared board.
-  The Grove Pi+ is considered a sub-platform in MRAA. For more information see 
-  https://github.com/intel-iot-devkit/mraa/blob/master/docs/firmata.md
-  
-  For information specific to usage of the Grove Pi+ see 
-  https://github.com/intel-iot-devkit/mraa/blob/master/docs/grovepi.md
-  
-  The definition for the Gro
-  modified 8 May 2014
-  by Scott Fitzgerald
-  modified 2 Sep 2016
-  by Arturo Guadalupi
-  modified 8 Sep 2016
-  by Colby Newman
+int main(void)
+{
 
-  This example code is in the public domain.
+    jhd1313m1_context lcd = jhd1313m1_init(0, 0x3e, 0x62);
 
-  http://www.arduino.cc/en/Tutorial/Blink
-*/
+    if (!lcd)
+    {
+        printf("jhd1313m1_i2c_init() failed\n");
+        return 1;
+    }
 
-//A 512 offset is required for sub-platforms.  516 corresponds to digital pin 4, or D4.
-#define LED_BUILTIN 516
+    int ndx = 0;
+    char str[20];
+    uint8_t rgb[7][3] = {
+        {0xd1, 0x00, 0x00},
+        {0xff, 0x66, 0x22},
+        {0xff, 0xda, 0x21},
+        {0x33, 0xdd, 0x00},
+        {0x11, 0x33, 0xcc},
+        {0x22, 0x00, 0x66},
+        {0x33, 0x00, 0x44}};
+    while (1)
+    {
+        snprintf(str, sizeof(str), "Hello World %d", ndx);
+        // Alternate rows on the LCD
+        jhd1313m1_set_cursor(lcd, ndx%2, 0);
+        jhd1313m1_write(lcd, str, strlen(str));
+        // Change the color
+        uint8_t r = rgb[ndx%7][0];
+        uint8_t g = rgb[ndx%7][1];
+        uint8_t b = rgb[ndx%7][2];
+        jhd1313m1_set_color(lcd, r, g, b);
+        // Echo via printf
+        printf("Hello World %d rgb: 0x%02x%02x%02x\n", ndx++, r, g, b);
 
-// the setup function runs once when you start your sketch
-void setup() {
-  //add the Grove Pi+ sub-platform
-  mraa_add_subplatform(MRAA_GROVEPI, "0");
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
-}
+        upm_delay(1);
+    }
 
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
+    jhd1313m1_close(lcd);
+//! [Interesting]
+
+    return 0;
 }
