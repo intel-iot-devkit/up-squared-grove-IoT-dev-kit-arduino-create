@@ -1,3 +1,15 @@
+/* Copyright (c) Intel. All rights reserved.
+Licensed under the MIT license. See LICENSE file in the project root for full license information.
+*/
+
+/*
+  Grove LCD
+
+  Example using the Grove LCD UPM library. Prints the value of the analog input from the Grove Rotary Angle Sensor to the display.
+
+  https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/GroveLCD
+ */
+
 // upm - Version: Latest 
 //#include <ArduinoUPM.h>
 #include <jhd1313m1.h>
