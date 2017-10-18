@@ -27,15 +27,17 @@ cd ~
 mkdir opencv
 cd opencv
 wget -O opencv-3.3.0.zip https://github.com/Itseez/opencv/archive/3.3.0.zip
+wget -O opencv_contrib-3.3.0.zip https://github.com/Itseez/opencv_contrib/archive/3.3.0.zip
 ```
-[//]: # (wget -O opencv_contrib-3.3.0.zip https://github.com/Itseez/opencv_contrib/archive/3.3.0.zip)
+[//]: # ()
 
 Unzip the downloaded archive:
 
 ```
 unzip opencv-3.3.0.zip
+unzip opencv_contrib-3.3.0.zip
 ```
-[//]: # (unzip opencv_contrib-3.3.0.zip)
+[//]: # ()
 
 
 ### Compile
