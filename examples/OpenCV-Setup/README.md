@@ -16,6 +16,11 @@ sudo apt-get install --no-install-recommends ubuntu-desktop
 ```
 "--no-install-recommends" means just the required dependencies, you can see the full list here https://packages.ubuntu.com/xenial/ubuntu-desktop 
 
+In order for the GUI to show reboot your system
+```
+reboot
+```
+
 ### Set up a monitor, keyboard, and mouse
 <add>
 
