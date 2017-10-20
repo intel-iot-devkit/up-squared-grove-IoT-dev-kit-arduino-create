@@ -8,6 +8,17 @@
 
 [//]: # (download a video, run the sketch, login to machine, change to root user, run it)
 
+## Install GUI
+The Ubuntu 16.04 operating system included with your kit does not have a Graphical User Interface (GUI). So in order for you to be able to view the results of the image or video streams being processed by opencv, you need to install it first.
+
+'''
+sudo apt-get install --no-install-recommends ubuntu-desktop
+'''
+"--no-install-recommends" means just the required dependencies, you can see the full list here https://packages.ubuntu.com/xenial/ubuntu-desktop 
+
+### Set up a monitor, keyboard, and mouse
+<add>
+
 ## Setup OpenCV
 
 This sections contains the instructions to download, compile and install the OpenCV 3.3.0 libraries on the Ubuntu desktop.
