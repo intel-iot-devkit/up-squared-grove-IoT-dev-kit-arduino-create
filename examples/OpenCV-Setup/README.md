@@ -66,10 +66,12 @@ make
 Approximate compile time: 55m 56s
 
 To achieve a faster compilation time, you can take advantage of the number of usable cores (`nproc`) in your CPU with either the following modified `make` commands:
-	$ make -j $(nproc)
-		-OR-
-	$ make -j $(($(nproc)+1))
-  
+
+```
+make -j $(nproc)
+	-or-
+make -j $(($(nproc)+1))
+  ```
 *Specifying the number of threads/cores to utilize*
 Approximate compile time:
 ```
