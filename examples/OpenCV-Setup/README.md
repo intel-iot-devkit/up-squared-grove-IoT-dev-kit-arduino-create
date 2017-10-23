@@ -8,8 +8,8 @@
 
 [//]: # (download a video, run the sketch, login to machine, change to root user, run it)
 
-## Install a GUI
-Because the Ubuntu 16.04 operating system (included with the UP2 kit) does not have a Graphical User Interface (GUI), you'll need to install a GUI in order to view the results of image or video streams processed by OpenCV\*.
+## Graphical User Interface (GUI) Installation
+Because the Ubuntu 16.04 operating system (included with the UP2 kit) does not include a Graphical User Interface (GUI), you'll need to install a GUI in order to view the results of image or video streams processed by OpenCV\*.
 
 ```
 sudo apt-get install --no-install-recommends ubuntu-desktop
@@ -21,14 +21,16 @@ Reboot your system to complete the GUI install
 reboot
 ```
 
-### Set up a monitor, keyboard, and mouse
-<add>
+### Hardwar setup of monitor, keyboard and mouse
+Plug in a USB keyboard/mouse into one of the USB ports available on the UP2 hardware. 
 
-## Setup OpenCV
+Next, plug in the cable of a display port oor HDMI compatible monitor.
+
+# OpenCV Setup
 
 This sections contains the instructions to download, compile and install the OpenCV 3.3.0 libraries on the Ubuntu desktop.
 
-### Download
+## Download
 Open a command prompt and type:
 
 ```
@@ -49,7 +51,7 @@ unzip opencv_contrib-3.3.0.zip
 [//]: # ()
 
 
-### Compile
+## Compile
 To build (or compile) the OpenCV libraries, navigate to the folder *opencv-3.3.0* and create a *build* directory:
 
 ```
@@ -80,7 +82,7 @@ make -j3
 
 **Note**: The `cmake` and `make` commands must complete successfully for you to continue with the installation below.
 
-### Install
+## Install
 From the  `~/opencv/opencv-3.3.0/build ` directory, type:
 ```
 sudo make install
