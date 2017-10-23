@@ -67,7 +67,7 @@ make
 ```
 Approximate compile time: 55m 56s
 
-To achieve a faster compilation time, you can take advantage of the number of usable cores, `nproc`, in your CPU with either the following modified `make` commands:
+To achieve a faster compilation time, you can take advantage of the number of usable cores, `nproc`, in your CPU with either of the following modified `make` commands:
 
 ```
 make -j $(nproc)
