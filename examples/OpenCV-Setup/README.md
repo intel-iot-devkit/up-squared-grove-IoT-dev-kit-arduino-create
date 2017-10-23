@@ -9,7 +9,7 @@
 [//]: # (download a video, run the sketch, login to machine, change to root user, run it)
 
 ## Graphical User Interface (GUI) Installation
-Because the Ubuntu 16.04 operating system (included with the UP2 kit) does not include a Graphical User Interface (GUI), you'll need to install a GUI in order to view the results of image or video streams processed by OpenCV\*.
+For UP2 kit, because the Ubuntu 16.04 operating system (included with the kit) does not include a Graphical User Interface (GUI), you'll need to install a GUI in order to view the results of image or video streams processed by OpenCV\*.
 
 ```
 sudo apt-get install --no-install-recommends ubuntu-desktop
@@ -21,7 +21,7 @@ Reboot your system to complete the GUI install
 reboot
 ```
 
-### Hardwar setup of monitor, keyboard and mouse
+### Hardware setup of monitor, keyboard and mouse
 Plug in a USB keyboard/mouse into one of the USB ports available on the UP2 hardware. 
 
 Next, plug in the cable of a display port oor HDMI compatible monitor.
@@ -67,18 +67,14 @@ make
 ```
 Approximate compile time: 55m 56s
 
-To achieve a faster compilation time, you can take advantage of the number of usable cores (`nproc`) in your CPU with either the following modified `make` commands:
+To achieve a faster compilation time, you can take advantage of the number of usable cores, `nproc`, in your CPU with either the following modified `make` commands:
 
 ```
 make -j $(nproc)
 	-or-
 make -j $(($(nproc)+1))
   ```
-*Specifying the number of threads/cores to utilize*
 Approximate compile time:
-```
-make -j3
-```
 
 **Note**: The `cmake` and `make` commands must complete successfully for you to continue with the installation below.
 
