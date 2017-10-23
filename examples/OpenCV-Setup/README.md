@@ -8,15 +8,15 @@
 
 [//]: # (download a video, run the sketch, login to machine, change to root user, run it)
 
-## Install GUI
-The Ubuntu 16.04 operating system included with your kit does not have a Graphical User Interface (GUI). So in order for you to be able to view the results of the image or video streams being processed by opencv, you need to install it first.
+## Install a GUI
+Because the Ubuntu 16.04 operating system (included with the UP2 kit) does not have a Graphical User Interface (GUI), you'll need to install a GUI in order to view the results of image or video streams processed by OpenCV\*.
 
 ```
 sudo apt-get install --no-install-recommends ubuntu-desktop
 ```
-"--no-install-recommends" means just the required dependencies, you can see the full list here https://packages.ubuntu.com/xenial/ubuntu-desktop 
+`--no-install-recommends` includes required dependencies only. You can see the full list at https://packages.ubuntu.com/xenial/ubuntu-desktop 
 
-In order for the GUI to show reboot your system
+Reboot your system to complete the GUI install
 ```
 reboot
 ```
