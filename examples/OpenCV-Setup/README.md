@@ -25,6 +25,11 @@ sudo su
 apt update
 apt install ubuntu-desktop
 ```
+
+Reboot your system after the install completes.
+```
+reboot
+```
 ### Other instructions (as needed)
 May need to force if `apt update` outputs errors regarding lock.
 
