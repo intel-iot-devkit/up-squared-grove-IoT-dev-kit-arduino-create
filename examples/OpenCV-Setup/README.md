@@ -15,6 +15,7 @@ The UP2 kit comes with the Ubuntu server operating system pre-installed on the U
 
 [//]: # (`--no-install-recommends` includes required dependencies only. You can see the full list at https://packages.ubuntu.com/xenial/ubuntu-desktop)
 
+Log in as root user:
 ```
 sudo su
 ```
