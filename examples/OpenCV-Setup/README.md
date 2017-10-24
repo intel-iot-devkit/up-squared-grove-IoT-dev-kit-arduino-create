@@ -8,6 +8,11 @@
 
 [//]: # (download a video, run the sketch, login to machine, change to root user, run it)
 
+### Hardware setup of monitor, keyboard and mouse
+Plug in a USB keyboard/mouse into one of the USB ports available on the UP2 hardware. 
+
+Next, plug in the cable of a display port oor HDMI compatible monitor.
+
 ## Install Ubuntu desktop environment
 The UP2 kit comes with the Ubuntu server operating system pre-installed on the UP2 board but does not include the Ubuntu desktop environment. You'll need to install the desktop environment in order to view the results of image or video streams processed by OpenCV\*.
 
@@ -52,11 +57,6 @@ Reboot your system after the install completes.
 ```
 reboot
 ```
-
-### Hardware setup of monitor, keyboard and mouse
-Plug in a USB keyboard/mouse into one of the USB ports available on the UP2 hardware. 
-
-Next, plug in the cable of a display port oor HDMI compatible monitor.
 
 # OpenCV Setup
 
