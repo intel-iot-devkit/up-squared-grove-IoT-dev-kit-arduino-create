@@ -1,6 +1,6 @@
 [//]: # (Joe Butler comment below)
 
-[//]: # (Install GUI, Restart, Setup a monitor/keyboard/mouse)
+[//]: # (Install Ubuntu desktop environment, Restart, Setup a monitor/keyboard/mouse)
 
 [//]: # (Install opencv) 
 
@@ -8,15 +8,41 @@
 
 [//]: # (download a video, run the sketch, login to machine, change to root user, run it)
 
-## Graphical User Interface (GUI) Installation
-For UP2 kit, because the Ubuntu 16.04 operating system (included with the kit) does not include a Graphical User Interface (GUI), you'll need to install a GUI in order to view the results of image or video streams processed by OpenCV\*.
+## Install Ubuntu desktop environment
+The UP2 kit comes with the Ubuntu server operating system pre-installed on the UP2 board but does not include the Ubuntu desktop environment. You'll need to install the desktop environment in order to view the results of image or video streams processed by OpenCV\*.
+
+[//]: # (sudo apt-get install --no-install-recommends ubuntu-desktop)
+
+[//]: # (`--no-install-recommends` includes required dependencies only. You can see the full list at https://packages.ubuntu.com/xenial/ubuntu-desktop)
 
 ```
-sudo apt-get install --no-install-recommends ubuntu-desktop
+sudo su
 ```
-`--no-install-recommends` includes required dependencies only. You can see the full list at https://packages.ubuntu.com/xenial/ubuntu-desktop 
+**Note**: if you are behind a firewall, configure your proxy before proceeding with the commands that follow.
 
-Reboot your system to complete the GUI install
+```
+apt update
+apt install ubuntu-desktop
+```
+### Other instructions (as needed)
+May need to force if `apt update` outputs errors regarding lock.
+
+Backup the current list using:
+```
+mv /etc/apt/sources.list /etc/apt/sources.list.old
+```
+
+Then download:
+
+```
+curl https://repogen.simplylinux.ch/txt/xenial/sources_806a0b140939fc6715a1303545ba86ee3f40492c.txt | sudo tee /etc/apt/sources.list
+```
+
+To add mraa, follow instructions at https://launchpad.net/~mraa/+archive/ubuntu/mraa
+
+Once done, you should have all sources available and updated (including the ubuntu-desktop package).
+
+Reboot your system after the install completes.
 ```
 reboot
 ```
