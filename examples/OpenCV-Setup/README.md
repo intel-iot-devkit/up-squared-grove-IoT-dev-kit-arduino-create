@@ -8,10 +8,10 @@
 
 [//]: # (download a video, run the sketch, login to machine, change to root user, run it)
 
-### Hardware setup of monitor, keyboard and mouse
-Plug in a USB keyboard/mouse into one of the USB ports available on the UP2 hardware. 
+## Hardware Setup: connect monitor, keyboard and mouse
+Plug in a USB keyboard and mouse into the USB ports available on the UP2 hardware. 
 
-Next, plug in the cable of a display port oor HDMI compatible monitor.
+Next, gather a HDMI or display port compatible monitor along with it's corresponding cable and connect the monitor to the board by plugging in the cable to the available ports on the UP2 hardware.
 
 ## Install Ubuntu desktop environment
 The UP2 kit comes with the Ubuntu server operating system pre-installed on the UP2 board but does not include the Ubuntu desktop environment. You'll need to install the desktop environment in order to view the results of image or video streams processed by OpenCV\*.
