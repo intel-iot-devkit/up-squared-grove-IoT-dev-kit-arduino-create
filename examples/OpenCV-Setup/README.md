@@ -48,18 +48,11 @@ In the `~/opencv/opencv-3.3.0/build ` directory, create the make files:
 
 ```
 cmake ../
-make
-```
-Approximate compile time: 55m 56s
-
-To achieve a faster compilation time, you can take advantage of the number of usable cores, `nproc`, in your CPU with either of the following modified `make` commands:
-
-```
 make -j $(nproc)
-	-or-
-make -j $(($(nproc)+1))
-  ```
-Approximate compile time:
+```
+Approximate compile time: varies depending on the number of usable cores
+
+To achieve an optimal compilation time, we take advantage of the number of usable cores, `nproc`, in the CPU by appending the make command with `-j $(nproc)`. If the hardware you are using supports hyperthreading, you may also try appending the `make` command with either `-j $(($(nproc)+1))` or ` `.
 
 **Note**: The `cmake` and `make` commands must complete successfully for you to continue with the installation below.
 
