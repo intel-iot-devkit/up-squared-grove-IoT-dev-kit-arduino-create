@@ -110,11 +110,17 @@ Then download:
 ```
 curl https://repogen.simplylinux.ch/txt/xenial/sources_806a0b140939fc6715a1303545ba86ee3f40492c.txt | sudo tee /etc/apt/sources.list
 ```
+To force:
+```
+sudo rm /var/lib/apt/lists/lock 
+```
+
+Run the update and install commands:
 ```
 apt update
 apt install ubuntu-desktop
 ```
-Reboot your system after the install completes.
+Reboot your system after the install completes:
 ```
 reboot
 ```
