@@ -13,6 +13,9 @@
 This sections contains the instructions to download, compile and install the OpenCV 3.3.0 libraries on the Ubuntu desktop.
 
 ## Download
+
+**Note**: if you are behind a firewall, configure your proxy before proceeding with the commands that follow.
+
 Open a command prompt and type:
 
 ```
