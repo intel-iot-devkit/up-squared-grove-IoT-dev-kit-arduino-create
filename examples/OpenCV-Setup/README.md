@@ -110,12 +110,15 @@ Then download:
 ```
 curl https://repogen.simplylinux.ch/txt/xenial/sources_806a0b140939fc6715a1303545ba86ee3f40492c.txt | sudo tee /etc/apt/sources.list
 ```
-
-To add mraa, follow instructions at https://launchpad.net/~mraa/+archive/ubuntu/mraa
-
-Once done, you should have all sources available and updated (including the ubuntu-desktop package).
-
+```
+apt update
+apt install ubuntu-desktop
+```
 Reboot your system after the install completes.
 ```
 reboot
 ```
+#### MRAA (optional)
+To add mraa, follow instructions at https://launchpad.net/~mraa/+archive/ubuntu/mraa
+
+Once done, you should have all sources available and updated (including the ubuntu-desktop package).
