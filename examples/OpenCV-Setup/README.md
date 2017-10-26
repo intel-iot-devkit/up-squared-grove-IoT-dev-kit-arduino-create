@@ -8,9 +8,17 @@
 
 [//]: # (download a video, run the sketch, login to machine, change to root user, run it)
 
-# OpenCV Setup
+# Introduction
+This tutorial contains the instructions to setup OpenCV 3.3.0 on the Ubuntu operating system.
 
-This sections contains the instructions to download, compile and install the OpenCV 3.3.0 libraries on the Ubuntu desktop.
+# What you'll Learn
+You'll learn to download, build (compile) and install the OpenCV 3.3.0 libraries on the Ubuntu 16.04 LTS operating system.
+
+# Gather Your Materials
+* UP Squared Board (tested) or other Intel® processor-based hardware
+* Ubuntu 16.04 LTS
+
+# OpenCV Setup
 
 ## Download
 
