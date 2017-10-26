@@ -41,8 +41,6 @@ Unzip the downloaded archive:
 unzip opencv-3.3.0.zip
 unzip opencv_contrib-3.3.0.zip
 ```
-[//]: # ()
-
 
 ## Compile
 To build (or compile) the OpenCV libraries, navigate to the folder *opencv-3.3.0* and create a *build* directory:
@@ -54,8 +52,15 @@ cd build
 ```
 In the `~/opencv/opencv-3.3.0/build ` directory, create the make files:
 
+[//]: # (cmake ../)
 ```
-cmake ../
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+    -D INSTALL_PYTHON_EXAMPLES=OFF \
+    -D INSTALL_C_EXAMPLES=ON \
+    -D OPENCV_EXTRA_MODULES_PATH=~/opencv/opencv_contrib-3.3.0/modules \
+    -D PYTHON_EXECUTABLE=python \
+    -D BUILD_EXAMPLES=ON ..
+
 make -j $(nproc)
 ```
 Approximate compile time: varies depending on the number of usable cores
