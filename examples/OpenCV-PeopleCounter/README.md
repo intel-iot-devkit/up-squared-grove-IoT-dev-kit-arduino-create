@@ -1,6 +1,7 @@
 # People Counter in C++/OpenCV for Arduino Create IDE 
 
 ## Introduction
+A people counter is a computer vision application implemented on a hardware device that counts (or measures) the number of people who enter a designated area. People are first detected (green bounding box) and then counted. This real-time applications has use in many practical areas including retail stores, shopping centers, hotels, museums, and government buildings. HOG (Histograms of Oriented Gradients), state of art method for detecting people, is the algorithm used in the code sample below.
 
 ## What you’ll learn
 In this tutorial, you’ll learn how to build and run a people counting computer vision application from source code in the Arduino Create IDE. The application will be executed from the command prompt.
