@@ -67,6 +67,8 @@ sudo ldconfig
 
 # UP2 Users
 ## Before you setup OpenCV
+Before you build and install the OpenCV libraries, setup your UP2 hardware and install the Ubuntu desktop environment.
+
 ### Hardware Setup: connect monitor, keyboard and mouse
 Plug in a USB keyboard and mouse into the USB ports available on the UP2 hardware. 
 
