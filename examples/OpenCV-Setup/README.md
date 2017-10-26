@@ -54,16 +54,11 @@ In the `~/opencv/opencv-3.3.0/build ` directory, create the make files:
 
 [//]: # (cmake ../)
 ```
-cmake -D CMAKE_BUILD_TYPE=RELEASE \
-    -D INSTALL_PYTHON_EXAMPLES=OFF \
-    -D INSTALL_C_EXAMPLES=ON \
-    -D OPENCV_EXTRA_MODULES_PATH=~/opencv/opencv_contrib-3.3.0/modules \
-    -D PYTHON_EXECUTABLE=python \
-    -D BUILD_EXAMPLES=ON ..
+cmake -D CMAKE_BUILD_TYPE=RELEASE \-D INSTALL_PYTHON_EXAMPLES=OFF \-D INSTALL_C_EXAMPLES=ON \-D OPENCV_EXTRA_MODULES_PATH=~/opencv/opencv_contrib-3.3.0/modules \-D PYTHON_EXECUTABLE=python \-D BUILD_EXAMPLES=ON ..
 
 make -j $(nproc)
 ```
-Approximate compile time: varies depending on the number of usable cores
+Approximate compile time: varies depending on the number of usable cores in the processor
 
 To achieve an optimal compilation time, we can take advantage of the number of usable cores, `nproc`, in the CPU by appending the make command with `-j $(nproc)`. If the hardware you are using supports hyperthreading, you may also try appending the `make` command with either `-j $(($(nproc)+1))` or `-j $(($(nproc)+$(($(nproc)/2))))`.
 
@@ -91,6 +86,7 @@ Next, gather a HDMI or display port compatible monitor along with it's correspon
 The UP2 kit comes with the Ubuntu server operating system pre-installed on the UP2 board but does not include the Ubuntu desktop environment. You'll need to install the desktop environment in order to view the results of image or video streams processed by OpenCV\*.
 
 [//]: # (sudo apt-get install --no-install-recommends ubuntu-desktop)
+[//]: # (always use sudo with apt)
 
 [//]: # (`--no-install-recommends` includes required dependencies only. You can see the full list at https://packages.ubuntu.com/xenial/ubuntu-desktop)
 
