@@ -7,7 +7,6 @@ This tutorial walks you through running linux processes using the Process class.
 
 ## Gather your materials
 You’ll need the following to complete this tutorial:
-
 * [!UP² board] (http://www.up-board.org/upsquared/) 
 
 ## Setup
