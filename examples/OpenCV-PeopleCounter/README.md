@@ -3,8 +3,7 @@
 ## Introduction
 
 ## What you’ll learn
-In this tutorial, you’ll learn how to build and run a people counting computer vision application from source code in Arduino Create IDE
-The application will be executed from the command prompt.
+In this tutorial, you’ll learn how to build and run a people counting computer vision application from source code in the Arduino Create IDE. The application will be executed from the command prompt.
 
 ## Gather your materials
 You’ll need the following to complete this tutorial:
