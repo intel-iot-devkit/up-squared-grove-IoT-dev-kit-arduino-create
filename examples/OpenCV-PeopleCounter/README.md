@@ -1,4 +1,4 @@
-# sandbox
+# People Counter in C++/OpenCV for Arduino Create IDE 
 
 ## Introduction
 
