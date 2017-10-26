@@ -65,7 +65,7 @@ make -j $(nproc)
 ```
 Approximate compile time: varies depending on the number of usable cores
 
-To achieve an optimal compilation time, we take advantage of the number of usable cores, `nproc`, in the CPU by appending the make command with `-j $(nproc)`. If the hardware you are using supports hyperthreading, you may also try appending the `make` command with either `-j $(($(nproc)+1))` or ` `.
+To achieve an optimal compilation time, we can take advantage of the number of usable cores, `nproc`, in the CPU by appending the make command with `-j $(nproc)`. If the hardware you are using supports hyperthreading, you may also try appending the `make` command with either `-j $(($(nproc)+1))` or `-j $(($(nproc)+$(($(nproc)/2))))`.
 
 **Note**: The `cmake` and `make` commands must complete successfully for you to continue with the installation below.
 
@@ -76,7 +76,7 @@ sudo make install
 sudo ldconfig
 ```
 
-`ldconfig` tells the operating system that the OpenCV libraries are available. `sudo` is used to...
+`ldconfig` tells the operating system that the OpenCV libraries are available.
 
 # UP2 Users
 ## Before you setup OpenCV
