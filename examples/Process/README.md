@@ -25,10 +25,11 @@ Process is a class built for the Arduino Yun that also works nicely on the UP Sq
 
 The basic way to use it is as follows:
 
+```
 Process <name>
 <name>.begin("<command>")
 <name>.addParameter ("<parameter1>")
 <name>.addParameter ("<parameter2>")
 etc
 <name>.run()
-  
+```
