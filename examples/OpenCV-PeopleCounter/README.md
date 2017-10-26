@@ -11,9 +11,11 @@ In this tutorial, you’ll learn how to:
 ## Gather your materials
 You’ll need the following to complete this tutorial:
   *	[UP Squared board](http://www.up-board.org/upsquared/)
-  *	[Ubuntu 16.04](https://)
-  * [OpenCV version 3.3.0]
+  *	Ubuntu 16.04
+  * OpenCV version 3.3.0
   *	A UVC webcam
+
+[Click here for instructions on how to set up the OpenCV libraries on your hardware.](https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/blob/master/examples/OpenCV-Setup/README.md)
 
 ## Setup OpenCV
 
