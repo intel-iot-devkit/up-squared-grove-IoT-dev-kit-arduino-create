@@ -79,7 +79,7 @@ sudo ldconfig
 `ldconfig` tells the operating system that the OpenCV libraries are available.
 
 # UP2 Users
-## Before you setup OpenCV
+## Before you setup OpenCV 
 Before you build and install the OpenCV libraries, setup your UP2 hardware and install the Ubuntu desktop environment.
 
 ### Hardware Setup: connect monitor, keyboard and mouse
