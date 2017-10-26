@@ -66,12 +66,13 @@ sudo ldconfig
 `ldconfig` tells the operating system that the OpenCV libraries are available. `sudo` is used to...
 
 # UP2 Users
-## Hardware Setup: connect monitor, keyboard and mouse
+## Before you setup OpenCV
+### Hardware Setup: connect monitor, keyboard and mouse
 Plug in a USB keyboard and mouse into the USB ports available on the UP2 hardware. 
 
 Next, gather a HDMI or display port compatible monitor along with it's corresponding cable and connect the monitor to the board by plugging in the cable to the available ports on the UP2 hardware.
 
-## Install Ubuntu desktop environment
+### Install Ubuntu desktop environment
 The UP2 kit comes with the Ubuntu server operating system pre-installed on the UP2 board but does not include the Ubuntu desktop environment. You'll need to install the desktop environment in order to view the results of image or video streams processed by OpenCV\*.
 
 [//]: # (sudo apt-get install --no-install-recommends ubuntu-desktop)
