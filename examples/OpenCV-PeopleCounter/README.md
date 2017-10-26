@@ -120,12 +120,18 @@ void drawText(Mat & image)
 
 Open a session in the Arduino Create IDE, begin a NEW SKETCH and paste the code into the sketch window. Save your sketch and name it as people_detect_count.
 
+![Arduino Create IDE](capture-1.PNG)
+
 ### Verify
 [//]: # (insert screenshot of "done verifying...")
+
+![done verifying](verify.PNG)
 
 ### Upload
 
 [//]: # (insert screenshot of "done uploading...")
+
+![done uploading](upload.PNG)
 
 ### Run the Application
 
