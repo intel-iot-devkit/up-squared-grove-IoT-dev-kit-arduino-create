@@ -126,8 +126,11 @@ sudo rm /var/lib/apt/lists/lock
 Run the update and install commands:
 ```
 apt update
-apt install ubuntu-desktop
+apt install --no-install-recommends ubuntu-desktop
 ```
+
+`--no-install-recommends` saves space on the drive by installing the minimum required components.
+
 Reboot your system after the install completes:
 ```
 reboot
