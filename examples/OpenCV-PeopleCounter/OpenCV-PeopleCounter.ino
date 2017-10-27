@@ -45,6 +45,7 @@ static void detectAndDraw(const HOGDescriptor &hog, Mat &img)
         r.height = cvRound(r.height*0.8);
         rectangle(img, r.tl(), r.br(), cv::Scalar(0,255,0), 3);
     }
+    return found_filtered.size()
 }
 
 
@@ -66,7 +67,8 @@ void setup()
             if(image.empty())
                 break;
             drawText(image);
-            detectAndDraw(hog, image);
+            int num_people = detectAndDraw(hog, image);
+            cout << "People count: " << num_people << endl;
             imshow("people detector", image);
             //imshow("Sample", image);
             if(waitKey(10) >= 0)
