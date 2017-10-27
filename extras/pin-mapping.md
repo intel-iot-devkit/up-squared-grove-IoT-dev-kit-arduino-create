@@ -40,3 +40,10 @@
 |38	|I2S_DIN:	|GPIO
 |39	|Ground	
 |40	|I2S_DOUT:	|GPIO
+
+References:  
+* https://up-community.org/wiki/Pinout_UP2#Pinout  
+* run:
+  ```
+  mraa-gpio list
+  ```
