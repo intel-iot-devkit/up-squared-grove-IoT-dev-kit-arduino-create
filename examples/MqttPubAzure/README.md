@@ -1,4 +1,19 @@
-# MQTT with Azure in Arduino Create
+# MQTT Publication with Azure
+This tutorial takes you from setting up a device in Azure all the way to viewing your data being send with MQTT.  The sketch is setup to read data from the Grove Rotary Angle Sensor at a given interval and send it to Azure.  The final step where you view your data is done in the Device Explorer provided by Microsoft.  It is only supported on **Windows** , see https://github.com/Azure/iothub-explorer for instructions on how to use the iot-hubexplorer node.js command line tool for other platforms.
+
+## Gather your materials
+* ![UP² board](http://www.up-board.org/upsquared/) 
+* Grove Pi+ board
+* Grove Rotary Angle sensor
+
+### Software dependencies
+* libcrypto
+* libssl  
+
+These will already be installed if you are using the OS that was shipped with the UP Squared Grove IoT Development Kit. Otherwise you need to install them via apt-get.
+
+## Plug in your sensor
+Connect the Grove Rotary Angle Sensor to pin **A0** on the Grove Pi+
 
 ## Create an account
 If you don't have an Azure account, sign up for a free trial https://azure.microsoft.com/en-us/free/ 
@@ -67,7 +82,7 @@ This tutorial will you walk you through using the Device Explorer GUI on windows
 ![](./../../extras/screen12.png)
 
 
-## Edit example in Arduino Create
+## Get the code
 
 1. Open the example **Libraries>AZURE IOT DEVICE SDK>Examples>ClientMqtt**
 
@@ -84,3 +99,4 @@ Go to the **Data** tab and click **Monitor**.  You should see a message saying "
 
 ![](./../../extras/screen15.png)
 
+## How it works
