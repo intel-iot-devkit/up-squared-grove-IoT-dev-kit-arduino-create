@@ -12,7 +12,7 @@ This tutorial shows you how to go from setting up an account with AWS to sending
 
 ### Software dependencies
 * libcrypto
-* libssl
+* libssl  
 These will already be installed if you are using the OS that was shipped with the UP Squared Grove IoT Development Kit.  Otherwise you need to install them via apt-get.
 
 ## Set up AWS portal
