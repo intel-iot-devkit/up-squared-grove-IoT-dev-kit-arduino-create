@@ -1,6 +1,11 @@
 # MQTT Publication with Azure
 This tutorial takes you from setting up a device in Azure all the way to viewing your data being send with MQTT.  The sketch is setup to read data from the Grove Rotary Angle Sensor at a given interval and send it to Azure.  The final step where you view your data is done in the Device Explorer provided by Microsoft.  It is only supported on **Windows** , see https://github.com/Azure/iothub-explorer for instructions on how to use the iot-hubexplorer node.js command line tool for other platforms.
 
+## What you'll learn
+* How to setup the an IoT Hub
+* How to get the credentials for your device and enter them into the SECRETS tab
+* How to view your data using the Device Explorer
+
 ## Gather your materials
 * ![UP² board](http://www.up-board.org/upsquared/) 
 * Grove Pi+ board
