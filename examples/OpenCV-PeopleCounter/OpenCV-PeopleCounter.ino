@@ -13,7 +13,7 @@ using namespace std;
 
 void drawText(Mat & image);
 
-static void detectAndDraw(const HOGDescriptor &hog, Mat &img)
+int detectAndDraw(const HOGDescriptor &hog, Mat &img)
 {
     vector<Rect> found, found_filtered;
     double t = (double) getTickCount();
@@ -45,7 +45,7 @@ static void detectAndDraw(const HOGDescriptor &hog, Mat &img)
         r.height = cvRound(r.height*0.8);
         rectangle(img, r.tl(), r.br(), cv::Scalar(0,255,0), 3);
     }
-    return found_filtered.size()
+    return found_filtered.size();
 }
 
 
