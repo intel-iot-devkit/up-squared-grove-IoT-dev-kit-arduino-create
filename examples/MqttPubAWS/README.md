@@ -1,3 +1,20 @@
+# MQTT Publication with AWS
+This tutorial shows you how to go from setting up an account with AWS to sending data via MQTT.  It uses the aws-iot-device-sdk-cpp.h library from https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create , which is a slightly modified version of the AWS IoT Device SDK https://github.com/aws/aws-iot-device-sdk-cpp.  
+
+## What you'll learn
+* How to setup an AWS account and Thing
+* How to create a certificate for your Thing
+* How to enter the certificate in the SECRETS tab 
+* How to verify the connection in AWS
+
+## Gather your materials
+* ![UP² board](http://www.up-board.org/upsquared/) 
+
+### Software dependencies
+* libcrypto
+* libssl
+These will already be installed if you are using the OS that was shipped with the UP Squared Grove IoT Development Kit.  Otherwise you need to install them via apt-get.
+
 ## Set up AWS portal
 
 1.  Go to AWS IOT console and register or sign in.
@@ -60,7 +77,7 @@
     ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step10.png)
 
    
-## Enter details in sample
+## Get the code
 
 1.  Open the PubSub example in Arduino Create **Libraries>AWS IOT DEVICE SDK>Examples>PubSub**
 
@@ -95,7 +112,7 @@
     This will load the certificates from those file paths instead of as
     strings.
 
-## Monitor the topic in AWS IoT dashboard
+### Monitor the topic in AWS IoT dashboard
 
 1.  Go to the Dashboard (you can navigate to it in the left menu from the console https://aws.amazon.com/console/). A graphical representation of device connections and messages can be seen.  You should see a connection corresponding to the time you ran the sketch.
     ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Dashboard.png)
@@ -115,3 +132,6 @@
     When the sample runs, you will see the published messages, like below:
 
     ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/MonitorStep3.png)
+
+## How it works
+
