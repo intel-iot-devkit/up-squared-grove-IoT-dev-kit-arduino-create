@@ -1,7 +1,7 @@
 # People Counter in C++/OpenCV for Arduino Create IDE 
 
 ## Introduction
-A people counter is a computer vision application implemented on a hardware device that counts (or measures) the number of people who enter a designated area. In the implementation that follows, people are first detected (green bounding box) and then counted. This real-time application has use in many practical areas including retail stores, shopping centers, hotels, museums, and government buildings. HOG (Histograms of Oriented Gradients), state of art method for detecting people, is the algorithm used in the code sample below.
+A people counter is a computer vision application implemented on a hardware device that counts (or measures) the number of people who enter a designated area. In the implementation that follows, people are first detected (green bounding box) and then counted. This real-time application has use in many practical areas including retail stores, shopping centers, hotels, museums, and government buildings. HOG (Histograms of Oriented Gradients), popular method for detecting people, is the algorithm used in the code sample below.
 
 ## What you’ll learn
 In this tutorial, you’ll learn how to build and run a people counting computer vision application from source code in the Arduino Create IDE. The application will then be executed from the command prompt on the Ubuntu desktop.
@@ -151,4 +151,5 @@ cd sketches
 A window should pop up and when a person is detected, you'll see a green bounding box around the person.
 
 ## How it works
-Place commented code snippets here.
+The people counter/detector uses HOG (Histograms of Oriented Gradients), a type of "feature descriptor", for object detection. A feature descriptor (an algorithm) encodes information from an image or video into numerical values. Those values are then used to distinguish one feature from another (to make the task of classification easier). HOG appears in the code as `HOGDescriptor hog; hog.setSVMDetector(HOGDescriptor::getDefaultPeopleDetector());` 
+
