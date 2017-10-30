@@ -10,10 +10,10 @@
 
 # How to Build and Install the OpenCV Libraries on Ubuntu
 ## Introduction
-This tutorial contains the instructions to setup OpenCV 3.3.0 on the Ubuntu operating system.
+This tutorial contains the instructions to setup OpenCV 3.3.0 on the Ubuntu 16.04 LTS operating system.
 
 ## What you'll Learn
-You'll learn to download, build (compile) and install the OpenCV 3.3.0 libraries on the Ubuntu 16.04 LTS operating system.
+* download, build (compile) and install the OpenCV 3.3.0 libraries
 
 ## Gather Your Materials
 * UP Squared Board (tested) or other Intel® processor-based hardware
