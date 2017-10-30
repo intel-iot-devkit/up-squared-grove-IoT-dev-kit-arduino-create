@@ -72,7 +72,7 @@ static void detectAndDraw(const HOGDescriptor &hog, Mat &img)
 
 void setup()
 {
-    HOGDescriptor hog;
+    HOGDescriptor hog; //instantiate the class to create an object
     hog.setSVMDetector(HOGDescriptor::getDefaultPeopleDetector());
     cout << "Built with OpenCV " << CV_VERSION << endl;
     Mat image;
@@ -154,3 +154,7 @@ A window should pop up and when a person is detected, you'll see a green boundin
 The people counter/detector uses Histograms of Oriented Gradients (HOG), a type of "feature descriptor", to achieve object detection. A feature descriptor (an algorithm) encodes information from an image or video into numerical values. Those values are then used to distinguish one feature from another (to make the task of classification easier). HOG features are calculated 
 
 HOG appears in the code as `HOGDescriptor hog; hog.setSVMDetector(HOGDescriptor::getDefaultPeopleDetector());`
+
+[//]: # (add link to HOG descriptor class in OpenCV)
+[//]: # (OpenCV class versus C++ class)
+[//]: # (counts per frame, every frame you get an updated count, and output should be in the terminal window)
