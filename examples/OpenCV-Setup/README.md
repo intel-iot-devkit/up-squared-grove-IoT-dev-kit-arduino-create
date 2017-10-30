@@ -91,22 +91,18 @@ The UP2 kit comes with the Ubuntu server operating system pre-installed on the U
 
 [//]: # (`--no-install-recommends` includes required dependencies only. You can see the full list at https://packages.ubuntu.com/xenial/ubuntu-desktop)
 
-Log in as root user:
-```
-sudo su
-```
 **Note**: if you are behind a firewall, configure your proxy before proceeding with the commands that follow.
 
 ```
-apt update
-apt install ubuntu-desktop
+suo apt update
+sudo apt install ubuntu-desktop
 ```
 
 Reboot your system after the install completes.
 ```
 reboot
 ```
-### Other instructions (as needed)
+### Other instructions (troubleshooting as needed)
 May need to force if `apt update` outputs errors regarding lock.
 
 Backup the current list using:
