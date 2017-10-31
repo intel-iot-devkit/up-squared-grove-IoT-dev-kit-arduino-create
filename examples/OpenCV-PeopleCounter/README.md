@@ -13,7 +13,7 @@ A people counter is a solution that counts (or measures) the number of people wh
   * OpenCV version 3.3.0
   *	A UVC webcam
 
-[Click here for instructions on how to set up the OpenCV libraries on your hardware.](https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/blob/master/examples/OpenCV-Setup/README.md)
+[Click here for instructions on how to set up the OpenCV libraries on your hardware.](https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/OpenCV-Setup)
 
 ## Get the Code
 
@@ -72,7 +72,7 @@ static void detectAndDraw(const HOGDescriptor &hog, Mat &img)
 
 void setup()
 {
-    HOGDescriptor hog; //instantiate the class to create an object
+    HOGDescriptor hog; //here, we instantiate a class and to instantiate a class (in C++) is to create an object
     hog.setSVMDetector(HOGDescriptor::getDefaultPeopleDetector());
     cout << "Built with OpenCV " << CV_VERSION << endl;
     Mat image;
@@ -151,7 +151,7 @@ cd sketches
 A window should pop up and when a person is detected, you'll see a green bounding box around the person.
 
 ## How it works
-The people counter/detector uses Histograms of Oriented Gradients (HOG), a type of "feature descriptor", to achieve object detection. A feature descriptor (an algorithm) encodes information from an image or video into numerical values. Those values are then used to distinguish one feature from another (to make the task of classification easier). HOG features are calculated 
+The people counter/detector uses Histograms of Oriented Gradients (HOG), a type of "feature descriptor", to achieve object detection. A feature descriptor (an algorithm) encodes information from an image or video into numerical values. Those values are then used to distinguish one feature from another (to make the task of classification easier). HOG features are calculated... 
 
 HOG appears in the code as `HOGDescriptor hog; hog.setSVMDetector(HOGDescriptor::getDefaultPeopleDetector());`
 
