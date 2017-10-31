@@ -1,9 +1,9 @@
 # Grove Rotary Angle Sensor
 
-# Introduction
+## Introduction
 You’ll use the serial monitor to see the raw data coming from the sensor. You’ll be able to control the rate of an LED blinking using the input from a rotary angle sensor.
 
-# What you’ll learn
+## What you’ll learn
 * Stop a sketch that is running
 * Set up a serial monitor
 * Read analog input data from a sensor
