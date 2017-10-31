@@ -1,4 +1,7 @@
 
+# Introduction
+
+# What you'll learn
 In this step, you will:
 * Connect an LED
 * Open the sample Blink application
@@ -50,8 +53,10 @@ If your LED isn't flashing, check the following:
 * Your board is still connected. You can see this in the My Devices page [https://create-intel.arduino.cc/devices](https://create-intel.arduino.cc/devices). It should say ONLINE. If it isn’t, check the network connections. If all else fails and your board continues OFFLINE, go through the setup process again, starting at [Create an account and install the Arduino plugin](https://software.intel.com/node/8c6e7d82-619d-4e04-b4d7-0ea54b10e46f).
 * Make sure the LED is plugged in the right way (the longer wire should be connected to the positive terminal). Try another LED if you have one.
 ## Digging into the code
+
 You may have seen some lines in the code that you don’t recognize. Before we dive in, there are a couple of concepts to understand:
 * MRAA* (mraa.io) – pronounced ‘em rah’ is the hardware abstraction layer in Arduino Create for Linux*-based platforms. It is an open source project, and it supports multiple boards and programming languages. Using MRAA allows you to initialize and work with pins on a board with an easy-to-understand API.
+
 * Platform – The way that MRAA abstracts the hardware is through a pin mapping at the user space level. So when you use MRAA, you need to set your platform so the mapping is done correctly for your specific board.  In this case, the platform is the UP² board, but MRAA supports over a dozen boards. You can see a complete list of the pin mapping here: [https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/blob/master/extras/pin-mapping.md](https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/blob/master/extras/pin-mapping.md)
 
 MRAA supports GPIO, I2C, PWM, SPI, and UART. There is also a very useful library written on top of MRAA which is an abstraction for individual sensors.  It’s called UPM and you can read about it at [https://upm.mraa.io/](https://upm.mraa.io). UPM is supported in Arduino Create for platforms using MRAA.
@@ -67,18 +72,22 @@ Since the Grove Pi+ board is a sub-platform of the UP² board, we need to offset
 Digital pins and analog pins both start at zero. For example, Analog pin 0 (A0) corresponds to 512, and Digital pin 4 (D4) corresponds to 516.
 
 ```mraa_add_subplatform(MRAA_GROVEPI, "0")```
-<p>This line adds the Grove Pi+ board as a sub-platform.  </p>
-<p>The rest of the code uses the standard Arduino APIs.  </p>
-<ul style="list-style: disc;"><li>PinMode - <a href="https://www.arduino.cc/en/Reference/PinMode" target="_blank">https://www.arduino.cc/en/Reference/PinMode</a></li>
-<li>DigitalWrite - <a href="https://www.arduino.cc/en/Reference/DigitalWrite" target="_blank">https://www.arduino.cc/en/Reference/DigitalWrite</a></li>
-<li>Delay - <a href="https://www.arduino.cc/en/Reference/Delay" target="_blank">https://www.arduino.cc/en/Reference/Delay</a>  </li>
-</ul><h2>Next Steps</h2>
-<p>Now that your board is connected to Arduino Create, continue on to the tutorials.</p>
-<p>All our tutorials are located in github at https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples and can be accessed in the IDE in <span style="font-weight: bold;">Examples &gt; FROM LIBRARIES &gt; UP SQUARED GROVE IOT DEV KIT</span></p>
-<p>These tutorials generally fall into four categories:</p>
-<ul style="list-style: circle;"><li>Computer vision with OpenCV</li>
-<li>Sensors and the Grove Pi+ board using mraa and upm</li>
-<li>Cloud connectivity using MQTT</li>
-<li>Utilities like SerialMonitor, Process, and SystemCalls</li>
-</ul><p>If you’re not sure where to start, we recommend learning the basics about sensors with the <a href="/node/b7b16e2f-9d80-45fe-ada1-93ddb65759aa">GroveRotaryAngle</a> tutorial.</p>
-</div>
+
+This line adds the Grove Pi+ board as a sub-platform.
+The rest of the code uses the standard Arduino APIs.
+* [PinMode](https://www.arduino.cc/en/Reference/PinMode)
+* [DigitalWrite](https://www.arduino.cc/en/Reference/DigitalWrite)
+* [Delay](https://www.arduino.cc/en/Reference/Delay)
+
+## Next Steps
+Now that your board is connected to Arduino Create, continue on to the tutorials.
+All our tutorials are located in github at https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples and can be accessed in the IDE in `Examples > FROM LIBRARIES > UP SQUARED GROVE IOT DEV KIT`
+
+These tutorials generally fall into four categories:
+* Computer vision with OpenCV
+* Sensors and the Grove Pi+ board using mraa and upm
+* Cloud connectivity using MQTT
+* Utilities like SerialMonitor, Process, and SystemCalls
+
+If you’re not sure where to start, we recommend learning the basics about sensors with the [GroveRotaryAngle](https://software.intel.com/node/b7b16e2f-9d80-45fe-ada1-93ddb65759aa) tutorial.
+
