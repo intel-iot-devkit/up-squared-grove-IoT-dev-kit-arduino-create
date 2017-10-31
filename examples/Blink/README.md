@@ -9,6 +9,8 @@ In this step, you will:
 * Upload your sketch using Arduino Create\*
 * Dig into the code
 
+# Gather your materials
+
 ## Connect an LED
 1. Locate the Grove* Green LED in your Grove kit and use a Grove* Cable to connect it to on your Grove Pi+* board. It’s ok to leave your board on when plugging in the LED.
 <img> 
@@ -63,12 +65,13 @@ MRAA supports GPIO, I2C, PWM, SPI, and UART. There is also a very useful library
 
 * Sub-platform – When using MRAA, you have the option to define a sub-platform. A sub-platform operates with the same APIs as the platform, but you are required to add an offset of 512 to all pins.  Note that you can only have one sub-platform for each application using MRAA. The most common reason to use a sub-platform is to expand the I/O capabilities of a platform. In this guide, the Grove Pi+ board provides easy to use connectors for the Grove sensors, a handy addition to the UP² board. On the Grove Pi+ board is an ATMEL ATMEGA 328, which gets programmed by MRAA with a Firmata* sketch when you try to run it as a sub-platform. The Firmata sketch running on the ATMEGA acts as sort of a slave, interpreting commands from the platform (MRAA application running on the UP² board) and passing data back and forth between the I/Os and the platform. The sub-platform is controlled via I2C (though it can also be done over serial).
 
-## Now to the code…
+## Get the Code
 
 ```#define LED_BUILTIN 516```
 
 Since the Grove Pi+ board is a sub-platform of the UP² board, we need to offset the pin numbers by 512.  Since the LED is connected to D4, the pin number we need to use is 4 plus the offset of 512, which is 516.
 
+## How it Works
 Digital pins and analog pins both start at zero. For example, Analog pin 0 (A0) corresponds to 512, and Digital pin 4 (D4) corresponds to 516.
 
 ```mraa_add_subplatform(MRAA_GROVEPI, "0")```
