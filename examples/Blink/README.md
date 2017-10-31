@@ -1,7 +1,9 @@
 
-# Introduction
+# Blink an LED
 
-# What you'll learn
+## Introduction
+
+## What you'll learn
 In this step, you will:
 * Connect an LED
 * Open the sample Blink application
@@ -9,7 +11,7 @@ In this step, you will:
 * Upload your sketch using Arduino Create\*
 * Dig into the code
 
-# Gather your materials
+## Gather your materials
 
 ## Connect an LED
 1. Locate the Grove* Green LED in your Grove kit and use a Grove* Cable to connect it to on your Grove Pi+* board. It’s ok to leave your board on when plugging in the LED.
