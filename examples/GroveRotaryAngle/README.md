@@ -1,14 +1,13 @@
 # Grove Rotary Angle Sensor
 
 # Introduction
+You’ll use the serial monitor to see the raw data coming from the sensor. You’ll be able to control the rate of an LED blinking using the input from a rotary angle sensor.
 
 # What you’ll learn
 * Stop a sketch that is running
 * Set up a serial monitor
 * Read analog input data from a sensor
 * Use the analog input to control a digital output
-
-You’ll use the serial monitor to see the raw data coming from the sensor. You’ll be able to control the rate of an LED blinking using the input from a rotary angle sensor.
 
 ## Gather your materials
 
@@ -30,19 +29,23 @@ This tutorial assumes you have already set up your board to work with Arduino Cr
 4. You should now see the name of the sketch that you ran to blink the LED, for example ‘Blink_mod’. Click "RUNNING".
 <img>
 
-5. You should now see <b style="mso-bidi-font-weight: normal;">STOPPED<span style="font-weight: normal;">.</span></b><br/><br/><img src="/sites/default/files/did_feeds_images/783cf14f-4e48-45f4-b3d6-21dc3aff16fb/783cf14f-4e48-45f4-b3d6-21dc3aff16fb-imageId=b9883f09-80ba-4666-9475-2d4cfac48b19.png" alt="" style="border:none; width:100%; max-width:501px;" border="0"/></li>
-</ol><h2>Connect hardware</h2>
-<ol style="list-style: decimal;"><li>Plug in the Grove LED to <span style="font-weight: bold;">D4</span> on the Grove Pi+ board.<br/><br/><img src="/sites/default/files/did_feeds_images/783cf14f-4e48-45f4-b3d6-21dc3aff16fb/783cf14f-4e48-45f4-b3d6-21dc3aff16fb-imageId=414bd27d-3736-4918-ae7e-7bf96c0c393a.jpg" alt="" style="border:none; width:100%; max-width:600px;" border="0"/><br/></li>
-<li>Plug the Grove Rotary Angle Sensor into <span style="font-weight: bold;">A0</span>.<br/><br/><img src="/sites/default/files/did_feeds_images/783cf14f-4e48-45f4-b3d6-21dc3aff16fb/783cf14f-4e48-45f4-b3d6-21dc3aff16fb-imageId=6c5e5265-5841-436d-a586-ebb0524ac151.png" alt="" style="border:none; width:100%; max-width:600px;" border="0"/></li>
-</ol><h2>Get the code</h2>
-<ol style="list-style: decimal;"><li>In the Arduino Create Web Editor, open the <span style="font-weight: bold;">AnalogInput</span> example (<span style="font-weight: bold;">Examples&gt;03.ANALOG&gt;AnalogInput</span>) and modify it as follows:
-<ol style="list-style: decimal;"><li>Change <code>sensorPin</code> to <code>512</code>.</li>
-<li>Change <code>ledPin</code> to <code>516</code>.</li>
-<li>At the top of the setup() method, insert this line to add the subplatform:
-<p><code>mraa_add_subplatform(MRAA_GROVEPI, "0");</code></p>
-</li>
-<li>Add <code>DebugSerial.begin(115200);</code> to the end of the setup() function.</li>
-<li>
+5. You should now see "STOPPED".
+<img>
+
+## Connect hardware
+1. Plug in the Grove LED to "D4" on the Grove Pi+ board.
+<img>
+2. Plug the Grove Rotary Angle Sensor into "A0".
+<img>
+
+## Get the code
+1. In the Arduino Create Web Editor, open the "AnalogInput" example `Examples > 03.ANALOG > AnalogInput` and modify it as follows:
+* Change `sensorPin` to `512`.
+* Change `ledPin` to `516`.
+* At the top of the setup() method, insert this line to add the subplatform:
+`mraa_add_subplatform(MRAA_GROVEPI, "0");`
+* Add `DebugSerial.begin(115200);` to the end of the setup() function.
+
 <p>Add <code>DebugSerial.println(sensorValue);</code> above the digitalWrite() line in the loop() function.</p>
 </li>
 </ol><br/><span style="font-weight: bold;">Note</span>: The rotary angle sensor, also known as a potentiometer, is an analog sensor.<br/><br/>
