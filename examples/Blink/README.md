@@ -15,8 +15,7 @@ To get started using the UP2 board with the Arduino Create IDE, try this simple 
 * [Grove Pi+](http://wiki.seeedstudio.com/wiki/GrovePi%2b)
 * [Grove* LED](http://wiki.seeed.cc/Grove-LED_Socket_Kit)
 
-## Blink an LED
-### Connect an LED
+## Connect an LED
 1. Locate the Grove* Green LED in your Grove kit and use a Grove* Cable to connect it to on your Grove Pi+* board. It’s ok to leave your board on when plugging in the LED.
 
 ![](https://software.intel.com/sites/default/files/did_feeds_images/783cf14f-4e48-45f4-b3d6-21dc3aff16fb/783cf14f-4e48-45f4-b3d6-21dc3aff16fb-imageId=4eafab8b-1754-407b-aff0-0919525f784b.png)
