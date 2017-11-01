@@ -25,9 +25,11 @@ To get started using the UP2 board with the Arduino Create IDE, try this simple 
 
 You may need to first plug the LED into the terminals on the Grove LED module; if so, be sure to connect the longer wire to the positive terminal.
 
-### Open the Sample Blink application
+## Get the Code 
+In this step, you'll open the sample application named "Blink".
 1. If it's not open already, open the [Arduino Web Editor](https://create-intel.arduino.cc/editor)
-2. Open the Blink example made specifically for this kit. You can find it in `Examples > FROM LIBRARIES > UP SQUARED GROVE IOT DEV KIT > Blink` 
+2. To open the example in the Arduino Create IDE, navigate to `Examples > FROM LIBRARIES > UP SQUARED GROVE IOT DEV KIT > Blink`.
+
 
 ![](https://software.intel.com/sites/default/files/did_feeds_images/783cf14f-4e48-45f4-b3d6-21dc3aff16fb/783cf14f-4e48-45f4-b3d6-21dc3aff16fb-imageId=dce55a26-a232-4426-90c8-3e9a0e4858ae.png)
 
@@ -42,7 +44,7 @@ Click the "Upload" icon to upload and run the sketch.
 
 **Note**: When you click "Upload" button <img> you're uploading and running the sketch on your target device. To compile your sketch without uploading and running it, click the "Verify" button <img> to the left of the "Upload" icon.
 
-### Stopping and Starting Sketches
+## Stopping and Starting Sketches
 Now that your sketch is running, we’ll show you how to stop it.  
 
 1. Go to the My Devices page by clicking the menu icon in the upper left and clicking My Devices. Alternatively, you can go to https://create.arduino.cc/devices.
@@ -59,7 +61,7 @@ You should now see ‘STOPPED’
 
 ![](https://software.intel.com/sites/default/files/did_feeds_images/783cf14f-4e48-45f4-b3d6-21dc3aff16fb/783cf14f-4e48-45f4-b3d6-21dc3aff16fb-imageId=c17dbf8a-76bc-4791-a200-ca8801d896ce.png)
 
-### Your sketch is running
+## Your sketch is running
 1. You can confirm that your sketch is running because the log at the bottom of the screen gives you a Process ID (PID). For example:
 
 ![](https://software.intel.com/sites/default/files/did_feeds_images/783cf14f-4e48-45f4-b3d6-21dc3aff16fb/783cf14f-4e48-45f4-b3d6-21dc3aff16fb-imageId=3c06aad5-03cc-4ee2-bb35-f75a0cba4f0d.png)
@@ -73,9 +75,6 @@ If your LED isn't flashing, check the following:
 * Make sure the board you have selected is the one that says "via Cloud"
 * Your board is still connected. You can see this in the My Devices page [https://create-intel.arduino.cc/devices](https://create-intel.arduino.cc/devices). It should say ONLINE. If it isn’t, check the network connections. If all else fails and your board continues OFFLINE, go through the setup process again, starting at [Create an account and install the Arduino plugin](https://software.intel.com/node/8c6e7d82-619d-4e04-b4d7-0ea54b10e46f).
 * Make sure the LED is plugged in the right way (the longer wire should be connected to the positive terminal). Try another LED if you have one.
-
-## Get the Code
-To open the example in the Arduino Create IDE, navigate to `Examples > FROM LIBRARIES > UP SQUARED GROVE IOT DEV KIT > Blink`.
 
 **Note**: Since the Grove Pi+ board is a sub-platform of the UP² board, we need to offset the pin numbers by 512.  Since the LED is connected to D4, the pin number we need to use is 4 plus the offset of 512, which is 516.
 
