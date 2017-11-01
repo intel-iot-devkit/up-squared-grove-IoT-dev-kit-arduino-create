@@ -16,7 +16,7 @@ You’ll use the serial monitor to see the raw data coming from the sensor. You�
 * [Grove* Rotary Angle Sensor](http://wiki.seeed.cc/Grove-Rotary_Angle_Sensor)
 * [Grove* LED](http://wiki.seeed.cc/Grove-LED_Socket_Kit)
 
-## To...
+## Rotary Angle Sensor
 
 ### Stop running sketches
 This tutorial assumes you have already set up your board to work with Arduino Create*. If you haven’t done that, go back to the section on [Getting Started](https://software.intel.com/node/e5977984-ca1e-4e58-bbda-76292a51249d).
@@ -40,52 +40,23 @@ This tutorial assumes you have already set up your board to work with Arduino Cr
 2. Plug the Grove Rotary Angle Sensor into "A0".
 <img>
 
-### Get the code
-1. In the Arduino Create Web Editor, open the "AnalogInput" example `Examples > 03.ANALOG > AnalogInput` and modify it as follows:
-* Change `sensorPin` to `512`.
-* Change `ledPin` to `516`.
-* At the top of the setup() method, insert this line to add the subplatform:
-`mraa_add_subplatform(MRAA_GROVEPI, "0");`
-* Add `DebugSerial.begin(115200);` to the end of the setup() function.
+## Get the code
+To open the example in the Arduino Create IDE, navigate to `Examples > FROM LIBRARIES > UP SQUARED GROVE IOT DEV KIT > GroveRotaryAngle
 
-<p>Add <code>DebugSerial.println(sensorValue);</code> above the digitalWrite() line in the loop() function.</p>
-</li>
-</ol><br/><span style="font-weight: bold;">Note</span>: The rotary angle sensor, also known as a potentiometer, is an analog sensor.<br/><br/>
-The code should look like this:
-<pre>
-int sensorPin = 512;    // select the input pin for the Grove rotary angle sensor
-int ledPin = 516;      // select the pin for the LED
-int sensorValue = 0;  // variable to store the value coming from the sensor
-void setup() {
-  // add the Grove Pi+ sub-platform
-  mraa_add_subplatform(MRAA_GROVEPI, "0");
-  // declare the ledPin as an OUTPUT:
-  pinMode(ledPin, OUTPUT);
-  // Setup serial terminal, meant for devices connected via Cloud.  If you are using the UP^2 board via serial port (COM, tty, etc)
-  // change the DebugSerial method with Serial in all instances
-  DebugSerial.begin(115200);
-}
-void loop() {
-  // read the value from the sensor:
-  sensorValue = analogRead(sensorPin);
-  // turn the ledPin on
-  digitalWrite(ledPin, HIGH);
-  // stop the program for &lt;sensorvalue&gt; milliseconds:
-  delay(sensorValue);
-  // print sensor value to the serial monitor
-  DebugSerial.println(sensorValue);
-  // turn the ledPin off:
-  digitalWrite(ledPin, LOW);
-  // stop the program for for &lt;sensorvalue&gt; milliseconds:
-  delay(sensorValue);
-}</pre></li>
-<li>Before you upload the example sketch to your board, make sure to open the <span style="font-weight: bold;">Monitor</span> in Arduino Create.  This example outputs the raw analog data values out to the serial monitor.<br/><img src="/sites/default/files/did_feeds_images/783cf14f-4e48-45f4-b3d6-21dc3aff16fb/783cf14f-4e48-45f4-b3d6-21dc3aff16fb-imageId=e5b6aa4f-2df6-4d7b-b26a-58bc2b8ffad0.png" alt="" style="border:none; width:100%; max-width:456px;" border="0"/><br/></li>
-<li>Upload the example sketch by clicking the <span style="font-weight: bold;">Upload</span> icon in the upper right of the editor. You should see the LED blink. If you turn the knob on the rotary angle sensor, you can change the rate of the blinking.<br/><br/>
-If this isn’t working, double-check that you have stopped any other running sketches on the My Devices page (<a href="https://create-intel.arduino.cc/devices" target="_blank">https://create-intel.arduino.cc/devices</a>). Once there, if you see an “N Sketches Running” message, click <span style="font-weight: bold;">Running</span> and <span style="font-weight: bold;">Stop</span> any sketches. If you’ve tried stopping your sketch, but it still doesn’t work, try restarting your UP² board.</li>
-</ol><h2>How it works</h2>
-<p>You’ll notice that in the code, 512 corresponds to A0 on the Grove Pi+* board, while 516 corresponds to D4.  The code doesn’t use 0 or 4 to because you’re required to add an offset of 512 to any pin on the Grove Pi+ board.</p>
-<p>Why? Under the covers, MRAA (the hardware abstraction library in Arduino) is using the Grove Pi+ board as a sub-platform!  So this line to add MRAA_GROVEPI as the sub-platform is required.</p>
-<p><code>mraa_add_subplatform(MRAA_GROVEPI, "0");</code></p>
+**Note**: The rotary angle sensor, also known as a potentiometer, is an analog sensor.
+
+<li>Before you upload the example sketch to your board, make sure to open the "Monitor" in Arduino Create.  This example outputs the raw analog data values out to the serial monitor.
+<img>
+
+Upload the example sketch by clicking the "Upload" icon in the upper right of the editor. You should see the LED blink. If you turn the knob on the rotary angle sensor, you can change the rate of the blinking.
+
+If this isn’t working, double-check that you have stopped any other running sketches on the My Devices page [https://create-intel.arduino.cc/devices](https://create-intel.arduino.cc/devices). Once there, if you see an “N Sketches Running” message, "Running" and "Stop" any sketches. If you’ve tried stopping your sketch, but it still doesn’t work, try restarting your UP² board.
+
+## How it works
+You’ll notice that in the code, 512 corresponds to A0 on the Grove Pi+* board, while 516 corresponds to D4. The code doesn’t use 0 or 4 to because you’re required to add an offset of 512 to any pin on the Grove Pi+ board. Why? Under the covers, MRAA (the hardware abstraction library in Arduino) is using the Grove Pi+ board as a sub-platform!So this line to add MRAA_GROVEPI as the sub-platform is required.
+
+`mraa_add_subplatform(MRAA_GROVEPI, "0");`
+
 <p>Whenever you use a sub-platform in MRAA, you need to add an offset of 512 to whatever pin you are using.  For example, if you’re setting the pin mode of a GPIO pin 4, normally your code would look like this:</p>
 <p><code>pinMode(4, OUTPUT);</code></p>
 <p>but with a sub-platform, your code would look like this:</p>
