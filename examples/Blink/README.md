@@ -43,7 +43,7 @@ Click the "Upload" icon to upload and run the sketch.
 
 **Note**: When you click "Upload" button <img> you're uploading and running the sketch on your target device. To compile your sketch without uploading and running it, click the "Verify" button <img> to the left of the "Upload" icon.
 
-## Stopping and Starting Sketches
+### Stopping and Starting Sketches
 Now that your sketch is running, we’ll show you how to stop it.  
 
 1. Go to the My Devices page by clicking the menu icon in the upper left and clicking My Devices. Alternatively, you can go to https://create.arduino.cc/devices.
@@ -60,7 +60,7 @@ You should now see ‘STOPPED’
 
 ![](https://software.intel.com/sites/default/files/did_feeds_images/783cf14f-4e48-45f4-b3d6-21dc3aff16fb/783cf14f-4e48-45f4-b3d6-21dc3aff16fb-imageId=c17dbf8a-76bc-4791-a200-ca8801d896ce.png)
 
-## Your sketch is running
+### Your sketch is running
 1. You can confirm that your sketch is running because the log at the bottom of the screen gives you a Process ID (PID). For example:
 
 ![](https://software.intel.com/sites/default/files/did_feeds_images/783cf14f-4e48-45f4-b3d6-21dc3aff16fb/783cf14f-4e48-45f4-b3d6-21dc3aff16fb-imageId=3c06aad5-03cc-4ee2-bb35-f75a0cba4f0d.png)
