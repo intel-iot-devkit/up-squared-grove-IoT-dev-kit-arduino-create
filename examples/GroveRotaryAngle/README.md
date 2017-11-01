@@ -12,12 +12,12 @@ You’ll use the serial monitor to see the raw data coming from the sensor. You�
 ## Gather your materials
 
 * [UP2* board](http://www.up-board.org/upsquared)
-* [Grove Pi+ board](http://wiki.seeedstudio.com/wiki/GrovePi%2b)
+* [Grove Pi+](http://wiki.seeedstudio.com/wiki/GrovePi%2b)
 * [Grove* Rotary Angle Sensor](http://wiki.seeed.cc/Grove-Rotary_Angle_Sensor)
 * [Grove* LED](http://wiki.seeed.cc/Grove-LED_Socket_Kit)
 
 ## Stop running sketches
-This tutorial assumes you have already set up your board to work with Arduino Create*. If you haven’t done that, go back to the section on[Getting Started](https://software.intel.com/node/e5977984-ca1e-4e58-bbda-76292a51249d).
+This tutorial assumes you have already set up your board to work with Arduino Create*. If you haven’t done that, go back to the section on [Getting Started](https://software.intel.com/node/e5977984-ca1e-4e58-bbda-76292a51249d).
 
 1. Make sure to stop any running sketches before proceeding with this tutorial. The hardware abstractions layer (MRAA*) locks the hardware pins it is using, so if you try to run a different sketch using those same pins while the previous sketch is still running, it won’t work.
 
