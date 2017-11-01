@@ -22,11 +22,11 @@ To open the example in the Arduino Create IDE, navigate to `Examples > FROM LIBR
 [//]: # (insert screenshot of Arduino Create IDE)
 ### Verify
 
-![done verifying](up-squared-grove-IoT-dev-kit-arduino-create/extras/people-counter/verify.PNG)
+![done verifying](./../../extras/people-counter/verify.PNG)
 
 ### Upload
 
-![done uploading](up-squared-grove-IoT-dev-kit-arduino-create/extras/people-counter/upload.PNG)
+![done uploading]((./../../extras/people-counter/upload.PNG)
 
 ### Run the Application
 
