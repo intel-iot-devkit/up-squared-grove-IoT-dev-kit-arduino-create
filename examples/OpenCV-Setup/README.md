@@ -127,7 +127,8 @@ reboot
 ## Validate OpenCV Setup on UP2 using the Arduino Create IDE
 The steps that follow are intended to verify that Arduino Create IDE, UP2 hardware and OpenCV work together successfully to run a basic example application.
 
-1. In the Arduino Create Web Editor, navigate to the **FROM LIBRARIES TAB** and find the "Contours" example in the **OPENCV** directory. 2. Verify and then upload the sketch.
+1. In the Arduino Create Web Editor, navigate to the **FROM LIBRARIES TAB** and find the "Contours" example in the **OPENCV** directory.
+2. Verify and then upload the sketch.
 3. To run the sketch from the Ubuntu desktop environment on the UP2 hardware: 
 
 ```
