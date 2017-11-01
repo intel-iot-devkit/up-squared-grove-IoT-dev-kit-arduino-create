@@ -1,7 +1,7 @@
 
 # How to Build and Install the OpenCV Libraries on Ubuntu
 ## Introduction
-This tutorial contains the instructions to setup OpenCV 3.3.0 on the Ubuntu 16.04 LTS operating system. Specific instructions for UP2 users can be found in the second half of this tutorial.
+This tutorial contains the instructions to setup OpenCV 3.3.0 on the Ubuntu 16.04 LTS operating system. Instructions for UP2 users to install the Ubuntu desktop environment along with steps to verify that OpenCV has been installed correctly can be found in the second half of this tutorial.
 
 ## What you'll Learn
 * How to Download, build (compile) and install the OpenCV 3.3.0 libraries from the command line
@@ -123,9 +123,18 @@ Reboot your system after the install completes:
 ```
 reboot
 ```
-#### MRAA (optional)
-To add mraa, follow instructions at https://launchpad.net/~mraa/+archive/ubuntu/mraa
-
-Once done, you should have all sources available and updated (including the ubuntu-desktop package).
 
 ## Validate OpenCV Setup on UP2 using the Arduino Create IDE
+The steps that follow are intended to verify that Arduino Create IDE, UP2 hardware and OpenCV work together successfully to run a basic example application.
+
+1. In the Arduino Create Web Editor, navigate to the **FROM LIBRARIES TAB** and find the "Contours" example in the **OPENCV** directory. 2. Verify and then upload the sketch.
+3. To run the sketch from the Ubuntu desktop environment on the UP2 hardware: 
+
+```
+sudo su
+cd sketches
+```
+```
+./Contours
+```
+Two windows should pop up. One that you can interact with (move a slide bar) and another to show the results of moving the slide bar.
