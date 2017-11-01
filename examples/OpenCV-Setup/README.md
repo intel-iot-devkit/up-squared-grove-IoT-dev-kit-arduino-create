@@ -1,16 +1,7 @@
-[//]: # (Joe Butler comment below)
-
-[//]: # (Install Ubuntu desktop environment, Restart, Setup a monitor/keyboard/mouse)
-
-[//]: # (Install opencv) 
-
-[//]: # (Run test #1 -- to get version, Run test #2 -- display a video file) 
-
-[//]: # (download a video, run the sketch, login to machine, change to root user, run it)
 
 # How to Build and Install the OpenCV Libraries on Ubuntu
 ## Introduction
-This tutorial contains the instructions to setup OpenCV 3.3.0 on the Ubuntu 16.04 LTS operating system.
+This tutorial contains the instructions to setup OpenCV 3.3.0 on the Ubuntu 16.04 LTS operating system. Specific instructions for UP2 users can be found in the second half of this tutorial.
 
 ## What you'll Learn
 * How to Download, build (compile) and install the OpenCV 3.3.0 libraries from the command line
