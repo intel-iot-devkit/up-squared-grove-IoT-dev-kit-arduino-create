@@ -16,7 +16,7 @@ A people counter is a solution that counts (or measures) the number of people wh
 [Click here for instructions on how to set up the OpenCV libraries on your hardware.](https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/OpenCV-Setup)
 
 ## Get the Code
-Open the example in the Arduino Create IDE. Navigate to `Examples > FROM LIBRARIES > UP SQUARED GROVE IOT DEV KIT > OpenCV-PeopleCounter`.
+To open the example in the Arduino Create IDE, navigate to `Examples > FROM LIBRARIES > UP SQUARED GROVE IOT DEV KIT > OpenCV-PeopleCounter`.
 
 ![Arduino Create IDE]()
 
