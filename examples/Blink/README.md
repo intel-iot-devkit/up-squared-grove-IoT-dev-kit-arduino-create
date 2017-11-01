@@ -5,11 +5,10 @@
 To get started using the UP2 board with the Arduino Create IDE, try this simple exercise to blink an LED from the GrovePi+. 
 
 ## What you'll learn
-* Connect an LED
-* Open the sample Blink application
-* Modify the sketch for your board
-* Upload your sketch using Arduino Create\*
-* Dig into the code
+* How to connect an LED to the GrovePi+
+* How to open a sample example in the Arduino Create IDE\*
+* How to verify and upload a sketch in the Arduino Create IDE
+* How the source code works
 
 ## Gather your materials
 * [UP2* board](http://www.up-board.org/upsquared)
@@ -91,10 +90,9 @@ The rest of the code uses the standard Arduino APIs.
 * [Delay](https://www.arduino.cc/en/Reference/Delay)
 
 ## Next Steps
-Now that your board is connected to Arduino Create, continue on to the tutorials.
-All our tutorials are located in github at https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples and can be accessed in the IDE in `Examples > FROM LIBRARIES > UP SQUARED GROVE IOT DEV KIT`
+Now that your board is connected to Arduino Create, check out the other tutorials on GitHub at https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples. To access the code samples from the Arudino Create IDE, navigate to `Examples > FROM LIBRARIES > UP SQUARED GROVE IOT DEV KIT`.
 
-These tutorials generally fall into four categories:
+The tutorials can be grouped into four categories:
 * Computer vision with OpenCV
 * Sensors and the Grove Pi+ board using mraa and upm
 * Cloud connectivity using MQTT
