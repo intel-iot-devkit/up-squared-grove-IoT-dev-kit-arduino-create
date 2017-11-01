@@ -74,10 +74,9 @@ If your LED isn't flashing, check the following:
 * Make sure the LED is plugged in the right way (the longer wire should be connected to the positive terminal). Try another LED if you have one.
 
 ## Get the Code
+To open the example in the Arduino Create IDE, navigate to `Examples > FROM LIBRARIES > UP SQUARED GROVE IOT DEV KIT > Blink`.
 
-```#define LED_BUILTIN 516```
-
-Since the Grove Pi+ board is a sub-platform of the UP² board, we need to offset the pin numbers by 512.  Since the LED is connected to D4, the pin number we need to use is 4 plus the offset of 512, which is 516.
+**Note**: Since the Grove Pi+ board is a sub-platform of the UP² board, we need to offset the pin numbers by 512.  Since the LED is connected to D4, the pin number we need to use is 4 plus the offset of 512, which is 516.
 
 ## How it Works
 You may have seen some lines in the code that you don’t recognize. Before we dive in, there are a couple of concepts to understand:
