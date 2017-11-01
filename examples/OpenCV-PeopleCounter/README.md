@@ -22,11 +22,11 @@ To open the example in the Arduino Create IDE, navigate to `Examples > FROM LIBR
 [//]: # (insert screenshot of Arduino Create IDE)
 ### Verify
 
-![done verifying](./../../extras/people-counter/verify.PNG)
+![](./../../extras/people-counter/verify.PNG)
 
 ### Upload
 
-![done uploading]((./../../extras/people-counter/upload.PNG)
+![](./../../extras/people-counter/upload.PNG)
 
 ### Run the Application
 
