@@ -45,27 +45,24 @@ To open the example in the Arduino Create IDE, navigate to `Examples > FROM LIBR
 
 **Note**: The rotary angle sensor, also known as a potentiometer, is an analog sensor.
 
-<li>Before you upload the example sketch to your board, make sure to open the "Monitor" in Arduino Create.  This example outputs the raw analog data values out to the serial monitor.
+Before you upload the example sketch to your board, make sure to open the "Monitor" in Arduino Create. This example outputs the raw analog data values out to the serial monitor.
 <img>
 
 Upload the example sketch by clicking the "Upload" icon in the upper right of the editor. You should see the LED blink. If you turn the knob on the rotary angle sensor, you can change the rate of the blinking.
 
-If this isn’t working, double-check that you have stopped any other running sketches on the My Devices page [https://create-intel.arduino.cc/devices](https://create-intel.arduino.cc/devices). Once there, if you see an “N Sketches Running” message, "Running" and "Stop" any sketches. If you’ve tried stopping your sketch, but it still doesn’t work, try restarting your UP² board.
+If this isn’t working, double-check that you have stopped any other running sketches on the My Devices page [https://create-intel.arduino.cc/devices](https://create-intel.arduino.cc/devices). Once there, if you see an “N Sketches Running” message, "Running" and "Stop" any sketches. If you’ve tried stopping your sketch, but it still doesn’t work, try restarting your UP2 board.
 
 ## How it works
 You’ll notice that in the code, 512 corresponds to A0 on the Grove Pi+* board, while 516 corresponds to D4. The code doesn’t use 0 or 4 to because you’re required to add an offset of 512 to any pin on the Grove Pi+ board. Why? Under the covers, MRAA (the hardware abstraction library in Arduino) is using the Grove Pi+ board as a sub-platform!So this line to add MRAA_GROVEPI as the sub-platform is required.
 
 `mraa_add_subplatform(MRAA_GROVEPI, "0");`
 
-<p>Whenever you use a sub-platform in MRAA, you need to add an offset of 512 to whatever pin you are using.  For example, if you’re setting the pin mode of a GPIO pin 4, normally your code would look like this:</p>
-<p><code>pinMode(4, OUTPUT);</code></p>
-<p>but with a sub-platform, your code would look like this:</p>
-<p><code>pinMode(516, OUTPUT);</code></p>
-<p>Digital pins and analog pins both start at zero. Therefore, Analog pin 0 (A0) corresponds to 512, and Digital pin 4 (D4) corresponds to 516.</p>
-<p>If you’re still unclear how this works, go back to the Blink LED example and read <a href="/node/d363382b-de12-4019-9c10-c9c89470dd74#Understanding_how_the_code_works">this section about MRAA and sub-platforms</a>.</p>
-<p>The serial monitor is started in the setup() function.</p>
-<p><code>DebugSerial.begin(115200);</code></p>
-<p>Data can then be sent using:</p>
-<p><code>DebugSerial.println(sensorValue);</code></p>
-<p>For more detailed information on how to use the serial monitor, see the <a href="/node/8d850e2a-d72f-4652-bcbd-254335682b5f">Serial Monitor</a> tutorial.</p>
-</div>
+Whenever you use a sub-platform in MRAA, you need to add an offset of 512 to whatever pin you are using.  For example, if you’re setting the pin mode of a GPIO pin 4, normally your code would look like this: `pinMode(4, OUTPUT);` but with a sub-platform, your code would look like this: `pinMode(516, OUTPUT);`
+
+Digital pins and analog pins both start at zero. Therefore, Analog pin 0 (A0) corresponds to 512, and Digital pin 4 (D4) corresponds to 516. If you’re still unclear how this works, go back to the Blink LED example and read [Understanding How the Code Works](https://software.intel.com/node/d363382b-de12-4019-9c10-c9c89470dd74#Understanding_how_the_code_works) section about MRAA and sub-platforms.
+
+The serial monitor is started in the setup() function: `DebugSerial.begin(115200);`
+Data can then be sent using: `DebugSerial.println(sensorValue);`
+
+For more detailed information on how to use the serial monitor, see the [Serial Monitor](https://software.intel.com/node/8d850e2a-d72f-4652-bcbd-254335682b5f) tutorial.
+
