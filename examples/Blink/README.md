@@ -2,10 +2,9 @@
 # Blink an LED
 
 ## Introduction
-Blink an LED (hardware equivalent of 'Hello World') from the GrovePi+. This is a simple exercise to get you started using the UP2 board with the Arduino Create IDE.
+To get started using the UP2 board with the Arduino Create IDE, try this simple exercise to blink an LED from the GrovePi+. 
 
 ## What you'll learn
-In this step, you will:
 * Connect an LED
 * Open the sample Blink application
 * Modify the sketch for your board
