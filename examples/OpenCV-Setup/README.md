@@ -81,11 +81,6 @@ In this step, you will a connect monitor, keyboard and mouse to the UP2 board.
 ### Install Ubuntu desktop environment
 The UP2 kit comes with the Ubuntu server operating system pre-installed on the UP2 board but does not include the Ubuntu desktop environment. You'll need to install the desktop environment in order to view the results of image or video streams processed by OpenCV\*.
 
-[//]: # (sudo apt-get install --no-install-recommends ubuntu-desktop)
-[//]: # (always use sudo with apt)
-
-[//]: # (`--no-install-recommends` includes required dependencies only. You can see the full list at https://packages.ubuntu.com/xenial/ubuntu-desktop)
-
 **Note**: if you are behind a firewall, configure your proxy before proceeding with the commands that follow.
 
 ```
@@ -132,3 +127,5 @@ reboot
 To add mraa, follow instructions at https://launchpad.net/~mraa/+archive/ubuntu/mraa
 
 Once done, you should have all sources available and updated (including the ubuntu-desktop package).
+
+## Validate OpenCV Setup on UP2 using the Arduino Create IDE
