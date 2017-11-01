@@ -26,18 +26,24 @@ This tutorial assumes you have already set up your board to work with Arduino Cr
 2. To stop running sketches, go to the My Devices page by clicking the menu icon in the upper left and clicking "My Devices". Alternatively, you can go to [https://create-intel.arduino.cc/devices](https://create-intel.arduino.cc/devices).
 
 3. Click "1 SKETCHES RUNNING" 
+
 ![](https://software.intel.com/sites/default/files/did_feeds_images/783cf14f-4e48-45f4-b3d6-21dc3aff16fb/783cf14f-4e48-45f4-b3d6-21dc3aff16fb-imageId=ac9261db-295b-4197-86a9-5c68e56abc4c.png)
 
 4. You should now see the name of the sketch that you ran to blink the LED, for example ‘Blink_mod’. Click "RUNNING".
+
 ![](https://software.intel.com/sites/default/files/did_feeds_images/783cf14f-4e48-45f4-b3d6-21dc3aff16fb/783cf14f-4e48-45f4-b3d6-21dc3aff16fb-imageId=531bf600-b939-40c8-ae03-30a60eae9b57.png)
 
 5. You should now see "STOPPED".
+
 ![](https://software.intel.com/sites/default/files/did_feeds_images/783cf14f-4e48-45f4-b3d6-21dc3aff16fb/783cf14f-4e48-45f4-b3d6-21dc3aff16fb-imageId=b9883f09-80ba-4666-9475-2d4cfac48b19.png)
 
 ### Connect hardware
 1. Plug in the Grove LED to "D4" on the Grove Pi+ board.
+
 ![](https://software.intel.com/sites/default/files/did_feeds_images/783cf14f-4e48-45f4-b3d6-21dc3aff16fb/783cf14f-4e48-45f4-b3d6-21dc3aff16fb-imageId=414bd27d-3736-4918-ae7e-7bf96c0c393a.jpg)
+
 2. Plug the Grove Rotary Angle Sensor into "A0".
+
 ![](https://software.intel.com/sites/default/files/did_feeds_images/783cf14f-4e48-45f4-b3d6-21dc3aff16fb/783cf14f-4e48-45f4-b3d6-21dc3aff16fb-imageId=6c5e5265-5841-436d-a586-ebb0524ac151.png)
 
 ## Get the code
@@ -46,6 +52,7 @@ This tutorial assumes you have already set up your board to work with Arduino Cr
 **Note**: The rotary angle sensor, also known as a potentiometer, is an analog sensor.
 
 2. Before you upload the example sketch to your board, make sure to open the "Monitor" in Arduino Create. This example outputs the raw analog data values out to the serial monitor.
+
 ![](https://software.intel.com/sites/default/files/did_feeds_images/783cf14f-4e48-45f4-b3d6-21dc3aff16fb/783cf14f-4e48-45f4-b3d6-21dc3aff16fb-imageId=e5b6aa4f-2df6-4d7b-b26a-58bc2b8ffad0.png)
 
 3. Upload the example sketch by clicking the "Upload" icon in the upper right of the editor. You should see the LED blink. If you turn the knob on the rotary angle sensor, you can change the rate of the blinking.
