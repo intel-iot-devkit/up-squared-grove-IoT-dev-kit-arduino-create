@@ -16,9 +16,7 @@ You’ll use the serial monitor to see the raw data coming from the sensor. You�
 * [Grove* Rotary Angle Sensor](http://wiki.seeed.cc/Grove-Rotary_Angle_Sensor)
 * [Grove* LED](http://wiki.seeed.cc/Grove-LED_Socket_Kit)
 
-## Rotary Angle Sensor
-
-### Stop running sketches
+## Stop running sketches
 This tutorial assumes you have already set up your board to work with Arduino Create*. If you haven’t done that, go back to the section on [Getting Started](https://software.intel.com/node/e5977984-ca1e-4e58-bbda-76292a51249d).
 
 1. Make sure to stop any running sketches before proceeding with this tutorial. The hardware abstractions layer (MRAA*) locks the hardware pins it is using, so if you try to run a different sketch using those same pins while the previous sketch is still running, it won’t work.
@@ -37,7 +35,7 @@ This tutorial assumes you have already set up your board to work with Arduino Cr
 
 ![](https://software.intel.com/sites/default/files/did_feeds_images/783cf14f-4e48-45f4-b3d6-21dc3aff16fb/783cf14f-4e48-45f4-b3d6-21dc3aff16fb-imageId=b9883f09-80ba-4666-9475-2d4cfac48b19.png)
 
-### Connect hardware
+## Connect hardware
 1. Plug in the Grove LED to "D4" on the Grove Pi+ board.
 
 ![](https://software.intel.com/sites/default/files/did_feeds_images/783cf14f-4e48-45f4-b3d6-21dc3aff16fb/783cf14f-4e48-45f4-b3d6-21dc3aff16fb-imageId=414bd27d-3736-4918-ae7e-7bf96c0c393a.jpg)
