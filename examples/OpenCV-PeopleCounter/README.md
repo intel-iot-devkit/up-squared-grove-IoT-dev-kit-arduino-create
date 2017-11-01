@@ -37,8 +37,6 @@ After successfully uploading the sketch to the target hardware, a *sketches* fol
 ```
 sudo su
 cd sketches
-```
-```
 ./OpenCV-PeopleCounter
 ```
 
@@ -50,6 +48,4 @@ The people counter/detector uses Histograms of Oriented Gradients (HOG), a type 
 HOG appears in the code as `HOGDescriptor hog; hog.setSVMDetector(HOGDescriptor::getDefaultPeopleDetector());`
 
 Read more about the [HOG descriptor class](https://docs.opencv.org/3.1.0/d5/d33/structcv_1_1HOGDescriptor.html) at opencv.org.
-
-[//]: # ()
 
