@@ -13,7 +13,7 @@
 This tutorial contains the instructions to setup OpenCV 3.3.0 on the Ubuntu 16.04 LTS operating system.
 
 ## What you'll Learn
-* Download, build (compile) and install the OpenCV 3.3.0 libraries
+* How to Download, build (compile) and install the OpenCV 3.3.0 libraries from the command line
 
 ## Gather Your Materials
 * UP Squared Board (tested) or other Intel® processor-based hardware
@@ -78,10 +78,14 @@ sudo ldconfig
 ## Before you setup OpenCV 
 Before you build and install the OpenCV libraries, setup your UP2 hardware and install the Ubuntu desktop environment.
 
-### Hardware Setup: connect monitor, keyboard and mouse
-Plug in a USB keyboard and mouse into the USB ports available on the UP2 hardware. 
+### Hardware Setup
+In this step, you will a connect monitor, keyboard and mouse to the UP2 board.
 
-Next, gather a HDMI or display port compatible monitor along with it's corresponding cable and connect the monitor to the board by plugging in the cable to the available ports on the UP2 hardware.
+1. Plug in a USB keyboard and mouse into the USB ports available on the UP2 hardware. 
+
+2. Next, gather a HDMI or display port compatible monitor along with it's corresponding cable and connect the monitor to the board by plugging in the cable to the available ports on the UP2 hardware.
+
+3. Ensure that you are connected to the Internet by plugging in an Ethernet cable to the Ethernet port on the UP2 board.
 
 ### Install Ubuntu desktop environment
 The UP2 kit comes with the Ubuntu server operating system pre-installed on the UP2 board but does not include the Ubuntu desktop environment. You'll need to install the desktop environment in order to view the results of image or video streams processed by OpenCV\*.
@@ -95,8 +99,9 @@ The UP2 kit comes with the Ubuntu server operating system pre-installed on the U
 
 ```
 suo apt update
-sudo apt install ubuntu-desktop
+sudo apt-get install --no-install-recommends ubuntu-desktop
 ```
+**Note**: The use of `--no-install-recommends` includes required dependencies only. You can see the full list at https://packages.ubuntu.com/xenial/ubuntu-desktop
 
 Reboot your system after the install completes.
 ```
@@ -122,8 +127,8 @@ sudo rm /var/lib/apt/lists/lock
 
 Run the update and install commands:
 ```
-apt update
-apt install --no-install-recommends ubuntu-desktop
+sudo apt update
+sudo apt install --no-install-recommends ubuntu-desktop
 ```
 
 `--no-install-recommends` saves space on the drive by installing the minimum required components.
