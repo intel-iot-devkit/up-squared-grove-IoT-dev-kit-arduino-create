@@ -17,16 +17,16 @@ A people counter is a solution that counts (or measures) the number of people wh
 
 ## Get the Code
 To open the example in the Arduino Create IDE, navigate to `Examples > FROM LIBRARIES > UP SQUARED GROVE IOT DEV KIT > OpenCV-PeopleCounter`.
-
 ![]()
+
 [//]: # (insert screenshot of Arduino Create IDE)
 ### Verify
 
-![done verifying](images/verify.PNG)
+![done verifying](extras/people-counter/verify.PNG)
 
 ### Upload
 
-![done uploading](images/upload.PNG)
+![done uploading](extras/people-counter/upload.PNG)
 
 ### Run the Application
 
