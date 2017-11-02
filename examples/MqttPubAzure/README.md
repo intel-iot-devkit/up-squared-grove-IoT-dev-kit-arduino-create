@@ -104,4 +104,3 @@ Go to the **Data** tab and click **Monitor**.  You should see a message saying "
 
 ![](./../../extras/screen15.png)
 
-## How it works
