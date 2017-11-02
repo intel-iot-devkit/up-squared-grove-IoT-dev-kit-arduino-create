@@ -1,13 +1,6 @@
-/*  modified 8 May 2014
-  by Scott Fitzgerald
-  modified 2 Sep 2016
-  by Arturo Guadalupi
-  modified 8 Sep 2016
-  by Colby Newman
-  modified 13 Oct 2017
-  by Joseph Butler
-
-  This example code is in the public domain.
+/*  
+*  Copyright (c) 2017 Intel Corporation.
+*  Licensed under the MIT license. See LICENSE file in the project root for full license information.
 */
 
 /*
