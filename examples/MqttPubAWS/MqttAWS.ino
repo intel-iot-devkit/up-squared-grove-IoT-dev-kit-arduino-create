@@ -13,18 +13,12 @@
  * permissions and limitations under the License.
  */
 
-/**
- * @file PubSub.cpp
- * @brief Sample demonstrating MQTT operations
- *
+/*
+  MQTT Publication AWS
+  Example showing publication to AWS using the "sdk/test/cpp" sample topic.  The connection can be verified, but the viewing of the data is left to the user.
+  
+  https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/MqttPubAWS
  */
-/*********************************PRE-REQUISITES**************************************
- * This sample needs credentials and keys obtained from AWS.
- * Follow the instructions here to get the 
- * https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/examples/PubSub/README.md
- * Setup the portal and update the sample. Setup monitoring on AWS before running the sample.
- *
- **************************************************************************************/
 #include <chrono>
 #include <cstring>
 #include <regex>
