@@ -100,11 +100,12 @@ sudo apt-get install gedit
 To get back to your desktop enter **CTRL** + **ALT** + **F7** 
 
 ## Validate OpenCV Setup on UP Squared using Arduino Create 
-The steps that follow are intended to verify that Arduino Create, UP Squared hardware and OpenCV work together successfully to run a basic example application.
+The steps that follow are intended to verify that Arduino Create, UP Squared hardware and OpenCV work together successfully to run a basic example application.  
+
+**Note:  The general process below should be followed for running all OpenCV applications in Arduino Create. A sketch ran from Arduino Create cannot access your desktop to display the video, so it first needs to be uploaded with Arduino Create, and then ran manually from your UP Squared board.**  
 
 1. In the Arduino Create Web Editor, open the **Contours** example **LIBRARIES>OPENCV>EXAMPLES>Contours**
-2. Verify and then upload the sketch.
-**Just uploading the sketch will not execute the program, you need to follow the steps below**
+2. Verify and then upload the sketch.  
 3. Run the sketch from the Ubuntu desktop environment on the UP2 hardware: 
 
 ```
