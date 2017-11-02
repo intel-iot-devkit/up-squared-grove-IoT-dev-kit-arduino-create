@@ -133,5 +133,4 @@ These will already be installed if you are using the OS that was shipped with th
 
     ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/MonitorStep3.png)
 
-## How it works
 
