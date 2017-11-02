@@ -1,3 +1,15 @@
+/*  
+*  Copyright (c) 2017 Intel Corporation.
+*  Licensed under the MIT license. See LICENSE file in the project root for full license information.
+*/
+
+/*
+  OpenCV People Counter
+  Prints the number of people currently seen with a webcam to the monitor. Also displays the video with bounding boxes around detected people (must be ran on target machine)
+  
+  https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/OpenCV-Setup
+ */
+
 #include "ArduinoOpenCV.h"
 #include "opencv2/core.hpp"
 #include "opencv2/imgproc.hpp"
