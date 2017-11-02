@@ -39,7 +39,7 @@ cd sketches
 ./OpenCV-PeopleCounter
 ```
 
-A window should pop up and when a person is detected, you'll see a green bounding box around the person. And the terminal displays the "People count" as a numerical value (for example, 2).
+Two windows should pop up on the desktop (one for the webcam video and a terminal window for displaying numerical values). When a person is detected, you'll see a green bounding box around that person. And the terminal displays the "People count" as an integer value (person count per frame).
 
 ![](./../../extras/people-counter/bounding-box-2.png)
 
