@@ -1,12 +1,13 @@
 // Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-/*********************************PRE-REQUISITES**************************************
- * This sample needs the connection string obtained from the Azure IoT Hub. For setup see:
- * https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/MqttPubAzure 
- * Once you have the connection string copy it into the Secret tab.
- *
- **************************************************************************************/
+/*
+  MQTT Publication Azure
+  Sends the data from the rotary angle sensor to the IoT Hub.
+  
+  https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/MqttPubAzure
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "azure-iot-sdk.h"
