@@ -10,7 +10,6 @@ Youâ€™ll use the serial monitor to see the raw data coming from the sensor. Youâ
 * Use the analog input to control a digital output
 
 ## Gather your materials
-
 * [UP2* board](http://www.up-board.org/upsquared)
 * [Grove Pi+](http://wiki.seeedstudio.com/wiki/GrovePi%2b)
 * [Grove* Rotary Angle Sensor](http://wiki.seeed.cc/Grove-Rotary_Angle_Sensor)
