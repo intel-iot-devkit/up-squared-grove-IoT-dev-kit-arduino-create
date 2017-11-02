@@ -43,9 +43,9 @@ cd sketches
 A window should pop up and when a person is detected, you'll see a green bounding box around the person. And the terminal displays the "People count" as a numerical value (for example, 2).
 
 ## How it works
-The people counter/detector uses Histograms of Oriented Gradients (HOG), a type of "feature descriptor", to achieve object detection. A feature descriptor (an algorithm) encodes information from an image or video into numerical values. Those values are then used to distinguish one feature from another (to make the task of classification easier). HOG features are calculated... 
+The people detector portion of the code uses Histograms of Oriented Gradients (HOG), a type of "feature descriptor", to achieve object detection. A feature descriptor (an algorithm) encodes information from an image or video into numerical values. Those values are then used to distinguish one feature from another (to make the task of classification easier). Curves and edges are the main idea for this type of problem (detection of objects such as people), and for HOG filter approaches in general. And a HOG filter is a linear classifier, which means that it’s very good at sorting things into “buckets” based on multi-dimensional features (such as curves and edges). The counting feature is implemented through a basic draw and detect function.
 
-HOG appears in the code as `HOGDescriptor hog; hog.setSVMDetector(HOGDescriptor::getDefaultPeopleDetector());`
+HOG appears in the code as `HOGDescriptor hog; hog.setSVMDetector(HOGDescriptor::getDefaultPeopleDetector());`.
 
 Read more about the [HOG descriptor class](https://docs.opencv.org/3.1.0/d5/d33/structcv_1_1HOGDescriptor.html) at opencv.org.
 
