@@ -41,6 +41,10 @@ cd sketches
 
 A window should pop up and when a person is detected, you'll see a green bounding box around the person. And the terminal displays the "People count" as a numerical value (for example, 2).
 
+![](./../../extras/people-counter/bounding-box-2.PNG)
+
+![](./../../extras/people-counter/2-count-terminal.PNG)
+
 ## How it works
 The people detector portion of the code uses Histograms of Oriented Gradients (HOG), a type of "feature descriptor", to achieve object detection. 
 
