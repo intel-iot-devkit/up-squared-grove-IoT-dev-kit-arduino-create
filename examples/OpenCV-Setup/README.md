@@ -104,7 +104,7 @@ The steps that follow are intended to verify that Arduino Create, UP Squared har
 
 **Note:  The general process below should be followed for running all OpenCV applications in Arduino Create. A sketch ran from Arduino Create cannot access your desktop to display the video, so it first needs to be uploaded with Arduino Create, and then ran manually from your UP Squared board.**  
 
-1. In the Arduino Create Web Editor, open the **Contours** example **LIBRARIES>OPENCV>EXAMPLES>Contours**
+1. In the Arduino Create Web Editor, open the **Contours** example **EXAMPLES>FROM LIBRARIES>UP SQUARED GROVE IOT DEVELOPMENT KIT>OpenCV-Setup**
 2. Verify and then upload the sketch.  
 3. Run the sketch from the Ubuntu desktop environment on the UP2 hardware: 
 
