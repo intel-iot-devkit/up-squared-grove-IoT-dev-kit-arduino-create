@@ -1,4 +1,14 @@
+/*  
+*  Copyright (c) 2017 Intel Corporation.
+*  Licensed under the MIT license. See LICENSE file in the project root for full license information.
+*/
 
+/*
+  OpenCV Setup
+  Installation of OpenCV is required on the UP Squared Grove IoT Development Kit since it is linked dynamically in Arduino Create.  
+  
+  https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/OpenCV-Setup
+ */
 
 #include "ArduinoOpenCV.h"
 #include "opencv2/imgproc/imgproc.hpp"
