@@ -1,5 +1,5 @@
-# MQTT Publication with Azure
-This tutorial takes you from setting up a device in Azure all the way to viewing your data being send with MQTT.  The sketch is setup to read data from the Grove Rotary Angle Sensor at a given interval and send it to Azure.  The final step where you view your data is done in the Device Explorer provided by Microsoft.  It is only supported on **Windows** , see https://github.com/Azure/iothub-explorer for instructions on how to use the iot-hubexplorer node.js command line tool for other platforms.
+# MQTT Publication with Microsoft Azure\*
+This tutorial takes you from setting up a device in Microsoft Azure\* all the way to viewing your data being send with MQTT.  The sketch is setup to read data from the Grove\* Rotary Angle Sensor at a given interval and send it to Azure.  The final step where you view your data is done in the Device Explorer provided by Microsoft.  It is only supported on **Windows\*** , see https://github.com/Azure/iothub-explorer for instructions on how to use the iot-hubexplorer node.js command line tool for other platforms.
 
 ## What you'll learn
 * How to setup the an IoT Hub
@@ -8,14 +8,14 @@ This tutorial takes you from setting up a device in Azure all the way to viewing
 
 ## Gather your materials
 * ![UP² board](http://www.up-board.org/upsquared/) 
-* Grove Pi+ board
+* GrovePi+ board
 * Grove Rotary Angle sensor
 
 ### Software dependencies
 * libcrypto
 * libssl  
 
-These will already be installed if you are using the OS that was shipped with the UP Squared Grove IoT Development Kit. Otherwise you need to install them via apt-get.
+These will already be installed if you are using the OS that was shipped with the UPSquared Grove IoT Development Kit. Otherwise you need to install them via apt-get.
 
 ## Plug in your sensor
 Connect the Grove Rotary Angle Sensor to pin **A0** on the Grove Pi+
@@ -65,9 +65,9 @@ When it is done being created you should see it appear in the Dashboard
 
 ## Setup device explorer
 
-The easiest way to view your data is either using the Device Explorer GUI application (for Windows) or the iot-hubexplorer node.js command line tool (supported on Windows, Mac OS X, and Linux)
+The easiest way to view your data is either using the Device Explorer GUI application (for Windows) or the iot-hubexplorer node.js command line tool (supported on Windows, OS X®, and Linux\*)
 
-This tutorial will you walk you through using the Device Explorer GUI on windows.  See https://github.com/Azure/iothub-explorer for instructions on how to use the iot-hubexplorer node.js command line tool. 
+This tutorial will you walk you through using the Device Explorer GUI on Windows.  See https://github.com/Azure/iothub-explorer for instructions on how to use the iot-hubexplorer node.js command line tool. 
 
 1. Download and install the **SetupDeviceExplorer.msi** from https://github.com/Azure/azure-iot-sdk-csharp/releases.
 
