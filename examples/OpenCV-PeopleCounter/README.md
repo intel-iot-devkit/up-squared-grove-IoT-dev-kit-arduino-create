@@ -7,15 +7,15 @@ A people counter is a solution that counts (or measures) the number of people wh
 * How to run a basic people counter computer vision application
 
 ## Gather your materials
-  *	[UP Squared board](http://www.up-board.org/upsquared/) (tested hardware)
-  *	Ubuntu 16.04
+  *	[UPSquared board](http://www.up-board.org/upsquared/) (tested hardware)
+  *	Ubuntu\* 16.04
   * OpenCV version 3.3.0
   *	A UVC webcam
 
 [Click here for instructions on how to set up the OpenCV libraries on your hardware.](https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/OpenCV-Setup)
 
 ## Get the Code
-To open the example in the Arduino Create IDE, navigate to `Examples > FROM LIBRARIES > UP SQUARED GROVE IOT DEV KIT > OpenCV-PeopleCounter`.
+To open the example in the Arduino Create\* IDE, navigate to `Examples > FROM LIBRARIES > UP SQUARED GROVE IOT DEV KIT > OpenCV-PeopleCounter`.
 ![]()
 
 [//]: # (insert screenshot of Arduino Create IDE)
