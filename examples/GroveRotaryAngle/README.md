@@ -1,4 +1,4 @@
-# Grove Rotary Angle Sensor
+# Grove\* Rotary Angle Sensor
 
 ## Introduction
 You’ll use the serial monitor to see the raw data coming from the sensor. You’ll be able to control the rate of an LED blinking using the input from a rotary angle sensor.
@@ -10,15 +10,15 @@ You’ll use the serial monitor to see the raw data coming from the sensor. You�
 * Use the analog input to control a digital output
 
 ## Gather your materials
-* [UP2* board](http://www.up-board.org/upsquared)
-* [Grove Pi+](http://wiki.seeedstudio.com/wiki/GrovePi%2b)
-* [Grove* Rotary Angle Sensor](http://wiki.seeed.cc/Grove-Rotary_Angle_Sensor)
-* [Grove* LED](http://wiki.seeed.cc/Grove-LED_Socket_Kit)
+* [UP²\* board](http://www.up-board.org/upsquared)
+* [GrovePi+](http://wiki.seeedstudio.com/wiki/GrovePi%2b)
+* [Grove\* Rotary Angle Sensor](http://wiki.seeed.cc/Grove-Rotary_Angle_Sensor)
+* [Grove\* LED](http://wiki.seeed.cc/Grove-LED_Socket_Kit)
 
 ## Stop running sketches
-This tutorial assumes you have already set up your board to work with Arduino Create*. If you haven’t done that, go back to the section on [Getting Started](https://software.intel.com/node/e5977984-ca1e-4e58-bbda-76292a51249d).
+This tutorial assumes you have already set up your board to work with Arduino Create\*. If you haven’t done that, go back to the section on [Getting Started](https://software.intel.com/node/e5977984-ca1e-4e58-bbda-76292a51249d).
 
-1. Make sure to stop any running sketches before proceeding with this tutorial. The hardware abstractions layer (MRAA*) locks the hardware pins it is using, so if you try to run a different sketch using those same pins while the previous sketch is still running, it won’t work.
+1. Make sure to stop any running sketches before proceeding with this tutorial. The hardware abstractions layer (MRAA) locks the hardware pins it is using, so if you try to run a different sketch using those same pins while the previous sketch is still running, it won’t work.
 
 2. To stop running sketches, go to the My Devices page by clicking the menu icon in the upper left and clicking "My Devices". Alternatively, you can go to [https://create-intel.arduino.cc/devices](https://create-intel.arduino.cc/devices).
 
@@ -35,7 +35,7 @@ This tutorial assumes you have already set up your board to work with Arduino Cr
 ![](https://software.intel.com/sites/default/files/did_feeds_images/783cf14f-4e48-45f4-b3d6-21dc3aff16fb/783cf14f-4e48-45f4-b3d6-21dc3aff16fb-imageId=b9883f09-80ba-4666-9475-2d4cfac48b19.png)
 
 ## Connect hardware
-1. Plug in the Grove LED to "D4" on the Grove Pi+ board.
+1. Plug in the Grove LED to "D4" on the GrovePi+ board.
 
 ![](https://software.intel.com/sites/default/files/did_feeds_images/783cf14f-4e48-45f4-b3d6-21dc3aff16fb/783cf14f-4e48-45f4-b3d6-21dc3aff16fb-imageId=414bd27d-3736-4918-ae7e-7bf96c0c393a.jpg)
 
@@ -57,7 +57,7 @@ This tutorial assumes you have already set up your board to work with Arduino Cr
 If this isn’t working, double-check that you have stopped any other running sketches on the My Devices page [https://create-intel.arduino.cc/devices](https://create-intel.arduino.cc/devices). Once there, if you see an “N Sketches Running” message, "Running" and "Stop" any sketches. If you’ve tried stopping your sketch, but it still doesn’t work, try restarting your UP2 board.
 
 ## How it works
-You’ll notice that in the code, 512 corresponds to A0 on the Grove Pi+* board, while 516 corresponds to D4. The code doesn’t use 0 or 4 to because you’re required to add an offset of 512 to any pin on the Grove Pi+ board. Why? Under the covers, MRAA (the hardware abstraction library in Arduino) is using the Grove Pi+ board as a sub-platform!So this line to add MRAA_GROVEPI as the sub-platform is required.
+You’ll notice that in the code, 512 corresponds to A0 on the GrovePi+ board, while 516 corresponds to D4. The code doesn’t use 0 or 4 to because you’re required to add an offset of 512 to any pin on the Grove Pi+ board. Why? Under the covers, MRAA (the hardware abstraction library in Arduino\*) is using the GrovePi+ board as a sub-platform!So this line to add MRAA_GROVEPI as the sub-platform is required.
 
 `mraa_add_subplatform(MRAA_GROVEPI, "0");`
 
