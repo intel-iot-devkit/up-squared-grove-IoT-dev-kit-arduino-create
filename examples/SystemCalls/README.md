@@ -1,18 +1,18 @@
 # System Calls
 In this example you’ll learn how to make system calls from Arduino sketches.
 
-System calls are helpful to run commands like you would from a command prompt.  You can use system calls to run scripts, configure the system, copy files, etc.  It is important to note that when running a command from an Arduino sketch, the command is run as the root user.
+System calls are helpful to run commands like you would from a command prompt.  You can use system calls to run scripts, configure the system, copy files, etc.  It is important to note that when running a command from an Arduino\* sketch, the command is run as the root user.
 
 ## What you’ll learn
-* How to use Linux system calls in sketches
+* How to use Linux\* system calls in sketches
 
 ## Gather your materials
-* UP² board
+* UP²\* board
 
 ## Get the code
 **Examples>FROM LIBRARIES>UP SQUARED GROVE IOT DEV KIT>SerialMonitor>Serial**
 
-Before you upload your example sketch to your board, make sure to open the Monitor in Arduino Create.  
+Before you upload your example sketch to your board, make sure to open the Monitor in Arduino Create\*.  
 
 After uploading your sketch, you should see the results of the ifconfig command in the Monitor. These results contain your board’s IP address, as shown below.
 
