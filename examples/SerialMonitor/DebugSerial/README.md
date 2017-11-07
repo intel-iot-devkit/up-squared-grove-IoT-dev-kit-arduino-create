@@ -1,5 +1,5 @@
 # DebugSerial
-This tutorial shows you how to use the DebugSerial function over the USB port of your UPSquared.  The DebugSerial function will only work if your UPSquared is connected 'via Cloud'.  If you are connected via micro USB cable, then see this [Serial](./../Serial) tutorial.
+This tutorial shows you how to use the DebugSerial function over the USB port of your UPSquared\* board.  The DebugSerial function will only work if your UPSquared is connected 'via Cloud'.  If you are connected via micro USB cable, then see this [Serial](./../Serial) tutorial.
 
 ## What you'll learn 
 * Setup the serial monitor
