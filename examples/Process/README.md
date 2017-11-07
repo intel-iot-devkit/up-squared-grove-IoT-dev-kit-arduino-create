@@ -1,5 +1,5 @@
 # Process
-This tutorial walks you through running linux processes using the Process class. It gets the Arduino ascii art logo from the network, and prints it over serial.  It also gets and prints the cpu info.
+This tutorial walks you through running Linux\* processes using the Process class. It gets the Arduino\* ascii art logo from the network, and prints it over serial.  It also gets and prints the cpu info.
 
 ## What you'll learn
 * How to pass parameters to your processes 
@@ -20,7 +20,7 @@ sudo apt-get install curl
 This example is located in **EXAMPLES > FROM LIBRARIES > UP SQUARED GROVE IOT DEV KIT > Process**
 
 ## How it works
-Process is a class built for the Arduino Yun that also works nicely on the UP Squared.  It is a built-in class so there is nothing to include.  More about the class can be found at https://www.arduino.cc/en/Reference/YunProcessConstructor 
+Process is a class built for the Arduino Yun that also works nicely on the UPSquared.  It is a built-in class so there is nothing to include.  More about the class can be found at https://www.arduino.cc/en/Reference/YunProcessConstructor 
 
 The basic way to use it is as follows:
 
