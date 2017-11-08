@@ -32,6 +32,13 @@ unzip opencv-3.3.0.zip
 unzip opencv_contrib-3.3.0.zip
 ```
 
+## Install libgtk2.0-dev and pkg-config
+libgtk2.0-dev is required for your OpenCV applications to display images on the screen. Install it and pkg-config using
+```
+sudo apt-get install libgtk2.0-dev
+sudo apt-get install pkg-config
+```
+
 ## Compile
 To build (or compile) the OpenCV libraries, navigate to the folder *opencv-3.3.0* and create a *build* directory:
 
