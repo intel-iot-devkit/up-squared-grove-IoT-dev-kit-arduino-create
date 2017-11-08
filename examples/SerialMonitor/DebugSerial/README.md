@@ -1,11 +1,11 @@
 # DebugSerial
-This tutorial shows you how to use the DebugSerial function over the USB port of your UP Squared.  The DebugSerial function will only work if your UP Squared is connected 'via Cloud'.  If you are connected via micro USB cable, then see this [Serial](./../Serial) tutorial.
+This tutorial shows you how to use the DebugSerial function over the USB port of your UPSquared\* board.  The DebugSerial function will only work if your UPSquared is connected 'via Cloud'.  If you are connected via micro USB cable, then see this [Serial](./../Serial) tutorial.
 
 ## What you'll learn 
 * Setup the serial monitor
 
 ## Gather your materials
-* UP Squared board connected 'via Cloud'
+* UPSquared board connected 'via Cloud'
 
 ## Setup
 Make sure your UP Squared board shows up as a device in the editor 'via Cloud'
