@@ -1,5 +1,5 @@
 
-# Blink an LED
+# Blink an LED 
 
 ## Introduction
 To get started using the UP²\* board with the Arduino Create\* IDE, try this simple exercise to blink an LED from the GrovePi+\*. 
