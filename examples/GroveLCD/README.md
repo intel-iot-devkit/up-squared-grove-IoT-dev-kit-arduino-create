@@ -1,4 +1,4 @@
-# Grove LCD
+# Grove LCD 
 This tutorial shows you how to print 'Hello world' to the LCD display using the UPM library.
 
 ## What you'll learn
