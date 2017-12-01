@@ -10,7 +10,7 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
 
 // upm - Version: Latest
 
-#include "th02.hpp"
+#include <th02.hpp>
 #include "upm_utilities.h"
 
 //Create variables to hold the temperature and humidity
@@ -19,14 +19,14 @@ float humidity = 0.0;
 //Create variable to hold the temperature modifier
 char tempModifier = 'F'; //Modifier allows conversion to Fahrenheit or Kelvin, Base is Celsius
 //Create sensor
-upm::TH02 sensor;
+upm::TH02 sensor = upm::TH02();
 //Prototype function
 float ModTemp(char, float);
 
 void setup() {
   //Begin serial terminal
   //If you are using the UP^2 board via serial port (COM, tty, etc) change the DebugSerial method with Serial in all instances
-  DebugSerial.begin(115200);
+  DebugSerial.begin(9600);
 }
 
 void loop() {
@@ -56,10 +56,10 @@ void loop() {
 
 float ModTemp(char modifier, float modifiedTemp){
   if (modifier = 'F'){ //Perform math to change Celsius to Fahrenheit
-    temperature = ((modifiedTemp * (9/5)) + 32);
+    modifiedTemp = ((modifiedTemp * (9/5)) + 32);
   }
   else if (modifier = 'K'){ //Perform math to change Celsius to Kelvin
     modifiedTemp += 273.15;
   }
-  return temperature;
+  return modifiedTemp;
 }

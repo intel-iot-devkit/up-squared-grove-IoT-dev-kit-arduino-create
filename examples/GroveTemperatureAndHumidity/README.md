@@ -4,6 +4,8 @@ This tutorial shows you how to use the Grove Temperature and Humidity sensor wit
 ## What you'll learn
 * How to find the right UPM sensor library for your device
 * Instantiate a UPM sensor library class
+* How to use the [Delay](https://www.arduino.cc/reference/en/language/functions/time/delay/) function in Arduino
+* How to use the [DebugSerial](https://www.arduino.cc/reference/en/language/functions/communication/serial/) function in Arduino
 
 ## Gather your materials
 * [UP²\* board](http://www.up-board.org/upsquared)
@@ -18,17 +20,17 @@ In order for any UPM library to work, you need to include the header file corres
 
 The solution is to find your sensor first in the list https://iotdk.intel.com/docs/master/upm/modules.html 
 
-Then copy the name of the .h file.
+Then copy the name of the .hpp file.
 
 **Note: UPM libraries are generally defined by part number**
 
 At the top of your sketch include it, for example:
 ```
-#include "th02.hpp"
+#include <th02.hpp>
 ```
 To instantiate:
 ```
-upm::TH02 sensor;
+upm::TH02 sensor = upm::TH02();
 ```
 
 For a full list of examples see https://github.com/intel-iot-devkit/upm/tree/master/examples/c%2B%2B
