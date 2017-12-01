@@ -15,7 +15,7 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
 
 #include "upm_utilities.h"
 
-#define LED_PIN 514
+#define LED_PIN 516
 #define DELAY_TIME 2
 
 void setup() {
