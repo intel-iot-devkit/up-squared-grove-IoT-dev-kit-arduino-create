@@ -19,16 +19,16 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
 #define DELAY_TIME 2
 
 void setup() {
-	 mraa_add_subplatform(MRAA_GROVEPI, "0");
+	mraa_add_subplatform(MRAA_GENERIC_FIRMATA, "/dev/ttyS1"); //For testing. This is the way it's done in another example, but in others it's (MRAA_GROVEPI, "0"). I don't know which is correct, so I'm testing both.
 }
 
 void loop() {
 	for (int i = 0; i < 1023; i++) {
 		analogWrite(LED_PIN, i);
-		upm_delay_ms(DELAY_TIME);
+		delay(DELAY_TIME);
 	}
-	for (int i = 1023, i > 0; i--) {
+	for (int i = 1023; i > 0; i--) {
 		analogWrite(LED_PIN, i);
-		upm_delay_ms(DELAY_TIME);
+		delay(DELAY_TIME);
 	}
 }
