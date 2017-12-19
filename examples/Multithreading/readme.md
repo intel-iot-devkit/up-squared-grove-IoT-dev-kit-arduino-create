@@ -1,4 +1,4 @@
-# PWM
+# Multithreading
 This tutorial shows you how to use Multithreading on the Up2 board to perform multiple tasks simultaneously.
 
 ## What you'll learn
