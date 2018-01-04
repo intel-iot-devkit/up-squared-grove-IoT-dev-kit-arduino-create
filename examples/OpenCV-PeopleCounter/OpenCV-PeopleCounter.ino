@@ -78,10 +78,9 @@ void setup()
             capture >> image;
             if(image.empty())
                 break;
-            drawText(image);
             int num_people = detectAndDraw(hog, image);
             cout << "People count: " << num_people << endl;
-            imshow("people detector", image);
+            imshow("HOG Descriptor based People counter", image);
             //imshow("Sample", image);
             if(waitKey(10) >= 0)
                 break;
@@ -91,10 +90,10 @@ void setup()
     {
         cout << "No capture" << endl;
         image = Mat::zeros(480, 640, CV_8UC1);
-        drawText(image);
         imshow("Sample", image);
         waitKey(0);
     }
 }
 
 void loop() {}
+
