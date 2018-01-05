@@ -8,6 +8,8 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
   Example using PWM on Arduino Create using UPM.
 
   Cycles through all PWM output values on a single pin from 0 to 255 and back to 0 over the course of approximately two seconds, then repeats.
+  
+  https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/PWMBlink
 
 */
 

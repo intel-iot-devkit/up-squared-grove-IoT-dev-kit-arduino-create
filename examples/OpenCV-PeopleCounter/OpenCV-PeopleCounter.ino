@@ -7,7 +7,7 @@
   OpenCV People Counter
   Prints the number of people currently seen with a webcam to the monitor. Also displays the video with bounding boxes around detected people (must be ran on target machine)
   
-  https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/OpenCV-Setup
+  https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/OpenCV-PeopleCounter
  */
 
 #include "ArduinoOpenCV.h"

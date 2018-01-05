@@ -8,6 +8,8 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
   Example using multithreading on Arduino Create.
 
   Prints out a string from each thread at different intervals.
+  
+  https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/Multithreading
 
 */
 
