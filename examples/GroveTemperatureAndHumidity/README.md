@@ -13,7 +13,7 @@ This tutorial demonstrates how to use the Grove Temperature and Humidity sensor 
 * [Grove\* Temperature and Humidity Sensor](https://upm.mraa.io/sensorDetail.html?name=th02)
 
 ## Setup
-Plug the Grove Temperature and Humidity sensor into any I2C port.  
+Plug the Grove Temperature and Humidity sensor into any available I2C port on the GrovePi+.  
 
 ## How it works
 In order for any UPM library to work, you need to include the header file corresponding to that particular sensor in your sketch. Unfortunately, if you browse the Libraries in Arduino Create\* and include the UPM library, all the UPM sensor libraries will be included, and you probably only need one or two out of the several hundred.
