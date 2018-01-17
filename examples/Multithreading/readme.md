@@ -1,14 +1,14 @@
 # Multithreading
-This tutorial shows you how to use Multithreading on the Up2 board to perform multiple tasks simultaneously.
+This tutorial demonstrates how to use multithreading on the UP Squared\* board to perform multiple tasks simultaneously.
 
 ## What you'll learn
-* How to multithread code to multitask within the Arduino Create environment.
+* How to multithread code to multitask within the Arduino Create\* environment.
 
 ## Gather your materials
-* [UP²\* board](http://www.up-board.org/upsquared)
+* [UP Squared board](http://www.up-board.org/upsquared)
 
 ## Setup
-Upload the code to the Up2 board, then open the Serial terminal.
+Upload the code to the UP Squared board, then open a serial terminal.
 
 ## How it works
 The "fork" function is a system function included in unix-based operating systems. It can be used to spawn a child process, and returns the process id (pid) of the resulting child. The child's pid variable will contain the initial value, which in this case is preset to "0".
