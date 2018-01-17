@@ -7,7 +7,7 @@ A people counter is a solution that counts (or measures) the number of people wh
 * How to run a basic people counter computer vision application
 
 ## Gather your materials
-  *	[UPSquared board](http://www.up-board.org/upsquared/) (tested hardware)
+  *	[UP Squared\* board](http://www.up-board.org/upsquared/) (tested hardware)
   *	Ubuntu\* 16.04
   * OpenCV version 3.3.0
   *	A UVC webcam
