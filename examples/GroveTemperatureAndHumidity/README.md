@@ -1,15 +1,15 @@
-# Grove Temperature and Humidity Sensor
-This tutorial shows you how to use the Grove Temperature and Humidity sensor with the UP²\* board and the UPM library.
+# Grove\* Temperature and Humidity Sensor
+This tutorial demonstrates how to use the Grove Temperature and Humidity sensor with the UP²\* board and the UPM library.
 
 ## What you'll learn
 * How to find the right UPM sensor library for your device
 * Instantiate a UPM sensor library class
-* How to use the [Delay](https://www.arduino.cc/reference/en/language/functions/time/delay/) function in Arduino
+* How to use the [Delay](https://www.arduino.cc/reference/en/language/functions/time/delay/) function in Arduino\*
 * How to use the [DebugSerial](https://www.arduino.cc/reference/en/language/functions/communication/serial/) function in Arduino
 
 ## Gather your materials
 * [UP²\* board](http://www.up-board.org/upsquared)
-* [GrovePi+](http://wiki.seeedstudio.com/wiki/GrovePi%2b)
+* [GrovePi+\*](http://wiki.seeedstudio.com/wiki/GrovePi%2b)
 * [Grove\* Temperature and Humidity Sensor](https://upm.mraa.io/sensorDetail.html?name=th02)
 
 ## Setup
