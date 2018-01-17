@@ -1,5 +1,5 @@
-# Grove LCD
-This tutorial shows you how to print 'Hello world' to the LCD display using the UPM library.
+# Grove\* LCD
+This tutorial shows you how to print "Hello World" to an LCD display using the UPM library.
 
 ## What you'll learn
 * How to find the right UPM sensor library for your device
@@ -7,11 +7,11 @@ This tutorial shows you how to print 'Hello world' to the LCD display using the 
 
 ## Gather your materials
 * [UP²\* board](http://www.up-board.org/upsquared)
-* [GrovePi+](http://wiki.seeedstudio.com/wiki/GrovePi%2b)
+* [GrovePi+\*](http://wiki.seeedstudio.com/wiki/GrovePi%2b)
 * [Grove\* LCD RGB Backlight](https://www.seeedstudio.com/Grove-LCD-RGB-Backlight-p-1643.html)
 
 ## Setup
-Plug the Grove LCD RGB Backlight into any I2C port.  
+Plug the Grove LCD RGB Backlight into any available I2C port on the GrovePi+.  
 
 ## How it works
 In order for any UPM library to work, you need to include the header file corresponding to that particular sensor in your sketch. Unfortunately, if you browse the Libraries in Arduino Create\* and include the UPM library, all the UPM sensor libraries will be included, and you probably only need one or two out of the several hundred.
