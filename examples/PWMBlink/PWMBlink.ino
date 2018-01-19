@@ -18,6 +18,7 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
 #include "upm_utilities.h"
 
 #define LED_PIN 517
+//The 512 offset is required for sub-platforms.  517 corresponds to digital pin 5, or D5.
 #define DELAY_TIME 4
 
 void setup() {
