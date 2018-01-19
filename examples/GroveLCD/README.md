@@ -12,7 +12,7 @@ This tutorial shows you how to print 'Hello world' to the LCD display using the 
 
 ## Setup
 Plug the Grove LCD RGB Backlight into any I2C port.  
-[LCD Sensor](../images/LCD_0.jpg)
+[LCD Sensor](images/LCD_0.jpg)
 
 ## How it works
 In order for any UPM library to work, you need to include the header file corresponding to that particular sensor in your sketch. Unfortunately, if you browse the Libraries in Arduino Create\* and include the UPM library, all the UPM sensor libraries will be included, and you probably only need one or two out of the several hundred.
