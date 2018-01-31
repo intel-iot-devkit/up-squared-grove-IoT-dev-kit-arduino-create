@@ -2,7 +2,7 @@
 This tutorial demonstrates how to print "Hello World" to an LCD display using the UPM library.
 
 ## What you'll learn
-* How to find the right UPM sensor library for your device
+* How to find the correct UPM sensor library for your device
 * Instantiate a UPM sensor library class
 
 ## Gather your materials
