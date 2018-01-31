@@ -18,3 +18,5 @@ Plug the micro USB cable into your UP Squared board and your host computer and v
 Serial sends data over the USB cable from your device. Unlike with DebugSerial, baud rate does matter, so stick with 115200.
 
 Using Serial is ideal for situations where you are offline or you may want a lower latency since it's not going through the cloud.
+
+IMPORTANT NOTICE: This software is sample software. It is not designed or intended for use in any medical, life-saving or life-sustaining systems, transportation systems, nuclear systems, or for any other mission-critical application in which the failure of the system could lead to critical injury or death. The software may not be fully tested and may contain bugs or errors; it may not be intended or suitable for commercial release. No regulatory approvals for the software have been obtained, and therefore software may not be certified for use in certain countries or environments.

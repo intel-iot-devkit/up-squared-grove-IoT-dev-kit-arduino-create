@@ -70,3 +70,4 @@ Data can then be sent using: `DebugSerial.println(sensorValue);`
 
 For more detailed information on how to use the serial monitor, see the [Serial Monitor](https://software.intel.com/node/8d850e2a-d72f-4652-bcbd-254335682b5f) tutorial.
 
+IMPORTANT NOTICE: This software is sample software. It is not designed or intended for use in any medical, life-saving or life-sustaining systems, transportation systems, nuclear systems, or for any other mission-critical application in which the failure of the system could lead to critical injury or death. The software may not be fully tested and may contain bugs or errors; it may not be intended or suitable for commercial release. No regulatory approvals for the software have been obtained, and therefore software may not be certified for use in certain countries or environments.
