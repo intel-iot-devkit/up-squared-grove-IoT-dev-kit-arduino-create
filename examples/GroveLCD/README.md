@@ -12,6 +12,7 @@ This tutorial demonstrates how to print "Hello World" to an LCD display using th
 
 ## Setup
 Plug the Grove LCD RGB Backlight into any available I2C port on the GrovePi+.  
+![LCD Sensor](images/LCD_0.jpg)
 
 ## How it works
 In order for any UPM library to work, you need to include the header file corresponding to that particular sensor in your sketch. Unfortunately, if you browse the Libraries in Arduino Create\* and include the UPM library, all the UPM sensor libraries will be included, and you probably only need one or two out of the several hundred.
@@ -32,6 +33,8 @@ jhd1313m1_context lcd = jhd1313m1_init(0, 0x3e, 0x62);
 ```
 
 For a full list of examples see https://github.com/intel-iot-devkit/upm/tree/master/examples/c%2B%2B 
+![Arduino Create IDE](images/LCD_2.png)
 
+![Hello World](images/LCD_1.jpg)
 
 IMPORTANT NOTICE: This software is sample software. It is not designed or intended for use in any medical, life-saving or life-sustaining systems, transportation systems, nuclear systems, or for any other mission-critical application in which the failure of the system could lead to critical injury or death. The software may not be fully tested and may contain bugs or errors; it may not be intended or suitable for commercial release. No regulatory approvals for the software have been obtained, and therefore software may not be certified for use in certain countries or environments. 

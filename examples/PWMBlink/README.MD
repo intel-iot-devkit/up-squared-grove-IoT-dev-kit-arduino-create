@@ -11,7 +11,7 @@ This tutorial demonstrates how to use PWM on the UP Squared\* board to fade an L
 * [Grove LED](https://www.seeedstudio.com/Grove-Green-LED-p-1144.html)
 
 ## Setup
-Connect the LED breakout to the GrovePi+ board on the D2 port.
+Connect the LED breakout to the GrovePi+ board on the D5 port.
 
 ## How it works
 Pulse Width Modulation (PWM) is the process of cycling power to a device on and off at a high rate, allowing it to mimic the effects of voltage changes. This allows us to dim an LED without a digital to analog converter.
