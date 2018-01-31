@@ -7,7 +7,7 @@ A people counter is a solution that counts (or measures) the number of people wh
 * How to run a basic people counter computer vision application
 
 ## Gather your materials
-  *	[UPSquared board](http://www.up-board.org/upsquared/) (tested hardware)
+  *	[UP Squared\* board](http://www.up-board.org/upsquared/) (tested hardware)
   *	Ubuntu\* 16.04
   * OpenCV version 3.3.0
   *	A UVC webcam
@@ -57,3 +57,4 @@ Here, "histogram" refers to a distribution (for example, a cluster of similar th
 
 Read more about the [HOG descriptor class](https://docs.opencv.org/3.1.0/d5/d33/structcv_1_1HOGDescriptor.html) at opencv.org.
 
+IMPORTANT NOTICE: This software is sample software. It is not designed or intended for use in any medical, life-saving or life-sustaining systems, transportation systems, nuclear systems, or for any other mission-critical application in which the failure of the system could lead to critical injury or death. The software may not be fully tested and may contain bugs or errors; it may not be intended or suitable for commercial release. No regulatory approvals for the software have been obtained, and therefore software may not be certified for use in certain countries or environments.

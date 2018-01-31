@@ -108,3 +108,4 @@ The tutorials can be grouped into four categories:
 
 If you’re not sure where to start, we recommend learning the basics about sensors with the [GroveRotaryAngle](https://software.intel.com/node/b7b16e2f-9d80-45fe-ada1-93ddb65759aa) tutorial.
 
+IMPORTANT NOTICE: This software is sample software. It is not designed or intended for use in any medical, life-saving or life-sustaining systems, transportation systems, nuclear systems, or for any other mission-critical application in which the failure of the system could lead to critical injury or death. The software may not be fully tested and may contain bugs or errors; it may not be intended or suitable for commercial release. No regulatory approvals for the software have been obtained, and therefore software may not be certified for use in certain countries or environments.

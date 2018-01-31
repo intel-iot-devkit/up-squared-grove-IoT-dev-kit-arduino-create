@@ -1,5 +1,11 @@
 # Multithreading
-This tutorial shows you how to use Multithreading on the UP Squared\* board to perform multiple tasks simultaneously.
+This tutorial demonstrates how to use multithreading on the UP Squared\* board to perform multiple tasks simultaneously.
+
+## What you'll learn
+* How to multithread code to multitask within the Arduino Create\* environment.
+
+## Gather your materials
+* [UP Squared board](http://www.up-board.org/upsquared)
 
 ## What you'll learn
 * How to multithread code to multitask within the Arduino Create\* development environment.
