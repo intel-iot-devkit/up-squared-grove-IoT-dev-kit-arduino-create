@@ -1,4 +1,27 @@
 # Process
+<table>
+	<tr>
+		<td>Programming language</td>
+		<td>C++ (Arduino)</td>
+	</tr>
+	<tr>
+		<td>Skill level</td>
+		<td>Beginner</td>
+	</tr>
+	<tr>
+		<td>Time to complete</td>
+		<td>5 minutes</td>
+	</tr>
+	<tr>
+		<td>Hardware needed</td>
+		<td>UP Squared Grove IoT Development Kit</td>
+	</tr>
+	<tr>
+		<td>Target Operating System</td>
+		<td>Ubuntu 16.04</td>
+	</tr>
+</table>
+
 This tutorial walks you through running Linux\* processes using the Process class. It gets the Arduino\* ascii art logo from the network, and prints it over serial.  It also gets and prints the cpu info.
 
 ## What you'll learn
@@ -32,4 +55,3 @@ Process <name>
 etc
 <name>.run()
 ```
-IMPORTANT NOTICE: This software is sample software. It is not designed or intended for use in any medical, life-saving or life-sustaining systems, transportation systems, nuclear systems, or for any other mission-critical application in which the failure of the system could lead to critical injury or death. The software may not be fully tested and may contain bugs or errors; it may not be intended or suitable for commercial release. No regulatory approvals for the software have been obtained, and therefore software may not be certified for use in certain countries or environments.

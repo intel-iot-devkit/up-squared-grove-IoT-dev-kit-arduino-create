@@ -1,14 +1,37 @@
 # People Counter
+<table>
+	<tr>
+		<td>Programming language</td>
+		<td>C++ (Arduino)</td>
+	</tr>
+	<tr>
+		<td>Skill level</td>
+		<td>Intermediate</td>
+	</tr>
+	<tr>
+		<td>Time to complete</td>
+		<td>15 minutes</td>
+	</tr>
+	<tr>
+		<td>Hardware needed</td>
+		<td>
+		<p>UP Squared Grove IoT Development Kit</p>
+		<p>UVC compliant webcam</p>
+		</td>
+	</tr>
+	<tr>
+		<td>Target Operating System</td>
+		<td>Ubuntu 16.04</td>
+	</tr>
+</table>
 
-## Introduction
-A people counter is a solution that counts (or measures) the number of people who enter a designated area. You may be familiar with people counting systems, found in small shops, libraries and convenience stores, that use infrared sensors to detect people. When an infrared beam is cut (a person intercepts it by entering or exiting a door for example) the system increments a count. This technology has limitations when it comes to instances of occlusion (when one person A blocks person B and person B doesn't get counted). An appropriately designed computer vision-based people counting system can be more robust in handling cases of occlusion. Here we utilize the OpenCV libraries and apply the Histograms of Oriented Gradients (HOG) algorithm to create a computer vision application for people detection/counting.
+Counts (or measures) the number of people who enter a designated area. You may be familiar with people counting systems, found in small shops, libraries and convenience stores, that use infrared sensors to detect people. When an infrared beam is cut (a person intercepts it by entering or exiting a door for example) the system increments a count. This technology has limitations when it comes to instances of occlusion (when one person A blocks person B and person B doesn't get counted). An appropriately designed computer vision-based people counting system can be more robust in handling cases of occlusion. Here we utilize the OpenCV libraries and apply the Histograms of Oriented Gradients (HOG) algorithm to create a computer vision application for people detection/counting.
 
 ## What you’ll learn
 * How to run a basic people counter computer vision application
 
 ## Gather your materials
-  *	[UP Squared\* board](http://www.up-board.org/upsquared/) (tested hardware)
-  *	Ubuntu\* 16.04
+  *	[UP Squared board](http://www.up-board.org/upsquared/) 
   * OpenCV version 3.3.0
   *	A UVC webcam
 
@@ -57,4 +80,3 @@ Here, "histogram" refers to a distribution (for example, a cluster of similar th
 
 Read more about the [HOG descriptor class](https://docs.opencv.org/3.1.0/d5/d33/structcv_1_1HOGDescriptor.html) at opencv.org.
 
-IMPORTANT NOTICE: This software is sample software. It is not designed or intended for use in any medical, life-saving or life-sustaining systems, transportation systems, nuclear systems, or for any other mission-critical application in which the failure of the system could lead to critical injury or death. The software may not be fully tested and may contain bugs or errors; it may not be intended or suitable for commercial release. No regulatory approvals for the software have been obtained, and therefore software may not be certified for use in certain countries or environments.

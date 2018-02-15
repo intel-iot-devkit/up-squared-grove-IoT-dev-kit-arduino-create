@@ -21,6 +21,7 @@
   
 */
 
+#include "Arduino.h" //not strictly required to run, but prevents erros when importing into Intel(r) System Studio
 
 int sensorPin = 512;    // select the input pin for the Grove rotary angle sensor
 int ledPin = 516;      // select the pin for the LED
@@ -32,7 +33,7 @@ void setup() {
   // declare the ledPin as an OUTPUT:
   pinMode(ledPin, OUTPUT);
   // Setup serial terminal, meant for devices connected via Cloud.  If you are using the UP^2 board via serial port (COM, tty, etc)
-  // change the DebugSerial method with Serial in all instances
+  // DebugSerial should be used via cloud (when you don't have the micro USB cable connected)
   DebugSerial.begin(115200);
 }
 

@@ -1,4 +1,27 @@
 # MQTT Publication with Microsoft Azure\*
+<table>
+	<tr>
+		<td>Programming language</td>
+		<td>C++ (Arduino)</td>
+	</tr>
+	<tr>
+		<td>Skill level</td>
+		<td>Intermediate</td>
+	</tr>
+	<tr>
+		<td>Time to complete</td>
+		<td>5 minutes</td>
+	</tr>
+	<tr>
+		<td>Hardware needed</td>
+		<td>UP Squared Grove IoT Development Kit</td>
+	</tr>
+	<tr>
+		<td>Target Operating System</td>
+		<td>Ubuntu 16.04</td>
+	</tr>
+</table>
+
 This tutorial takes you from setting up a device in Microsoft Azure\* all the way to viewing your data being send with MQTT.  The sketch is setup to read data from the Grove\* Rotary Angle Sensor at a given interval and send it to Azure.  The final step where you view your data is done in the Device Explorer provided by Microsoft.  It is only supported on **Windows\*** , see https://github.com/Azure/iothub-explorer for instructions on how to use the iot-hubexplorer node.js command line tool for other platforms.
 
 ## What you'll learn
@@ -104,4 +127,3 @@ Go to the **Data** tab and click **Monitor**.  You should see a message saying "
 
 ![](./../../extras/screen15.png)
 
-IMPORTANT NOTICE: This software is sample software. It is not designed or intended for use in any medical, life-saving or life-sustaining systems, transportation systems, nuclear systems, or for any other mission-critical application in which the failure of the system could lead to critical injury or death. The software may not be fully tested and may contain bugs or errors; it may not be intended or suitable for commercial release. No regulatory approvals for the software have been obtained, and therefore software may not be certified for use in certain countries or environments.

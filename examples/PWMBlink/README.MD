@@ -1,20 +1,27 @@
 # PWM
-This tutorial demonstrates how to use PWM on the UP Squared\* board to fade an LED on and off.
+This tutorial shows you how to use PWM on the Up2 board to fade an LED on and off.
 
 ## What you'll learn
-* How to access the PWM pins on the UP Squared board
-* Use UPM via the Arduino Create\* development environment
+* How to access the PWM pins on the Up2 board
+* Use UPM via the Arduino Create development environment
 
 ## Gather your materials
-* [UP Squared* board](http://www.up-board.org/upsquared)
+* [UP²\* board](http://www.up-board.org/upsquared)
 * [GrovePi+](http://wiki.seeedstudio.com/wiki/GrovePi%2b)
 * [Grove LED](https://www.seeedstudio.com/Grove-Green-LED-p-1144.html)
 
 ## Setup
-Connect the LED breakout to the GrovePi+ board on the D5 port.
+Connect the Grove LED to the GrovePi+ board on the D5 port.
+
+## Get the code
+This example can be found in the Arduino Create IDE under `Examples > FROM LIBRARIES > UP SQUARED GROVE IOT DEV KIT > PWMBlink`.
+
+Before running, open the Monitor in the IDE.
+
+After running should see the LED repeatedly fade and get brighter.
 
 ## How it works
-Pulse Width Modulation (PWM) is the process of cycling power to a device on and off at a high rate, allowing it to mimic the effects of voltage changes. This allows us to dim an LED without a digital to analog converter.
+PWM stands for Pulse Width Modulation, and is the process of cycling power to a device on and off at a high rate, allowing it to mimic the effects of voltage changes. This allows us to dim an LED without needing a digital to analog converter of any sort.
 
 [AnalogWrite](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/)
 

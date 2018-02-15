@@ -1,5 +1,29 @@
-
 # OpenCV Setup
+<table>
+	<tr>
+		<td>Programming language</td>
+		<td>C++ (Arduino)</td>
+	</tr>
+	<tr>
+		<td>Skill level</td>
+		<td>Intermediate</td>
+	</tr>
+	<tr>
+		<td>Time to complete</td>
+		<td>75 minutes (mostly waiting for OpenCV to build)</td>
+	</tr>
+	<tr>
+		<td>Hardware needed</td>
+		<td>
+		<p>UP Squared Grove IoT Development Kit</p>
+		</td>
+	</tr>
+	<tr>
+		<td>Target Operating System</td>
+		<td>Ubuntu 16.04</td>
+	</tr>
+</table>
+
 OpenCV is the main library used for computer vision and image processing.  For sketches created in Arduino Create, the OpenCV library is dynamically linked, which means it must be installed on the target platform first in order to run. This tutorial contains the instructions to setup OpenCV 3.3.0 on the Ubuntu\* Server 16.04 LTS operating system that comes with the UPSquared\* Grove IoT Development Kit, though they can generally be applied to any Intel®-based system.
 
 ## What you'll Learn
@@ -9,12 +33,18 @@ OpenCV is the main library used for computer vision and image processing.  For s
 
 ## Gather Your Materials
 * UPSquared Board or other Intel® processor-based hardware with Ubuntu 16.04 LTS
+* A monitor, keyboard, and mouse for the UP Squared board
 
-## Download
+## Setup
+Connect a monitor, keyboard, and mouse before proceeding.  
+
+**Note:** the username and password are both `upsquared`  
+
+### Download
 
 **Note**: if you are behind a firewall, configure your proxy before proceeding with the commands that follow.
 
-Open a command prompt and type:
+In the command prompt and type:
 
 ```
 cd ~
@@ -25,6 +55,11 @@ wget -O opencv_contrib-3.3.0.zip https://github.com/opencv/opencv_contrib/archiv
 ```
 [//]: # ()
 
+The OS image shipped with the kit doesn't include `unzip`, so install it by  
+```
+sudo apt-get install unzip
+```
+
 Unzip the downloaded archive:
 
 ```
@@ -32,14 +67,14 @@ unzip opencv-3.3.0.zip
 unzip opencv_contrib-3.3.0.zip
 ```
 
-## Install libgtk2.0-dev and pkg-config
+### Install libgtk2.0-dev and pkg-config
 libgtk2.0-dev is required for your OpenCV applications to display images on the screen. Install it and pkg-config using
 ```
 sudo apt-get install libgtk2.0-dev
 sudo apt-get install pkg-config
 ```
 
-## Compile
+### Compile
 To build (or compile) the OpenCV libraries, navigate to the folder *opencv-3.3.0* and create a *build* directory:
 
 ```
@@ -67,7 +102,7 @@ To achieve an optimal compilation time, we can take advantage of the number of u
 
 **Note**: The `cmake` and `make` commands must complete successfully for you to continue with the installation below.
 
-## Install
+### Make install
 From the  `~/opencv/opencv-3.3.0/build ` directory, type:
 ```
 sudo make install
@@ -76,18 +111,7 @@ sudo ldconfig
 
 `ldconfig` tells the operating system that the OpenCV libraries are available.
 
-## Install desktop environment (required for UPSquared\* Grove\* IoT Development Kit)
-
-### Hardware Setup
-In this step, you will a connect monitor, keyboard and mouse to the UP² board.
-
-1. Plug in a USB keyboard and mouse into the USB ports available on the UP² hardware. 
-
-2. Next, gather a HDMI or display port compatible monitor along with it's corresponding cable and connect the monitor to the board by plugging in the cable to the available ports on the UP² hardware.
-
-3. Ensure that you are connected to the Internet by plugging in an Ethernet cable to the Ethernet port on the UP² board.
-
-### Install Ubuntu\* desktop environment
+### Install desktop environment 
 The UP² kit comes with the Ubuntu server operating system pre-installed on the UP² board but does not include the Ubuntu desktop environment. You'll need to install the desktop environment in order to view the results of image or video streams processed by OpenCV.
 
 **Note**: if you are behind a firewall, configure your proxy before proceeding with the commands that follow.
@@ -112,7 +136,7 @@ sudo apt-get install gedit
 
 To get back to your desktop enter **CTRL** + **ALT** + **F7** 
 
-## Validate OpenCV Setup on UPSquared\* using Arduino Create\*
+### Validate OpenCV Setup on UPSquared\* using Arduino Create\*
 The steps that follow are intended to verify that Arduino Create, UPSquared hardware and OpenCV work together successfully to run a basic example application.  
 
 **Note:  The general process below should be followed for running all OpenCV applications in Arduino Create. A sketch ran from Arduino Create cannot access your desktop to display the video, so it first needs to be uploaded with Arduino Create, and then ran manually from your UP Squared board.**  

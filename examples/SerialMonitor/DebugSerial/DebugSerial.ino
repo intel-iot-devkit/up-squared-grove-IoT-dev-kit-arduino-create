@@ -13,6 +13,8 @@
   
 */
 
+#include "Arduino.h" //not strictly required to run, but prevents erros when importing into Intel(r) System Studio
+
 int incomingByte = 0;   // for incoming serial data
 void setup() {
         DebugSerial.begin(115200);     // opens serial port, sets data rate to 115200 bps

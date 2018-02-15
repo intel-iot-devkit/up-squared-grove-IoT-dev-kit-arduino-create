@@ -1,4 +1,27 @@
 # MQTT Publication with Amazon Web Services (AWS)\*
+<table>
+	<tr>
+		<td>Programming language</td>
+		<td>C++ (Arduino)</td>
+	</tr>
+	<tr>
+		<td>Skill level</td>
+		<td>Intermediate</td>
+	</tr>
+	<tr>
+		<td>Time to complete</td>
+		<td>15 minutes</td>
+	</tr>
+	<tr>
+		<td>Hardware needed</td>
+		<td>UP Squared Grove IoT Development Kit</td>
+	</tr>
+	<tr>
+		<td>Target Operating System</td>
+		<td>Ubuntu 16.04</td>
+	</tr>
+</table>
+
 This tutorial shows you how to go from setting up an account with AWS\* to sending data via MQTT.  It uses the aws-iot-device-sdk-cpp.h library from https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create , which is a slightly modified version of the AWS\* IoT Device SDK https://github.com/aws/aws-iot-device-sdk-cpp.  
 
 ## What you'll learn
@@ -133,4 +156,4 @@ These will already be installed if you are using the OS that was shipped with th
 
     ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/MonitorStep3.png)
 
-IMPORTANT NOTICE: This software is sample software. It is not designed or intended for use in any medical, life-saving or life-sustaining systems, transportation systems, nuclear systems, or for any other mission-critical application in which the failure of the system could lead to critical injury or death. The software may not be fully tested and may contain bugs or errors; it may not be intended or suitable for commercial release. No regulatory approvals for the software have been obtained, and therefore software may not be certified for use in certain countries or environments.
+

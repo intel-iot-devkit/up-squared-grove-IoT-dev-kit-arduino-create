@@ -14,6 +14,8 @@
   
 */
 
+#include "Arduino.h" //not strictly required to run, but prevents erros when importing into Intel(r) System Studio
+
 //A 512 offset is required for sub-platforms.  516 corresponds to digital pin 4, or D4.
 #define LED_BUILTIN 516
 

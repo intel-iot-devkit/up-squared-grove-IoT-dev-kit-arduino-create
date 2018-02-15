@@ -7,7 +7,7 @@
   
   https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/MqttPubAzure
  */
-
+#include "Arduino.h" //not strictly required to run, but prevents erros when importing into Intel(r) System Studio
 #include <stdio.h>
 #include <stdlib.h>
 #include "azure-iot-sdk.h"

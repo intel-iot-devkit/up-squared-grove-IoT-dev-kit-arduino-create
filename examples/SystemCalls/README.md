@@ -1,4 +1,27 @@
 # System Calls
+<table>
+	<tr>
+		<td>Programming language</td>
+		<td>C++ (Arduino)</td>
+	</tr>
+	<tr>
+		<td>Skill level</td>
+		<td>Beginner</td>
+	</tr>
+	<tr>
+		<td>Time to complete</td>
+		<td>5 minutes</td>
+	</tr>
+	<tr>
+		<td>Hardware needed</td>
+		<td>UP Squared Grove IoT Development Kit</td>
+	</tr>
+	<tr>
+		<td>Target Operating System</td>
+		<td>Ubuntu 16.04</td>
+	</tr>
+</table>
+
 In this example you’ll learn how to make system calls from Arduino sketches.
 
 System calls are helpful to run commands like you would from a command prompt.  You can use system calls to run scripts, configure the system, copy files, etc.  It is important to note that when running a command from an Arduino\* sketch, the command is run as the root user.
@@ -26,5 +49,3 @@ http://en.cppreference.com/w/cpp/utility/program/system
 http://www.cplusplus.com/reference/cstdlib/system/
 
 Alternatively, you can use Process, the built-in Arduino library, look for the Process example in this repository.
-
-IMPORTANT NOTICE: This software is sample software. It is not designed or intended for use in any medical, life-saving or life-sustaining systems, transportation systems, nuclear systems, or for any other mission-critical application in which the failure of the system could lead to critical injury or death. The software may not be fully tested and may contain bugs or errors; it may not be intended or suitable for commercial release. No regulatory approvals for the software have been obtained, and therefore software may not be certified for use in certain countries or environments.

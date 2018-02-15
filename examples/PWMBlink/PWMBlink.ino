@@ -13,6 +13,8 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
 
 */
 
+#include "Arduino.h" //not strictly required to run, but prevents erros when importing into Intel(r) System Studio
+
 // upm - Version: Latest
 
 #include "upm_utilities.h"
@@ -22,15 +24,19 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
 #define DELAY_TIME 4
 
 void setup() {
-	pinMode(LED_PIN, OUTPUT);
+    //add the Grove Pi+ sub-platform
 	mraa_add_subplatform(MRAA_GROVEPI, "0");
+	// initialize digital pin LED_PIN as an output.
+	pinMode(LED_PIN, OUTPUT);
 }
 
 void loop() {
+	//brighten
 	for (int i = 0; i < 255; i++) {
 		analogWrite(LED_PIN, i);
 		delay(DELAY_TIME);
 	}
+	//fade
 	for (int i = 255; i > 0; i--) {
 		analogWrite(LED_PIN, i);
 		delay(DELAY_TIME);

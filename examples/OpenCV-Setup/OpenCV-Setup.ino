@@ -9,7 +9,7 @@
   
   https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/OpenCV-Setup
  */
-
+#include "Arduino.h" //not strictly required to run, but prevents erros when importing into Intel(r) System Studio
 #include "ArduinoOpenCV.h"
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/highgui/highgui.hpp"

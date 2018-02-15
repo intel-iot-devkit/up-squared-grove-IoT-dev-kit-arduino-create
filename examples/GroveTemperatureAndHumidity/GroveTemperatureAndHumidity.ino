@@ -8,8 +8,8 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
   https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/GroveTemperatureAndHumidity
 */
 
+#include "Arduino.h" //not strictly required to run, but prevents erros when importing into Intel(r) System Studio
 // upm - Version: Latest
-
 #include <th02.hpp>
 #include "upm_utilities.h"
 

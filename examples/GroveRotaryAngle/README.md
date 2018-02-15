@@ -1,7 +1,28 @@
 # Grove\* Rotary Angle Sensor
+<table>
+	<tr>
+		<td>Programming language</td>
+		<td>C++ (Arduino)</td>
+	</tr>
+	<tr>
+		<td>Skill level</td>
+		<td>Beginner</td>
+	</tr>
+	<tr>
+		<td>Time to complete</td>
+		<td>5 minutes</td>
+	</tr>
+	<tr>
+		<td>Hardware needed</td>
+		<td>UP Squared Grove IoT Development Kit</td>
+	</tr>
+	<tr>
+		<td>Target Operating System</td>
+		<td>Ubuntu 16.04</td>
+	</tr>
+</table>
 
-## Introduction
-You’ll use the serial monitor to see the raw data coming from the sensor. You’ll be able to control the rate of an LED blinking using the input from a rotary angle sensor.
+Demonstrates analog input by reading an analog sensor and turning on and off a light emitting diode (LED) at a rate determined by the analog sensor reading.
 
 ## What you’ll learn
 * Stop a sketch that is running
@@ -70,4 +91,3 @@ Data can then be sent using: `DebugSerial.println(sensorValue);`
 
 For more detailed information on how to use the serial monitor, see the [Serial Monitor](https://software.intel.com/node/8d850e2a-d72f-4652-bcbd-254335682b5f) tutorial.
 
-IMPORTANT NOTICE: This software is sample software. It is not designed or intended for use in any medical, life-saving or life-sustaining systems, transportation systems, nuclear systems, or for any other mission-critical application in which the failure of the system could lead to critical injury or death. The software may not be fully tested and may contain bugs or errors; it may not be intended or suitable for commercial release. No regulatory approvals for the software have been obtained, and therefore software may not be certified for use in certain countries or environments.

@@ -10,10 +10,8 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
   https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/GroveLCD
 */
 
+#include "Arduino.h" //not strictly required to run, but prevents erros when importing into Intel(r) System Studio
 // upm - Version: Latest 
-//#include <ArduinoUPM.h>
-//#include <jhd1313m1.hpp>
-
 #include <jhd1313m1.h>
 #include "upm_utilities.h"
 
