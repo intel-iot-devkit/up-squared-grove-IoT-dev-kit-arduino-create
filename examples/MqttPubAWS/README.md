@@ -102,7 +102,7 @@ These will already be installed if you are using the OS that was shipped with th
    
 ## Get the code
 
-1.  Open the PubSub example in Arduino Create\* **Libraries>AWS IOT DEVICE SDK>Examples>PubSub**
+1.  Open the PubSub example in Arduino Create\* **Examples>FROM LIBRARYES>UP SQUARED GROVE IOT DEV KIT>MqttPubAWS**
 
     ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/SampleStep0.png)
 
