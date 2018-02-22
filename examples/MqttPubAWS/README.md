@@ -38,81 +38,94 @@ This tutorial shows you how to go from setting up an account with AWS\* to sendi
 * libssl  
 These will already be installed if you are using the OS that was shipped with the UP Squared Grove IoT Development Kit.  Otherwise you need to install them via apt-get.
 
-## Set up AWS portal
+## Tutorial steps
+Follow along with the steps below to send data from a rotatry angle sensor (via MQTT) to the AWS cloud platform.
 
-1.  Go to AWS IOT console and register or sign in.
+1. [Set up an AWS account](readme.md#step-1-set-up-an-AWS-account)
+
+2. [Create a Thing](readme.md#step-2-create-a-thing)
+
+3. [Create and attach a policy to your Thing](readme.md#step-3-create-and-attach-a-policy-to-your-thing)
+
+4. [Get the HTTPS endpoint value](readme.md#step-4-get-the-https-endpoint-value)
+
+5. [Get the code](readme.md#step-5-get-the-code)
+
+6. [View data sent via MQTT in the AWS console](readme.md#step-6-monitor-the-topic-in-AWS-IoT-dashboard)
+
+## Step 1: Set up an AWS account
+
+a.  Go to AWS IoT console and register or sign in.
 
     <https://aws.amazon.com/console/>
 
-2.  Search for IOT Services and find ‘AWS IoT’
+b.  In the AWS services search bar, type and select "AWS IoT".
     
     ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step1.png)
     
-
-3.  Click get Started
+c.  Click "Get started"
     
     ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step2.png)
     
-4.  Click on Registry &gt; Things &gt; Register a
-    Thing
-    
+## Step 2: Create a Thing
+### Register a Thing
+A *Thing* is a representation of your device in the cloud.
+a.  From  the left navigation panel, choose Manage &gt; Things &gt; and then click on "Register a
+    thing"
     
     ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step3.png)
 
-    
+b.  To register an AWS IoT Thing, select "Create a singe thing" 
 
-5.  Enter a thing name e.g. ‘Thing-01’ and click ‘Create Thing’
+c.  Enter a name for your Thing (for example, "Thingy") and then click "Next"
 
     ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step4.png)
-    
-6.  The thing is now created. Click on it to see its details.
-
+### Add a certificate to your Thing    
+a.  Choose "Create certificate" to generate a certificate, public key and private key.
     ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step4Result.PNG)
 
-7.  Click on ‘Interact’ and copy the HTTPS endpoint value. This value
-    will be used in the sample.
-
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step11.png)
-    
-8.  Click the back arrow to get back to the main page and click on
-    ‘Security’ &gt; ‘Policies’ . Then click ‘Create a Policy’
-
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step8.png)
-
-9.  Give a Name e.g. ‘Policy-01’. Add a statement with Action ‘iot:\*’, Resource ARN ‘\*’ and Effect ‘Allow’. Click on ‘CREATE’.
-
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step9.png)
-
-10. Go to ‘Security’ \> ‘Certificates’ and click on ‘Create Certificate’ 
-
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step5.png)
-
-11. Click ‘Create Certificate’ again
-
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step6.png)
-
-12. Download the four files and click ‘Activate’. Then click ‘Attach a Policy’
+b. Download all four certificate files and then click ‘Activate’. 
 
     ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step7.png)
-
-13. Select the policy created in the previous steps. Click ‘Done’.
+    
+## Step 3: Create and attach a policy to your Thing
+### Create a policy
+a. From the navigation pane, choose Secure &gt; Policies &gt; and then click on "Create a policy"
 
     ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step10.png)
 
-   
-## Get the code
+b. Give your policy a name (for example, "my-iot-policy". To "Add statements" choose "iot:\*" for **Action**, "\*" for **Resource ARN** and then select "Allow" for **Effect**. Now click "Create".
 
-1.  Open the PubSub example in Arduino Create\* **Examples>FROM LIBRARYES>UP SQUARED GROVE IOT DEV KIT>MqttPubAWS**
+### Attach a policy to your Thing
+
+a. On the main AWS IoT console page, navigate to Manage &gt; Things &gt; and select the Thing you created earlier.
+
+b. Select the "Security" tab and click on the certificate you've attached to your Thing.
+
+c. From the **Actions** dropdown, select "Attach policy".
+
+d. Select the policy you created earlier and then click "Attach"
+
+## Step 4: Get the HTTPS endpoint value
+
+7.  In your Thing, select the "Interact" tab and copy the HTTPS endpoint value. This value
+    will be used in the sample.
+
+    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step11.png)
+
+## Step 5: Get the code
+
+a.  Open the PubSub example in Arduino Create\* **Examples>FROM LIBRARYES>UP SQUARED GROVE IOT DEV KIT>MqttPubAWS**
 
     ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/SampleStep0.png)
 
-2.  Enter the endpoint value, the thing name and the client ID in the
+b.  Enter the endpoint value, the thing name and the client ID in the
     sample file’s \#define. The client ID and thing name are same.
     Update the sample pub-sub topic if you want.
 
     ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/SampleStep1.png)
 
-3.  Switch to the SECRET tab. Open the files downloaded as text file and
+c.  Switch to the SECRET tab. Open the files downloaded as text file and
     copy the string to the entries in the secret tab.
 
     SECRET\_ROOT\_CA : Content of file “VeriSign-Class
@@ -135,12 +148,12 @@ These will already be installed if you are using the OS that was shipped with th
     This will load the certificates from those file paths instead of as
     strings.
 
-### Monitor the topic in AWS\* IoT dashboard
+## Step 6: Monitor the topic in AWS IoT dashboard
 
-1.  Go to the Dashboard (you can navigate to it in the left menu from the console https://aws.amazon.com/console/). A graphical representation of device connections and messages can be seen.  You should see a connection corresponding to the time you ran the sketch.
+a.  Go to the Dashboard (you can navigate to it in the left menu from the console https://aws.amazon.com/console/). A graphical representation of device connections and messages can be seen.  You should see a connection corresponding to the time you ran the sketch.
     ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Dashboard.png)
 
-2.  The sample’s published messages can be tested by received by
+b.  The sample’s published messages can be tested by received by
     subscribing to the topic through the Test widget.  Navigate to the Test widget from the console https://aws.amazon.com/console/.
 
     Enter the name of the thing that was created
