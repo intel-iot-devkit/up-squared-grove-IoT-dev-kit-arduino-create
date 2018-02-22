@@ -30,7 +30,7 @@ This tutorial takes you from setting up a device in Microsoft Azure\* all the wa
 * How to view your data using the Device Explorer
 
 ## Gather your materials
-* ![UP² board](http://www.up-board.org/upsquared/) 
+* [UP² board](http://www.up-board.org/upsquared/) 
 * GrovePi+ board
 * Grove Rotary Angle sensor
 

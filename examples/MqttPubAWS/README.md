@@ -31,7 +31,7 @@ This tutorial shows you how to go from setting up an account with AWS\* to sendi
 * How to verify the connection in AWS
 
 ## Gather your materials
-* ![UP² board](http://www.up-board.org/upsquared/) 
+* [UP² board](http://www.up-board.org/upsquared/) 
 
 ### Software dependencies
 * libcrypto
