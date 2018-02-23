@@ -58,8 +58,8 @@ Follow along with the steps below to send data from a rotatry angle sensor (via 
 a.  Go to the [AWS IoT console](https://aws.amazon.com/console/) and register or sign in.
 
 b.  In the AWS services search bar, type and select "AWS IoT".
-    
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img2.png)
+
+   ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img2.png)
     
 c.  Click "Get started"
     
