@@ -55,17 +55,15 @@ Follow along with the steps below to send data from a rotatry angle sensor (via 
 
 ## Step 1: Set up an AWS account
 
-a.  Go to AWS IoT console and register or sign in.
-
-    <https://aws.amazon.com/console/>
+a.  Go to the [AWS IoT console](https://aws.amazon.com/console/) and register or sign in.
 
 b.  In the AWS services search bar, type and select "AWS IoT".
     
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step1.png)
+    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img2.png)
     
 c.  Click "Get started"
     
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step2.png)
+    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img3.png)
     
 ## Step 2: Create a Thing
 ### Register a Thing
@@ -73,26 +71,29 @@ A *Thing* is a representation of your device in the cloud.
 a.  From  the left navigation panel, choose Manage &gt; Things &gt; and then click on "Register a
     thing"
     
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step3.png)
+    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img4.png)
 
 b.  To register an AWS IoT Thing, select "Create a singe thing" 
 
-c.  Enter a name for your Thing (for example, "Thingy") and then click "Next"
+    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img5.png)
 
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step4.png)
+c.  Enter a name for your Thing (for example, "Thingy") and then click "Next" (bottom right hand corner of the screen)
+
+    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img6.png)
 ### Add a certificate to your Thing    
 a.  Choose "Create certificate" to generate a certificate, public key and private key.
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step4Result.PNG)
+    
+    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img7.PNG)
 
 b. Download all four certificate files and then click ‘Activate’. 
 
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step7.png)
+    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img8.png)
     
 ## Step 3: Create and attach a policy to your Thing
 ### Create a policy
 a. From the navigation pane, choose Secure &gt; Policies &gt; and then click on "Create a policy"
 
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step10.png)
+    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img9.png)
 
 b. Give your policy a name (for example, "my-iot-policy". To "Add statements" choose "iot:\*" for **Action**, "\*" for **Resource ARN** and then select "Allow" for **Effect**. Now click "Create".
 
