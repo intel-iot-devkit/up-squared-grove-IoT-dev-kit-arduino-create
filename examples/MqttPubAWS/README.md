@@ -59,7 +59,7 @@ a.  Go to the [AWS IoT console](https://aws.amazon.com/console/) and register or
 
 b.  In the AWS services search bar, type and select "AWS IoT".
 
-   ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img2.png)
+    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img2.png)
     
 c.  Click "Get started"
     
