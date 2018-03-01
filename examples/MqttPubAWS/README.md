@@ -22,26 +22,40 @@
 	</tr>
 </table>
 
-This tutorial shows you how to set up an account with AWS\* and send data via MQTT.  
+This tutorial demonstrates how to use an UP Squared\* board together with the Arduino Create\* IDE to publish messages (sensor data) via MQTT, a messaging protocol suited for IoT applications, to the Amazon Web Services (AWS)\* cloud platform.
 
-**Note**: we the [aws-iot-device-sdk-cpp.h](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create) library, which is a modified version of the [AWS\* IoT Device SDK](https://github.com/aws/aws-iot-device-sdk-cpp).  
+**Note**: we use the [aws-iot-device-sdk-cpp.h](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create) library, which is a modified version of the [AWS\* IoT Device SDK](https://github.com/aws/aws-iot-device-sdk-cpp).  
 
 ## What you'll learn
-* How to setup an AWS account and Thing
-* How to create a certificate for your Thing
-* How to enter the certificate in the SECRETS tab 
-* How to verify the connection in AWS
+From this code sample tutorial you'll learn how to:
+* Setup an AWS account and a Thing (a representation of a cloud device)
+* Create a certificate for your Thing and enter that certificate in a “Secret” tab (located in the Arduino Create IDE)
+* View MQTT Messages (sensor data) with the AWS IoT MQTT Client
 
 ## Gather your materials
+### Hardware
 * [UP Squared board](http://www.up-board.org/upsquared/) 
-
-### Software dependencies
+* GrovePi+\*
+* Grove\* rotary angle sensor
+### Software
+* [Arduino Create](https://create.arduino.cc/)
+#### Software dependencies
 * libcrypto
 * libssl  
-These will already be installed if you are using the OS that was shipped with the UP Squared Grove IoT Development Kit.  Otherwise you need to install them via apt-get.
+
+**Note**: if you are using the OS that was shipped with the UP Squared Grove IoT Development Kit, these software dependencies will already be installed. Otherwise you need to install them via apt-get.
+
+## Prerequisites
+* [Set up your UP Squared](https://software.intel.com/en-us/upsquared-grove-getting-started-guide)
+* [Connect your UP Squared to Arduino Create](https://software.intel.com/en-us/upsquared-grove-getting-started-guide-create-account)
+
+## Before you begin
+Complete the sensor setup below. Assuming you've already completed the prerequisites, connect the GrovePi+ to the UP Squared board and then connect the rotary angle sensor to A0 (analog pin 0).
+
+![](images/img0.png)
 
 ## Tutorial steps
-Follow along with the steps below to send data from a rotatry angle sensor (via MQTT) to the AWS cloud platform.
+Follow along with the steps below to send data from a rotatry angle sensor (via MQTT) to the AWS cloud platform for viewing.
 
 1. [Set up an AWS account](readme.md#step-1-set-up-an-AWS-account)
 
