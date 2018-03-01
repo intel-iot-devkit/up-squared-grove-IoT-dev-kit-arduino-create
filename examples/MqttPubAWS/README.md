@@ -14,7 +14,7 @@
 	</tr>
 	<tr>
 		<td>Hardware needed</td>
-		<td>UP Squared Grove IoT Development Kit</td>
+		<td>UP Squared* Grove* IoT Development Kit</td>
 	</tr>
 	<tr>
 		<td>Target Operating System</td>
@@ -22,7 +22,9 @@
 	</tr>
 </table>
 
-This tutorial shows you how to go from setting up an account with AWS\* to sending data via MQTT.  It uses the aws-iot-device-sdk-cpp.h library from https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create , which is a slightly modified version of the AWS\* IoT Device SDK https://github.com/aws/aws-iot-device-sdk-cpp.  
+This tutorial shows you how to set up an account with AWS\* and send data via MQTT.  
+
+**Note**: we the [aws-iot-device-sdk-cpp.h](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create) library, which is a modified version of the [AWS\* IoT Device SDK](https://github.com/aws/aws-iot-device-sdk-cpp).  
 
 ## What you'll learn
 * How to setup an AWS account and Thing
@@ -31,7 +33,7 @@ This tutorial shows you how to go from setting up an account with AWS\* to sendi
 * How to verify the connection in AWS
 
 ## Gather your materials
-* [UP² board](http://www.up-board.org/upsquared/) 
+* [UP Squared board](http://www.up-board.org/upsquared/) 
 
 ### Software dependencies
 * libcrypto
@@ -59,11 +61,11 @@ a.  Go to the [AWS IoT console](https://aws.amazon.com/console/) and register or
 
 b.  In the AWS services search bar, type and select "AWS IoT".
 
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img2.png)
+![](images/img2.png)
     
 c.  Click "Get started"
     
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img3.png)
+![](images/img3.png)
     
 ## Step 2: Create a Thing
 ### Register a Thing
@@ -71,31 +73,30 @@ A *Thing* is a representation of your device in the cloud.
 
 a.  From  the left navigation panel, choose Manage &gt; Things &gt; and then click on "Register a
     thing"
- ![](https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/readme-updates_feb-22-2018/extras/img4.png)
+    
+![](images/img4.png)
  
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img4.png)
-
 b.  To register an AWS IoT Thing, select "Create a singe thing" 
 
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img5.png)
+![](images/img5.png)
 
 c.  Enter a name for your Thing (for example, "Thingy") and then click "Next" (bottom right hand corner of the screen)
 
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img6.png)
+![](images/img6.png)
 ### Add a certificate to your Thing    
 a.  Choose "Create certificate" to generate a certificate, public key and private key.
     
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img7.PNG)
+![](images/img7.png)
 
 b. Download all four certificate files and then click ‘Activate’. 
 
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img8.png)
+![](images/img8.png)
     
 ## Step 3: Create and attach a policy to your Thing
 ### Create a policy
 a. From the navigation pane, choose Secure &gt; Policies &gt; and then click on "Create a policy"
 
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img9.png)
+![](images/img9.png)
 
 b. Give your policy a name (for example, "my-iot-policy". To "Add statements" choose "iot:\*" for **Action**, "\*" for **Resource ARN** and then select "Allow" for **Effect**. Now click "Create".
 
