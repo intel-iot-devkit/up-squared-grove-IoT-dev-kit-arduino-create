@@ -1,8 +1,8 @@
-# MQTT Publication with Amazon Web Services (AWS)\*
+# MQTT Publication to Amazon Web Services (AWS)\*
 
 This tutorial demonstrates how to use an UP Squared\* board together with the Arduino Create\* IDE to publish messages (sensor data) via MQTT, a messaging protocol suited for IoT applications, to the Amazon Web Services (AWS)\* cloud platform.
 
-**Note**: we use the [aws-iot-device-sdk-cpp.h](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create) library, which is a modified version of the [AWS\* IoT Device SDK](https://github.com/aws/aws-iot-device-sdk-cpp).  
+**Note**: we use the [aws-iot-device-sdk-cpp.h](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create) library (a modified version of the [AWS\* IoT Device SDK](https://github.com/aws/aws-iot-device-sdk-cpp)).  
 <table>
 	<tr>
 		<td>Programming language</td>
@@ -118,18 +118,27 @@ b. Give your policy a name (for example, "my-iot-policy". To "Add statements" ch
 
 a. On the main AWS IoT console page, navigate to Manage &gt; Things &gt; and select the Thing you created earlier.
 
+![](images/img10.png)
+
 b. Select the "Security" tab and click on the certificate you've attached to your Thing.
+
+![](images/img11.png)
 
 c. From the **Actions** dropdown, select "Attach policy".
 
-d. Select the policy you created earlier and then click "Attach"
+![](images/img12.png)
+
+d. Select the policy you created earlier and then click "Attach".
+
+![](images/img13.png)
 
 ## Step 4: Get the HTTPS endpoint value
+You'll need the endpoint value when you modify the code sample in Arduino Create.
 
 7.  In your Thing, select the "Interact" tab and copy the HTTPS endpoint value. This value
     will be used in the sample.
 
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Step11.png)
+![](images/img14.png)
 
 ## Step 5: Get the code
 
