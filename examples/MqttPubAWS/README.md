@@ -68,9 +68,11 @@ c.  Click "Get started"
 ## Step 2: Create a Thing
 ### Register a Thing
 A *Thing* is a representation of your device in the cloud.
+
 a.  From  the left navigation panel, choose Manage &gt; Things &gt; and then click on "Register a
     thing"
-    
+ ![](https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/readme-updates_feb-22-2018/extras/img4.png)
+ 
     ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/img4.png)
 
 b.  To register an AWS IoT Thing, select "Create a singe thing" 
