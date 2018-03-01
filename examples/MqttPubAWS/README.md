@@ -29,7 +29,7 @@ This tutorial demonstrates how to use an UP Squared\* board together with the Ar
 ## What you'll learn
 From this code sample tutorial you'll learn how to:
 * Setup an AWS account and a Thing (a representation of a cloud device)
-* Create a certificate for your Thing and enter that certificate in a “Secret” tab (located in the Arduino Create IDE)
+* Create a certificate for your Thing to authenticate your device's connection to AWS IoT
 * View MQTT Messages (sensor data) with the AWS IoT MQTT Client
 
 ## Gather your materials
@@ -43,7 +43,7 @@ From this code sample tutorial you'll learn how to:
 * libcrypto
 * libssl  
 
-**Note**: if you are using the OS that was shipped with the UP Squared Grove IoT Development Kit, these software dependencies will already be installed. Otherwise you need to install them via apt-get.
+**Note**: if you're using the [UP Squared Grove IoT Development Kit](https://software.intel.com/en-us/iot/hardware/up-squared-grove-dev-kit), these software dependencies will already be installed. Otherwise you'll need to install them via apt-get.
 
 ## Prerequisites
 * [Set up your UP Squared](https://software.intel.com/en-us/upsquared-grove-getting-started-guide)
@@ -98,11 +98,11 @@ c.  Enter a name for your Thing (for example, "Thingy") and then click "Next" (b
 
 ![](images/img6.png)
 ### Add a certificate to your Thing    
-a.  Choose "Create certificate" to generate a certificate, public key and private key.
+a.  Choose "Create certificate" to generate a certificate, public key and private key (used to authenticate your device's connection to AWS IoT).
     
 ![](images/img7.png)
 
-b. Download all four certificate files and then click ‘Activate’. 
+b. Download all four files and then click ‘Activate’. 
 
 ![](images/img8.png)
     
