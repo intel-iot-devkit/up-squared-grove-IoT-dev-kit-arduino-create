@@ -176,11 +176,15 @@ SECRET\_CLIENT\_PRIVATE\_KEY: Content of file ending in `xxx-private.pem.key`
 
 ![](images/img17.png)
 
-b. Save your file and then head back over to the .inc file tab. Click Verify and then Upload the sample to device.
+b. Save your file and then head back over to the *.ino* file tab. Click Verify first and then Upload (uploads the code sample to your UP Squared).
+
+![](images/img18.png)
+
+![](images/img19.png)
 
 **Note**: For added security, place the root certificate, client certificate and client private key on the device directly by transferring the files to your device (make note of the absolute file name and provide that in the values in the secret path). In the `DEFAULTSAMPLECONFIG` value (line 45), set `"load\_crts\_as\_string"` to false. This loads the certificates from the file paths instead of as strings.
 
-## Step 6: Monitor the topic in AWS IoT dashboard
+## Step 6: Monitor the topic in the AWS IoT dashboard
 
 a.  Go to the Dashboard (you can navigate to it in the left menu from the console https://aws.amazon.com/console/). A graphical representation of device connections and messages can be seen.  You should see a connection corresponding to the time you ran the sketch.
     ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Dashboard.png)
