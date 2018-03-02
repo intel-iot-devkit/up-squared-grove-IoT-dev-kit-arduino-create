@@ -147,35 +147,36 @@ a.  Open the MqttPubAWS example in Arduino Create\* **Examples** > **FROM LIBRAR
 ![](images/img15.png)
 
 ### Modify the code
-a.  Enter the endpoint value (`ENDPOINT`), client ID (`CLIENT_ID`) and your Thing's name (`THING_NAME`) in the code sample's \#define.  The client ID and Thing name are same. You can also update the sample pub-sub topic (optional).
+a.  Enter the endpoint value (`ENDPOINT`), client ID (`CLIENT_ID`) and your Thing's name (`THING_NAME`) in the code sample's \#define.  The client ID and Thing name are same. When you modify the code sample, you'll be prompted to create a copy (click "OK").
 
 ![](images/img16.png)
 
-### Configure certificates and keys
+You can also update the sample pub-sub topic (optional).
+
+### Format certificates and keys
 To authenticate your UP Squared board's connection to AWS, you'll use the files that were generated when you created a certificate. Find the following files you downloaded earlier on your host computer: 
 
-* xxx-private.pem.key
+* xxx-G5.pem
 * xxx-certificate.pem.crt
-* root-ca.pem
+* xxx-private.pem.key
 
 To format the certificates and keys for use in the Arduino Create Secret tab, run the following command on each of the files listed above:
 
 `awk 'NF {sub(/\r/, ""); printf "%s\\n",$0;}' your-certificate.crt`
 
-Arduino Create Secret tab
-a.  Navigate to the SECRET tab. Open the files downloaded as text file and
-    copy the string to the entries in the secret tab.
+### Secret tab
 
-    SECRET\_ROOT\_CA : Content of file “VeriSign-Class
-    3-Public-Primary-Certification-Authority-G5.pem”
+a.  Once you've properly formatted the files, navigate to the Secret tab. Copy and paste the formatted strings (we recommend using Notepad++\*) to the corresponding entries in the Secret tab.
 
-    SECRET\_CLIENT\_CERT : Content of file ending in
-    \*-certificate.pem.crt
+SECRET\_ROOT\_CA: Content of file ending in `xxx-G5.pem`
 
-    SECRET\_CLIENT\_PRIVATE\_KEY : Content of file ending in
-    \*-private.pem.key.
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/SampleStep2.png)
-    Click ‘Save’ and Verify and upload the sample to device.
+SECRET\_CLIENT\_CERT: Content of file ending in `xxx-certificate.pem.crt`
+
+SECRET\_CLIENT\_PRIVATE\_KEY: Content of file ending in `xxx-private.pem.key`
+
+![](images/img17.png)
+
+b. Save your file and then head back over to the .inc file tab. Click Verify and then Upload the sample to device.
 
 **Note**: For added security, place the root certificate, client certificate and client private key on the device directly by transferring the files to your device (make note of the absolute file name and provide that in the values in the secret path). In the `DEFAULTSAMPLECONFIG` value (line 45), set `"load\_crts\_as\_string"` to false. This loads the certificates from the file paths instead of as strings.
 
