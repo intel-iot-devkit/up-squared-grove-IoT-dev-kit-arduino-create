@@ -52,7 +52,7 @@ From this code sample tutorial you'll learn how to:
 ## Before you begin
 Complete the sensor setup below. Assuming you've already completed the prerequisites, connect the GrovePi+ to the UP Squared board and then connect the rotary angle sensor to A0 (analog pin 0).
 
-![](images/img0.png)
+![](images/img0-1.png)
 
 ## Tutorial steps
 Follow along with the steps below to send data from a rotatry angle sensor (via MQTT) to the AWS cloud platform for viewing.
