@@ -186,7 +186,7 @@ b. Save your file.
 
 ### Subscribe to a topic in AWS IoT console
 
-a. Before you run the example code, go the AWS IoT Console, open the MQTT Test Client and enter "sdk/test/cpp" as the subsription topic.
+a. Before you run the example code, go the AWS IoT Console, open the MQTT Test Client and enter "sdk/test/cpp" as the subsription topic. Click "Subscribe to topic".
 
 ![](images/img18-2.png)
 
