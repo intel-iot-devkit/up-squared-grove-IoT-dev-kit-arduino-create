@@ -164,6 +164,8 @@ To format the certificates and keys for use in the Arduino Create Secret tab, ru
 
 `awk 'NF {sub(/\r/, ""); printf "%s\\n",$0;}' your-certificate.crt`
 
+![](images/img16-2.png)
+
 ### Secret tab
 
 a.  Once you've properly formatted the files, navigate to the Secret tab. Copy and paste the formatted strings (we recommend using Notepad++\*) to the corresponding entries in the Secret tab.
@@ -176,11 +178,15 @@ SECRET\_CLIENT\_PRIVATE\_KEY: Content of file ending in `xxx-private.pem.key`
 
 ![](images/img17.png)
 
-b. Save your file and then head back over to the *.ino* file tab. Click Verify first and then Upload (uploads the code sample to your UP Squared).
+b. Save your file and then head back over to the *.ino* file tab. 
 
-![](images/img18.png)
+![](images/img17-2.png)
+
+b. Click Verify first and then Upload (uploads the code sample to your UP Squared).
 
 ![](images/img19.png)
+
+![](images/img20.png)
 
 **Note**: For added security, place the root certificate, client certificate and client private key on the device directly by transferring the files to your device (make note of the absolute file name and provide that in the values in the secret path). In the `DEFAULTSAMPLECONFIG` value (line 45), set `"load\_crts\_as\_string"` to false. This loads the certificates from the file paths instead of as strings.
 
