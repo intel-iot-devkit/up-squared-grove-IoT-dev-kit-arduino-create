@@ -142,7 +142,6 @@ You'll need the endpoint value when you modify the code sample in Arduino Create
 ![](images/img14.png)
 
 ## Step 5: Get the code
-
 a.  Open the MqttPubAWS example in Arduino Create\* **Examples** > **FROM LIBRARIES** > **UP SQUARED GROVE IOT DEV KIT** > **MqttPubAWS**
 
 ![](images/img15.png)
@@ -190,6 +189,16 @@ b. Click Verify first and then Upload (uploads the code sample to your UP Square
 ![](images/img20.png)
 
 **Note**: For added security, place the root certificate, client certificate and client private key on the device directly by transferring the files to your device (make note of the absolute file name and provide that in the values in the secret path). In the `DEFAULTSAMPLECONFIG` value (line 45), set `"load\_crts\_as\_string"` to false. This loads the certificates from the file paths instead of as strings.
+
+### Subscribe to a topic in AWS IoT console
+
+Before you run the example code, go the AWS IoT Console, open the MQTT Test Client and enter "sdk/test/cpp" as the subsription topic.
+
+![](images/img14-2.png)
+
+![](images/img14-3.png)
+
+Go back to the Arduino Create environment and open the Serial Monitor (left hand panel of the IDE). The monitor will give you output when you run the example.
 
 ## Step 6: View sensor data
 
