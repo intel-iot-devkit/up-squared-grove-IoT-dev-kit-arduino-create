@@ -39,6 +39,7 @@ From this code sample tutorial you'll learn how to:
 * Grove\* rotary angle sensor
 ### Software
 * [Arduino Create](https://create.arduino.cc/)
+* [Latest Ubuntu 16.04 server image](https://downloads.up-community.org/download/up-squared-iot-grove-development-kit-ubuntu-16-04-server-image/)
 #### Software dependencies
 * libcrypto
 * libssl  
@@ -190,8 +191,9 @@ b. Click Verify first and then Upload (uploads the code sample to your UP Square
 
 **Note**: For added security, place the root certificate, client certificate and client private key on the device directly by transferring the files to your device (make note of the absolute file name and provide that in the values in the secret path). In the `DEFAULTSAMPLECONFIG` value (line 45), set `"load\_crts\_as\_string"` to false. This loads the certificates from the file paths instead of as strings.
 
-## Step 6: Monitor the topic in the AWS IoT dashboard
+## Step 6: View sensor data
 
+### Monitor the topic in the AWS IoT dashboard
 a.  Go to the Dashboard (you can navigate to it in the left menu from the console https://aws.amazon.com/console/). A graphical representation of device connections and messages can be seen.  You should see a connection corresponding to the time you ran the sketch.
     ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Dashboard.png)
 
