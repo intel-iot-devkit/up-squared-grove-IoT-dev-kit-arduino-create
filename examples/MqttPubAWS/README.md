@@ -178,21 +178,15 @@ SECRET\_CLIENT\_PRIVATE\_KEY: Content of file ending in `xxx-private.pem.key`
 
 ![](images/img17.png)
 
-b. Save your file and then head back over to the *.ino* file tab. 
+b. Save your file. 
 
 ![](images/img17-2.png)
-
-b. Click Verify first and then Upload (uploads the code sample to your UP Squared).
-
-![](images/img19.png)
-
-![](images/img20.png)
 
 **Note**: For added security, place the root certificate, client certificate and client private key on the device directly by transferring the files to your device (make note of the absolute file name and provide that in the values in the secret path). In the `DEFAULTSAMPLECONFIG` value (line 45), set `"load\_crts\_as\_string"` to false. This loads the certificates from the file paths instead of as strings.
 
 ### Subscribe to a topic in AWS IoT console
 
-Before you run the example code, go the AWS IoT Console, open the MQTT Test Client and enter "sdk/test/cpp" as the subsription topic.
+a. Before you run the example code, go the AWS IoT Console, open the MQTT Test Client and enter "sdk/test/cpp" as the subsription topic.
 
 ![](images/img14-2.png)
 
@@ -200,26 +194,16 @@ Before you run the example code, go the AWS IoT Console, open the MQTT Test Clie
 
 Go back to the Arduino Create environment and open the Serial Monitor (left hand panel of the IDE). The monitor will give you output when you run the example.
 
+### Run the code
+Click **Verify** (optional) and then **Upload** to run the code.
+
+![](images/img19.png)
+
+![](images/img20.png)
+
 ## Step 6: View sensor data
 
 ### Monitor the topic in the AWS IoT dashboard
-a.  Go to the Dashboard (you can navigate to it in the left menu from the console https://aws.amazon.com/console/). A graphical representation of device connections and messages can be seen.  You should see a connection corresponding to the time you ran the sketch.
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/Dashboard.png)
-
-b.  The sample’s published messages can be tested by received by
-    subscribing to the topic through the Test widget.  Navigate to the Test widget from the console https://aws.amazon.com/console/.
-
-    Enter the name of the thing that was created
-    earlier e.g. ‘thing-01’. Client ID and thing name are same. Click
-    ‘Connect’.
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/MonitorStep1.png)
-    
-    Enter the topic that the sample is configured to. This is the value
-    of SDK\_SAMPLE\_TOPIC in the program, which is 'sdk/test/cpp' in this case. Click ‘Subscribe to Topic’
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/MonitorStep2.png)
-    
-    When the sample runs, you will see the published messages, like below:
-
-    ![](https://github.com/intel-iot-devkit/aws-iot-device-sdk-cpp-arduino-create/blob/master/extras/MonitorStep3.png)
+Go back to the AWS IoT MQTT Client. If everything worked properly you should see the following messages:
 
 
