@@ -188,9 +188,9 @@ b. Save your file.
 
 a. Before you run the example code, go the AWS IoT Console, open the MQTT Test Client and enter "sdk/test/cpp" as the subsription topic.
 
-![](images/img14-2.png)
+![](images/img18-2.png)
 
-![](images/img14-3.png)
+![](images/img18-3.png)
 
 Go back to the Arduino Create environment and open the Serial Monitor (left hand panel of the IDE). The monitor will give you output when you run the example.
 
