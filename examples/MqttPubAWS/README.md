@@ -103,17 +103,23 @@ a.  Choose "Create certificate" to generate a certificate, public key and privat
     
 ![](images/img7.png)
 
-b. Download all four files and then click ‘Activate’. 
+b. Download all four files.
 
 ![](images/img8.png)
+
+c. And then click ‘Activate’.
+
+![](images/img9.png)
     
 ## Step 3: Create and attach a policy to your Thing
 ### Create a policy
 a. From the navigation pane, choose Secure &gt; Policies &gt; and then click on "Create a policy"
 
-![](images/img9.png)
+![](images/img9-1.png)
 
 b. Give your policy a name (for example, "my-iot-policy". To "Add statements" choose "iot:\*" for **Action**, "\*" for **Resource ARN** and then select "Allow" for **Effect**. Now click "Create".
+
+![](images/img9-2.png)
 
 ### Attach a policy to your Thing
 
@@ -186,7 +192,7 @@ b. Save your file.
 
 ### Subscribe to a topic in AWS IoT console
 
-a. Before you run the example code, go the AWS IoT Console, open the MQTT Test Client and enter "sdk/test/cpp" as the subsription topic. Click "Subscribe to topic".
+a. Before you run the example code, go the AWS IoT Console, open the MQTT Test Client and enter "sdk/test/cpp" as the subscription topic. Click "Subscribe to topic".
 
 ![](images/img18-2.png)
 
