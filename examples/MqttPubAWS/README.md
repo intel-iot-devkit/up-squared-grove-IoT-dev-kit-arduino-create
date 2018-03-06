@@ -207,4 +207,4 @@ Click **Verify** (optional) and then **Upload** to run the code.
 
 Navigate to AWS IoT MQTT Client and subscribe to "#" if you are not already subscribed. You should see the sensor reading come in on topic /sdk/test/cpp:
 
-![](images/img21.png)
+![](images/img22.png)
