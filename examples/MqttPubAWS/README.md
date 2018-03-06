@@ -56,7 +56,7 @@ Complete the sensor setup below. Assuming you've already completed the prerequis
 ![](images/img0-1.png)
 
 ## Tutorial steps
-Follow along with the steps below to send data from a rotatry angle sensor (via MQTT) to the AWS cloud platform for viewing.
+Follow along with the steps below to send data from a rotary angle sensor (via MQTT) to the AWS cloud platform for viewing.
 
 1. [Set up an AWS account](readme.md#step-1-set-up-an-AWS-account)
 
@@ -84,9 +84,10 @@ c.  Click "Get started"
     
 ## Step 2: Create a Thing
 ### Register a Thing
+
 A *Thing* is a representation of your device in the cloud.
 
-a.  From  the left navigation panel, choose Manage &gt; Things &gt; and then click on "Register a
+a.  From  the left navigation panel, choose **Manage** &gt; **Things** &gt; and then click on "Register a
     thing"
     
 ![](images/img4.png)
@@ -98,7 +99,9 @@ b.  To register an AWS IoT Thing, select "Create a singe thing"
 c.  Enter a name for your Thing (for example, "Thingy") and then click "Next" (bottom right hand corner of the screen)
 
 ![](images/img6.png)
+
 ### Add a certificate to your Thing    
+
 a.  Choose "Create certificate" to generate a certificate, public key and private key (used to authenticate your device's connection to AWS IoT).
     
 ![](images/img7.png)
@@ -113,7 +116,7 @@ c. And then click ‘Activate’.
     
 ## Step 3: Create and attach a policy to your Thing
 ### Create a policy
-a. From the navigation pane, choose Secure &gt; Policies &gt; and then click on "Create a policy"
+a. From the navigation pane, choose **Secure** &gt; **Policies** &gt; and then click on "Create a policy"
 
 ![](images/img9-1.png)
 
@@ -123,7 +126,7 @@ b. Give your policy a name (for example, "my-iot-policy". To "Add statements" ch
 
 ### Attach a policy to your Thing
 
-a. On the main AWS IoT console page, navigate to Manage &gt; Things &gt; and select the Thing you created earlier.
+a. On the main AWS IoT console page, navigate to **Manage** &gt; **Things** &gt; and select the Thing you created earlier.
 
 ![](images/img10.png)
 
@@ -142,7 +145,7 @@ d. Select the policy you created earlier and then click "Attach".
 ## Step 4: Get the HTTPS endpoint value
 You'll need the endpoint value when you modify the code sample in Arduino Create.
 
-7.  In your Thing, select the "Interact" tab and copy the HTTPS endpoint value. This value
+7.  In your Thing, select the **Interact** tab and copy the HTTPS endpoint value. This value
     will be used in the sample.
 
 ![](images/img14.png)
@@ -160,7 +163,7 @@ a.  Enter the endpoint value (`ENDPOINT`), client ID (`CLIENT_ID`) and your Thin
 You can also update the sample pub-sub topic (optional).
 
 ### Format certificates and keys
-To authenticate your UP Squared board's connection to AWS, you'll use the files that were generated when you created a certificate. Find the following files you downloaded earlier on your host computer: 
+To authenticate your UP Squared board's connection to AWS, you'll need to format the files that were generated when you created a certificate. Find the following files you downloaded earlier on your host computer: 
 
 * xxx-G5.pem
 * xxx-certificate.pem.crt
@@ -192,7 +195,9 @@ b. Save your file.
 
 ### Subscribe to a topic in AWS IoT console
 
-a. Before you run the example code, go the AWS IoT Console, open the MQTT Test Client and enter "sdk/test/cpp" as the subscription topic. Click "Subscribe to topic".
+a. Before you run the example code, go the AWS IoT Console and navigate to **Test** (left panel) to open the MQTT Test Client.
+
+b. Enter "sdk/test/cpp" as the subscription topic and click "Subscribe to topic".
 
 ![](images/img18-2.png)
 
