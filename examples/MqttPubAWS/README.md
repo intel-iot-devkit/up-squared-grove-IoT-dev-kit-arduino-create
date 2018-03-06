@@ -216,6 +216,6 @@ Click **Verify** (optional) and then **Upload** to run the code.
 
 ### Monitor the topic in the AWS IoT dashboard
 
-Navigate to AWS IoT MQTT Client and subscribe to ""sdk/test/cpp" if you are not already subscribed. You should see the sensor reading come in on topic /sdk/test/cpp:
+Navigate to AWS IoT MQTT Client and subscribe to ""sdk/test/cpp" if you are not already subscribed. You should see the sensor reading come in on topic sdk/test/cpp:
 
 ![](images/img22.png)
