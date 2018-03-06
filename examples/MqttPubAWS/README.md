@@ -204,6 +204,7 @@ Click **Verify** (optional) and then **Upload** to run the code.
 ## Step 6: View sensor data
 
 ### Monitor the topic in the AWS IoT dashboard
-Go back to the AWS IoT MQTT Client. If everything worked properly you should see the following messages:
 
+Navigate to AWS IoT MQTT Client and subscribe to "#" if you are not already subscribed. You should see the sensor reading come in on topic /sdk/test/cpp:
 
+![](images/img21.png)
