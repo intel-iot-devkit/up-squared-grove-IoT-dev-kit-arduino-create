@@ -2,7 +2,7 @@
 <table>
 	<tr>
 		<td>Programming language</td>
-		<td>C++ (Arduino)</td>
+		<td>C++ (Arduino*)</td>
 	</tr>
 	<tr>
 		<td>Skill level</td>
@@ -14,7 +14,7 @@
 	</tr>
 	<tr>
 		<td>Hardware needed</td>
-		<td>UP Squared Grove IoT Development Kit</td>
+		<td>UP Squared* Grove* IoT Development Kit</td>
 	</tr>
 	<tr>
 		<td>Target Operating System</td>
@@ -22,32 +22,32 @@
 	</tr>
 </table>
 
-This tutorial takes you from setting up a device in Microsoft Azure\* all the way to viewing your data being send with MQTT.  The sketch is setup to read data from the Grove\* Rotary Angle Sensor at a given interval and send it to Azure.  The final step where you view your data is done in the Device Explorer provided by Microsoft.  It is only supported on **Windows\*** , see https://github.com/Azure/iothub-explorer for instructions on how to use the iot-hubexplorer node.js command line tool for other platforms.
+This tutorial takes you from setting up a device in Microsoft Azure\* all the way to viewing your data (sent via MQTT).  The sketch is setup to read data from the Grove\* Rotary Angle Sensor (at a given interval) and send it to the Microsoft Azure\* cloud platform.  The final step where you view your data is done in the Device Explorer\* tool provided by Microsoft\*.  It is only supported on Windows\* , see https://github.com/Azure/iothub-explorer for instructions on how to use the iot-hubexplorer node.js command line tool for other platforms.
 
 ## What you'll learn
-* How to setup the an IoT Hub
-* How to get the credentials for your device and enter them into the SECRETS tab
-* How to view your data using the Device Explorer
+* How to set up an IoT Hub
+* How to get the credentials for your device and enter them into the "Secrets" tab in Arduino Create\*
+* How to view your data using the Device Explorer tool
 
 ## Gather your materials
-* [UP² board](http://www.up-board.org/upsquared/) 
-* GrovePi+ board
-* Grove Rotary Angle sensor
+* [UP Squared\* board](http://www.up-board.org/upsquared/) 
+* GrovePi+\* board
+* Grove\* Rotary Angle sensor
 
 ### Software dependencies
 * libcrypto
 * libssl  
 
-These will already be installed if you are using the OS that was shipped with the UPSquared Grove IoT Development Kit. Otherwise you need to install them via apt-get.
+These will already be installed if you are using the OS that was shipped with the UP Squared\* Grove\* IoT Development Kit. Otherwise you need to install them via apt-get.
 
 ## Plug in your sensor
 Connect the Grove Rotary Angle Sensor to pin **A0** on the Grove Pi+
 
 ## Create an account
-If you don't have an Azure account, sign up for a free trial https://azure.microsoft.com/en-us/free/ 
+If you don't have a Microsoft Azure account, sign up for a free trial https://azure.microsoft.com/en-us/free/ 
 
 ## Create an IoT Hub
-You need an IoT Hub to enable communication between Azure and your device. The easiest way to create an IoT Hub is through the Azure portal. Follow the steps in https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal.
+You need an IoT Hub to enable communication between Microsoft Azure and your device. The easiest way to create an IoT Hub is through the Microsoft Azure portal. Follow the steps in https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal.
 
 The portal is located at https://portal.azure.com
 
@@ -59,22 +59,22 @@ The portal is located at https://portal.azure.com
 
 ![](./../../extras/screen2.png)
 
-When it is done being created you should see it appear in the Dashboard
+When it's done being created you should see it appear in the Dashboard.
 
 ![](./../../extras/screen3.png)
 
 
 ## Create a shared access policy
 
-1. Open your hub and select **Shared access policies**, under **SETTINGS**
+1. Open your hub and select **Shared access policies**, under **SETTINGS**.
 
 ![](./../../extras/screen4.png)
 
-2. Click **Add**
+2. Click **Add**.
 
 ![](./../../extras/screen5.png)
 
-3. Select read, service connect, and device connect permissions.  Give it a name, for example "my-policy"
+3. Select read, service connect, and device connect permissions.  Give it a name such as "my-policy".
 
 ![](./../../extras/screen6.png)
 
@@ -82,13 +82,13 @@ When it is done being created you should see it appear in the Dashboard
 
 ![](./../../extras/screen7.png)
 
-5. Click on your policy, and copy the **Connection string - primary key**, this is also known as the Hub connection string.  You will need it later.
+5. Click on your policy and copy the **Connection string - primary key** (also known as the Hub connection string). You will need it later.
 
 ![](./../../extras/screen8.png)
 
 ## Setup device explorer
 
-The easiest way to view your data is either using the Device Explorer GUI application (for Windows) or the iot-hubexplorer node.js command line tool (supported on Windows, OS X®, and Linux\*)
+View your data using either the Device Explorer tool or the iot-hubexplorer node.js command line tool (supported on Windows, macOS\, and Linux\*).
 
 This tutorial will you walk you through using the Device Explorer GUI on Windows.  See https://github.com/Azure/iothub-explorer for instructions on how to use the iot-hubexplorer node.js command line tool. 
 
