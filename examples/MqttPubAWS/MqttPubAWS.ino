@@ -58,9 +58,9 @@ This can be provided in three ways.
     or by using the helper function : formatCertString as is the default behavior of this sample.
 
     2. By putting the certificate files on the device and updating the file name in
-    sample config value. This is the most secure way and recommended for production. The Sample
+    sample config value. This is the most secure way and recommended for production. 
 
-    2. By providing inline
+    3. By providing inline
     const char* rootCAString =
     "-----BEGIN CERTIFICATE-----\n"
     "MIIE0zCCA7ugAwIBAgIQGNrRniZ96LtKIVjNzGs7SjANBgkqhkiG9w0BAQUFADCB\n"
