@@ -8,6 +8,10 @@
   Installation of OpenCV is required on the UP Squared Grove IoT Development Kit since it is linked dynamically in Arduino Create.  
   
   https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/OpenCV-Setup
+
+  This sample can be imported into Intel System Studio 2018, Linux hosts only.
+  * Free IDE includes optimized libraries, application analysis tools, and debugging tools
+  * Import tutorial: https://software.intel.com/en-us/developing-projects-with-intel-system-studio-c-importing-arduino-create-projects
  */
 #include "Arduino.h" //not strictly required to run, but prevents erros when importing into Intel(r) System Studio
 #include "ArduinoOpenCV.h"
