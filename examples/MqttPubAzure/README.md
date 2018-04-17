@@ -45,6 +45,7 @@ $sudo apt-get install libssl-dev
 To check if they are already installed : 
 
 $ldconfig –p | grep libssl
+
 $ldd $(which ssh) | grep libcrypto
 
 
