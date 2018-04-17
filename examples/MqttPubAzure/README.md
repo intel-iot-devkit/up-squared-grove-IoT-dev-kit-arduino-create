@@ -38,7 +38,9 @@ This tutorial takes you from setting up a device in Microsoft Azure\* all the wa
 * libcrypto
 * libssl  
 
-These will already be installed if you are using the OS that was shipped with the UP Squared\* Grove\* IoT Development Kit. Otherwise you need to install them via apt-get.
+These will already be installed if you are using the OS that was shipped with the UP Squared\* Grove\* IoT Development Kit. Otherwise you need to install them via apt-get. 
+
+apt-get install libssl-dev
 
 ## Plug in your sensor
 Connect the Grove Rotary Angle Sensor to pin **A0** on the Grove Pi+
