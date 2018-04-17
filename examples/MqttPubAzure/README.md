@@ -42,6 +42,11 @@ These will already be installed if you are using the OS that was shipped with th
 
 apt-get install libssl-dev
 
+To check if they are already installed : 
+ldconfig –p | grep libssl
+ldd $(which ssh) | grep libcrypto
+
+
 ## Plug in your sensor
 Connect the Grove Rotary Angle Sensor to pin **A0** on the Grove Pi+
 
