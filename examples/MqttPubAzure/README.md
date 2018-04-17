@@ -40,11 +40,12 @@ This tutorial takes you from setting up a device in Microsoft Azure\* all the wa
 
 These will already be installed if you are using the OS that was shipped with the UP Squared\* Grove\* IoT Development Kit. Otherwise you need to install them via apt-get. 
 
-apt-get install libssl-dev
+$sudo apt-get install libssl-dev
 
 To check if they are already installed : 
-ldconfig –p | grep libssl
-ldd $(which ssh) | grep libcrypto
+
+$ldconfig –p | grep libssl
+$ldd $(which ssh) | grep libcrypto
 
 
 ## Plug in your sensor
