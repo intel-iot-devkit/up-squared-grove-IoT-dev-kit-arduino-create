@@ -17,7 +17,8 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
 // upm - Version: Latest 
 #include "upm_utilities.h"
 
-#define IS_SERIAL_OR_SSH false //Set to false if SSH and set to true if Serial
+//Set to false if SSH and set to true if Serial
+#define IS_SERIAL_OR_SSH false
 //A 512 offset is required for sub-platforms.  516 corresponds to digital pin 4, or D4.
 #define BUTTON_PIN 516
 void setup();

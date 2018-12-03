@@ -16,7 +16,8 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
 #include "Arduino.h" //not strictly required to run, but prevents erros when importing into Intel(r) System Studio
 #include "upm_utilities.h"
 
-#define IS_SERIAL_OR_SSH false //Set to false if SSH and set to true if Serial
+//Set to false if SSH and set to true if Serial
+#define IS_SERIAL_OR_SSH false
 //A 512 offset is required for sub-platforms.  512 corresponds to analog pin 0, or A0.
 #define SENSOR_PIN 512
 #define DELAY_MS 500

@@ -19,7 +19,8 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
 #include <jhd1313m1.h>
 #include "upm_utilities.h"
 
-#define IS_SERIAL_OR_SSH false //Set to false if SSH and set to true if Serial
+//Set to false if SSH and set to true if Serial
+#define IS_SERIAL_OR_SSH false
 jhd1313m1_context lcd;
 
 int ndx = 0;
