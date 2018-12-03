@@ -17,8 +17,8 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
 #include <th02.hpp>
 #include "upm_utilities.h"
 
-//Set to false if SSH and set to true if Serial
-#define IS_SERIAL_OR_SSH false
+//Set to false if SSH and set to true if Serial Connection
+#define IS_SERIAL_OR_SSH true
 //Prototype function
 float ModTemp(char, float);
 

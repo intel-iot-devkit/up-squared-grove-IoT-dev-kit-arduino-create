@@ -26,14 +26,12 @@
 
 #include "Arduino.h" //not strictly required to run, but prevents erros when importing into Intel(r) System Studio
 
-//Set to false if SSH and set to true if Serial
-#define IS_SERIAL_OR_SSH false
+//Set to false if SSH and set to true if Serial Connection
+#define IS_SERIAL_OR_SSH true
 int sensorPin = 512;    // select the input pin for the Grove rotary angle sensor
 int ledPin = 516;      // select the pin for the LED
 int sensorValue = 0;  // variable to store the value coming from the sensor
 
-void setup();
-void loop();
 void setup() {
   // add the Grove Pi+ sub-platform
   mraa_add_subplatform(MRAA_GROVEPI, "0");

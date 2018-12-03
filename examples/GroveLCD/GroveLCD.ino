@@ -19,8 +19,8 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
 #include <jhd1313m1.h>
 #include "upm_utilities.h"
 
-//Set to false if SSH and set to true if Serial
-#define IS_SERIAL_OR_SSH false
+//Set to false if SSH and set to true if Serial Connection
+#define IS_SERIAL_OR_SSH true
 jhd1313m1_context lcd;
 
 int ndx = 0;
@@ -33,9 +33,6 @@ uint8_t rgb[7][3] = {
     {0x11, 0x33, 0xcc},
     {0x22, 0x00, 0x66},
     {0x33, 0x00, 0x44}};
-
-void setup();
-void loop();
 
 void setup() {
     #ifdef IS_SERIAL_OR_SSH
