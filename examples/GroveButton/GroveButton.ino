@@ -1,10 +1,13 @@
 /* Copyright (c) Intel. All rights reserved.
 Licensed under the MIT license. See LICENSE file in the project root for full license information.
 */
+
 /*
 	Grove Button
+
 	Example using the Grove Button. Prints to the debug serial terminal when the button is pressed.
 	https://github.com/intel-iot-devkit/up-squared-grove-IoT-dev-kit-arduino-create/tree/master/examples/GroveButton
+
 	This sample can be imported into Intel System Studio 2018, Linux hosts only.
 	* Free IDE includes optimized libraries, application analysis tools, and debugging tools
 	* Import tutorial: https://software.intel.com/en-us/developing-projects-with-intel-system-studio-c-importing-arduino-create-projects
@@ -14,6 +17,7 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
 // upm - Version: Latest 
 #include "upm_utilities.h"
 
+#define IS_SERIAL_OR_SSH false //Set to false if SSH and set to true if Serial
 //A 512 offset is required for sub-platforms.  516 corresponds to digital pin 4, or D4.
 #define BUTTON_PIN 516
 void setup();
@@ -26,26 +30,27 @@ void setup() {
 	pinMode(BUTTON_PIN, INPUT);
 	// DebugSerial should be used via cloud (when you don't have the micro USB cable connected)
 	#ifdef IS_SERIAL_OR_SSH
-	    DebugSerial.begin(9600);
+		DebugSerial.begin(9600);
 	#endif
 }
+
 void loop() {
 	//check for a high from the button, once it is released print 'Released!'
 	if (digitalRead(BUTTON_PIN)) {
 		#ifdef IS_SERIAL_OR_SSH
-		    //read analog value from light sensor and print via serial
-		    DebugSerial.println("Pressed!");
+			//read analog value from light sensor and print via serial
+			DebugSerial.println("Pressed!");
 		#else
-		    printf("pressed!");
+			printf("pressed!");
 		#endif
 		}
 		while (digitalRead(BUTTON_PIN));
 		{
 			#ifdef IS_SERIAL_OR_SSH
-		    	//read analog value from light sensor and print via serial
-			DebugSerial.println("Released!");
+				//read analog value from light sensor and print via serial
+				DebugSerial.println("Released!");
 			#else
-		    	printf("Released!");
+				printf("Released!");
 			#endif
 		}
 }
