@@ -28,6 +28,7 @@ void print(char *msg)
 		DebugSerial.println(msg);
 	#else
 		printf("%s\n", msg);
+	#endif
 }
 
 void setup() {
