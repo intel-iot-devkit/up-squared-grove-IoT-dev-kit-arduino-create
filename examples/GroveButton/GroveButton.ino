@@ -17,8 +17,19 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
 // upm - Version: Latest 
 #include "upm_utilities.h"
 
+//Set to false if SSH and set to true if Serial Connection
+#define IS_SERIAL_OR_SSH true
 //A 512 offset is required for sub-platforms.  516 corresponds to digital pin 4, or D4.
 #define BUTTON_PIN 516
+
+void print(char *msg)
+{
+	#ifdef IS_SERIAL_OR_SSH
+		DebugSerial.println(msg);
+	#else
+		printf("%s\n", msg);
+	#endif
+}
 
 void setup() {
     //add the Grove Pi+ sub-platform
@@ -26,14 +37,17 @@ void setup() {
 	// initialize digital pin BUTTON_PIN as an input.
 	pinMode(BUTTON_PIN, INPUT);
 	// DebugSerial should be used via cloud (when you don't have the micro USB cable connected)
-	DebugSerial.begin(9600);
+	#ifdef IS_SERIAL_OR_SSH
+		DebugSerial.begin(9600);
+	#endif
 }
 
 void loop() {
 	//check for a high from the button, once it is released print 'Released!'
 	if (digitalRead(BUTTON_PIN)) {
-		DebugSerial.println("Pressed!");
+		print("pressed!");
 		while (digitalRead(BUTTON_PIN));
-		DebugSerial.println("Released!");
-	}
+		{
+			print("Released!");
+		}
 }

@@ -17,15 +17,17 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
 #include <th02.hpp>
 #include "upm_utilities.h"
 
-
+//Set to false if SSH and set to true if Serial Connection
+#define IS_SERIAL_OR_SSH true
 //Prototype function
 float ModTemp(char, float);
 
 void setup() {
   //Begin serial terminal
   //If you are using the UP^2 board via serial port (COM, tty, etc) exchange the DebugSerial method with Serial in all instances
-  DebugSerial.begin(9600);
-  
+  #ifdef IS_SERIAL_OR_SSH
+      DebugSerial.begin(9600);
+  #endif
 }
 
 void loop() {
@@ -61,8 +63,12 @@ void loop() {
   outputMessage += "---------------------------------------\n\n";
   
   //Print information
-  DebugSerial.println(outputMessage);
-
+  #ifdef IS_SERIAL_OR_SSH
+      //read analog value from light sensor and print via serial
+      DebugSerial.println(outputMessage);
+   #else
+      printf("%s",outputMessage);
+   #endif
   //Sleep 3 seconds between readings
   delay(3000);
 }
