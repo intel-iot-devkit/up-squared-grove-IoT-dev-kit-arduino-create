@@ -50,4 +50,5 @@ void loop() {
 		{
 			print("Released!");
 		}
+	}
 }
