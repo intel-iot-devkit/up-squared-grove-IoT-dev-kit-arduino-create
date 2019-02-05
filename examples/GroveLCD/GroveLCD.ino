@@ -19,8 +19,8 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
 #include <jhd1313m1.h>
 #include "upm_utilities.h"
 
-//Set to false if SSH and set to true if Serial Connection
-#define IS_SERIAL_OR_SSH true
+//Comment this line if connected via SSH
+#define CONNECTION_IS_SERIAL
 jhd1313m1_context lcd;
 
 int ndx = 0;
@@ -35,13 +35,13 @@ uint8_t rgb[7][3] = {
     {0x33, 0x00, 0x44}};
 
 void setup() {
-    #ifdef IS_SERIAL_OR_SSH
-	DebugSerial.begin(9600);
+    #ifdef CONNECTION_IS_SERIAL
+	   DebugSerial.begin(9600);
     #endif
     lcd = jhd1313m1_init(0, 0x3e, 0x62);
 
     if (!lcd) 
-	#ifdef IS_SERIAL_OR_SSH
+	#ifdef CONNECTION_IS_SERIAL
 		//print sensor value to the serial monitor
 		DebugSerial.println("jhd1313m1_i2c_init() failed.");
 	#else
@@ -61,7 +61,7 @@ void loop() {
     jhd1313m1_set_color(lcd, r, g, b);
     // Echo via DebugSerial
     snprintf(str, sizeof(str), "Hello World %d rgb: 0x%02x%02x%02x\0", ndx++, r, g, b);
-    #ifdef IS_SERIAL_OR_SSH
+    #ifdef CONNECTION_IS_SERIAL
 	//print sensor value to the serial monitor
 	DebugSerial.println(str);
     #else

@@ -17,14 +17,14 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
 // upm - Version: Latest 
 #include "upm_utilities.h"
 
-//Set to false if SSH and set to true if Serial Connection
-#define IS_SERIAL_OR_SSH true
+//Comment this line if connected via SSH
+#define CONNECTION_IS_SERIAL
 //A 512 offset is required for sub-platforms.  516 corresponds to digital pin 4, or D4.
 #define BUTTON_PIN 516
 
 void print(char *msg)
 {
-	#ifdef IS_SERIAL_OR_SSH
+	#ifdef CONNECTION_IS_SERIAL
 		DebugSerial.println(msg);
 	#else
 		printf("%s\n", msg);
@@ -37,7 +37,7 @@ void setup() {
 	// initialize digital pin BUTTON_PIN as an input.
 	pinMode(BUTTON_PIN, INPUT);
 	// DebugSerial should be used via cloud (when you don't have the micro USB cable connected)
-	#ifdef IS_SERIAL_OR_SSH
+	#ifdef CONNECTION_IS_SERIAL
 		DebugSerial.begin(9600);
 	#endif
 }
