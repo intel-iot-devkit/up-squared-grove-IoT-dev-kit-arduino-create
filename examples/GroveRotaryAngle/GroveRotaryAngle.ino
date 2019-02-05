@@ -26,8 +26,8 @@
 
 #include "Arduino.h" //not strictly required to run, but prevents erros when importing into Intel(r) System Studio
 
-//Set to false if SSH and set to true if Serial Connection
-#define IS_SERIAL_OR_SSH true
+//Comment this line if connected via SSH
+#define CONNECTION_IS_SERIAL
 int sensorPin = 512;    // select the input pin for the Grove rotary angle sensor
 int ledPin = 516;      // select the pin for the LED
 int sensorValue = 0;  // variable to store the value coming from the sensor
@@ -39,7 +39,7 @@ void setup() {
   pinMode(ledPin, OUTPUT);
   // Setup serial terminal, meant for devices connected via Cloud.  If you are using the UP^2 board via serial port (COM, tty, etc)
   // DebugSerial should be used via cloud (when you don't have the micro USB cable connected)
-  #ifdef IS_SERIAL_OR_SSH
+  #ifdef CONNECTION_IS_SERIAL
       DebugSerial.begin(115200);
   #endif
 }
@@ -51,7 +51,7 @@ void loop() {
   digitalWrite(ledPin, HIGH);
   // stop the program for <sensorValue> milliseconds:
   delay(sensorValue);
-  #ifdef IS_SERIAL_OR_SSH
+  #ifdef CONNECTION_IS_SERIAL
       //print sensor value to the serial monitor
       DebugSerial.println(sensorValue);
   #else
